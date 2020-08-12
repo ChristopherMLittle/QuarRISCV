@@ -1,0 +1,46 @@
+##################################################
+#
+# For info on creating trigger state machines:
+#   1) In the main Vivado menu bar, select
+#      Window > Language Templates
+#   2) In the Templates window, select
+#      Debug > Trigger State Machine
+#   3) Refer to the entry 'Info' for an overview
+#      of the trigger state machine language.
+#
+# More information can be found in this document:
+#
+#   Vivado Design Suite User Guide: Programming
+#   and Debugging (UG908)
+#
+##################################################
+#state my_state0:
+#trigger;
+
+#
+# Trigger on the 4th rising edge of debug probe called "abc"
+#
+#state wait_for_4th_rising_edge_of_abc:
+#  if ((design_5_i/rst_ps7_0_100M_peripheral_aresetn == 1'bR) && ($counter0 == 16'h0001)) then
+#    reset_counter $counter0;
+#    trigger;
+#  elseif (design_5_i/rst_ps7_0_100M_peripheral_aresetn == 1'bR) then
+#    increment_counter $counter0;
+#    goto wait_for_4th_rising_edge_of_abc;
+#  else
+#    goto wait_for_4th_rising_edge_of_abc;
+#  endif
+
+#state reset_address:
+#    if(design_5_i/RISCV32I_EXBranch_Da_0_CTL_ID_PC == 32'h2000_0488) then
+#        trigger;
+#    else 
+#        goto reset_address;
+#    endif
+
+state resetn_inactive:
+    if(design_5_i/rst_ps7_0_100M_peripheral_aresetn == 1'b1) then
+        trigger;
+    else 
+        goto resetn_inactive;
+    endif

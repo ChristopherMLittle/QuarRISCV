@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_4_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_4_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="218fs"></ZoomEndTime>
+      <Cursor1Time time="17fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="312"></NameColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/design_4_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DONE_i" type="logic">
+      <obj_property name="ElementShortName">MIC_DONE_i</obj_property>
+      <obj_property name="ObjectShortName">MIC_DONE_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IREQ_DATA_i" type="array">
+      <obj_property name="ElementShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DREQ_DATA_i" type="array">
+      <obj_property name="ElementShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_INIT_TXN_o" type="logic">
+      <obj_property name="ElementShortName">MIC_INIT_TXN_o</obj_property>
+      <obj_property name="ObjectShortName">MIC_INIT_TXN_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IREQ_VALID_o" type="logic">
+      <obj_property name="ElementShortName">MIC_IREQ_VALID_o</obj_property>
+      <obj_property name="ObjectShortName">MIC_IREQ_VALID_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IREQ_ADDR_o" type="array">
+      <obj_property name="ElementShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IBLK_VALID_o" type="logic">
+      <obj_property name="ElementShortName">MIC_IBLK_VALID_o</obj_property>
+      <obj_property name="ObjectShortName">MIC_IBLK_VALID_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IBLK_ADDR_o" type="array">
+      <obj_property name="ElementShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_IBLK_DATA_o" type="array">
+      <obj_property name="ElementShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DREQ_VALID_o" type="logic">
+      <obj_property name="ElementShortName">MIC_DREQ_VALID_o</obj_property>
+      <obj_property name="ObjectShortName">MIC_DREQ_VALID_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DREQ_ADDR_o" type="array">
+      <obj_property name="ElementShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DBLK_VALID_o" type="logic">
+      <obj_property name="ElementShortName">MIC_DBLK_VALID_o</obj_property>
+      <obj_property name="ObjectShortName">MIC_DBLK_VALID_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DBLK_ADDR_o" type="array">
+      <obj_property name="ElementShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/MIC_DBLK_DATA_o" type="array">
+      <obj_property name="ElementShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+      <obj_property name="ObjectShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/inst_req_addr" type="array">
+      <obj_property name="ElementShortName">inst_req_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_req_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/data_req_addr" type="array">
+      <obj_property name="ElementShortName">data_req_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_req_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/inst_blk_addr" type="array">
+      <obj_property name="ElementShortName">inst_blk_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_blk_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/data_blk_addr" type="array">
+      <obj_property name="ElementShortName">data_blk_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_blk_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/r" type="array">
+      <obj_property name="ElementShortName">r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/file" type="array">
+      <obj_property name="ElementShortName">file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">file[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group500" type="group">
+      <obj_property name="label">Cache_Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/cpu_clk" type="logic">
+         <obj_property name="ElementShortName">cpu_clk</obj_property>
+         <obj_property name="ObjectShortName">cpu_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/IMEM_valid_i" type="logic">
+         <obj_property name="ElementShortName">IMEM_valid_i</obj_property>
+         <obj_property name="ObjectShortName">IMEM_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/IMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">IMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/IMEM_re_i" type="logic">
+         <obj_property name="ElementShortName">IMEM_re_i</obj_property>
+         <obj_property name="ObjectShortName">IMEM_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_valid_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_valid_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_bypass" type="logic">
+         <obj_property name="ElementShortName">DMEM_bypass</obj_property>
+         <obj_property name="ObjectShortName">DMEM_bypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_re_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_re_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_we_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_we_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">DMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_data_i" type="array">
+         <obj_property name="ElementShortName">DMEM_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_hit_i" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_hit_i</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_hit_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_data_i" type="array">
+         <obj_property name="ElementShortName">ICache_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">ICache_Blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_addr_i" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_data_i" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_hit_i" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_hit_i</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_hit_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_data_i" type="array">
+         <obj_property name="ElementShortName">DCache_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">DCache_Blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_addr_i" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_data_i" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DONE_i" type="logic">
+         <obj_property name="ElementShortName">MIC_DONE_i</obj_property>
+         <obj_property name="ObjectShortName">MIC_DONE_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IREQ_DATA_i" type="array">
+         <obj_property name="ElementShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DREQ_DATA_i" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MEM_rdy_o" type="logic">
+         <obj_property name="ElementShortName">MEM_rdy_o</obj_property>
+         <obj_property name="ObjectShortName">MEM_rdy_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MEM_err_o" type="logic">
+         <obj_property name="ElementShortName">MEM_err_o</obj_property>
+         <obj_property name="ObjectShortName">MEM_err_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/IMEM_data_o" type="array">
+         <obj_property name="ElementShortName">IMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DMEM_data_o" type="array">
+         <obj_property name="ElementShortName">DMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_valid_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_valid_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_we_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_we_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_we_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_re_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_re_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_re_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">ICache_Req_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Req_data_o" type="array">
+         <obj_property name="ElementShortName">ICache_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_addr_o" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ICache_Blk_data_o" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_valid_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_valid_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_we_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_we_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_we_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_re_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_re_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_re_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">DCache_Req_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Req_data_o" type="array">
+         <obj_property name="ElementShortName">DCache_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_data_o" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_addr_o" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DCache_Blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_INIT_TXN_o" type="logic">
+         <obj_property name="ElementShortName">MIC_INIT_TXN_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_INIT_TXN_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IREQ_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_IREQ_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IREQ_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DREQ_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_DREQ_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DREQ_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IBLK_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_IBLK_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IBLK_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_IBLK_DATA_o" type="array">
+         <obj_property name="ElementShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DBLK_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_DBLK_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DBLK_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/MIC_DBLK_DATA_o" type="array">
+         <obj_property name="ElementShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_state" type="array">
+         <obj_property name="ElementShortName">dat_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/stall_signal" type="logic">
+         <obj_property name="ElementShortName">stall_signal</obj_property>
+         <obj_property name="ObjectShortName">stall_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/init_req_signal" type="logic">
+         <obj_property name="ElementShortName">init_req_signal</obj_property>
+         <obj_property name="ObjectShortName">init_req_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/ready_signal" type="logic">
+         <obj_property name="ElementShortName">ready_signal</obj_property>
+         <obj_property name="ObjectShortName">ready_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_ivalid" type="logic">
+         <obj_property name="ElementShortName">chk_ivalid</obj_property>
+         <obj_property name="ObjectShortName">chk_ivalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_iread" type="logic">
+         <obj_property name="ElementShortName">chk_iread</obj_property>
+         <obj_property name="ObjectShortName">chk_iread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_iaddr" type="array">
+         <obj_property name="ElementShortName">chk_iaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_iaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dvalid" type="logic">
+         <obj_property name="ElementShortName">chk_dvalid</obj_property>
+         <obj_property name="ObjectShortName">chk_dvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dbypass" type="logic">
+         <obj_property name="ElementShortName">chk_dbypass</obj_property>
+         <obj_property name="ObjectShortName">chk_dbypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dread" type="logic">
+         <obj_property name="ElementShortName">chk_dread</obj_property>
+         <obj_property name="ObjectShortName">chk_dread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dwrite" type="logic">
+         <obj_property name="ElementShortName">chk_dwrite</obj_property>
+         <obj_property name="ObjectShortName">chk_dwrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_daddr" type="array">
+         <obj_property name="ElementShortName">chk_daddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_daddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_ddata" type="array">
+         <obj_property name="ElementShortName">chk_ddata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_ddata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_imiss" type="logic">
+         <obj_property name="ElementShortName">chk_imiss</obj_property>
+         <obj_property name="ObjectShortName">chk_imiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dmiss" type="logic">
+         <obj_property name="ElementShortName">chk_dmiss</obj_property>
+         <obj_property name="ObjectShortName">chk_dmiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_valid" type="logic">
+         <obj_property name="ElementShortName">chk_valid</obj_property>
+         <obj_property name="ObjectShortName">chk_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_icache_data" type="array">
+         <obj_property name="ElementShortName">chk_icache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_icache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/chk_dcache_data" type="array">
+         <obj_property name="ElementShortName">chk_dcache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_dcache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_iread" type="logic">
+         <obj_property name="ElementShortName">dat_iread</obj_property>
+         <obj_property name="ObjectShortName">dat_iread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_iaddr" type="array">
+         <obj_property name="ElementShortName">dat_iaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_iaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_dbypass" type="logic">
+         <obj_property name="ElementShortName">dat_dbypass</obj_property>
+         <obj_property name="ObjectShortName">dat_dbypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_dread" type="logic">
+         <obj_property name="ElementShortName">dat_dread</obj_property>
+         <obj_property name="ObjectShortName">dat_dread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_dwrite" type="logic">
+         <obj_property name="ElementShortName">dat_dwrite</obj_property>
+         <obj_property name="ObjectShortName">dat_dwrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_daddr" type="array">
+         <obj_property name="ElementShortName">dat_daddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_daddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_ddata" type="array">
+         <obj_property name="ElementShortName">dat_ddata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_ddata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_imiss" type="logic">
+         <obj_property name="ElementShortName">dat_imiss</obj_property>
+         <obj_property name="ObjectShortName">dat_imiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_dmiss" type="logic">
+         <obj_property name="ElementShortName">dat_dmiss</obj_property>
+         <obj_property name="ObjectShortName">dat_dmiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_icache_data" type="array">
+         <obj_property name="ElementShortName">dat_icache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_icache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/dat_dcache_data" type="array">
+         <obj_property name="ElementShortName">dat_dcache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_dcache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DAT_IDLE" type="array">
+         <obj_property name="ElementShortName">DAT_IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DAT_CHK" type="array">
+         <obj_property name="ElementShortName">DAT_CHK[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_CHK[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DAT_REQ" type="array">
+         <obj_property name="ElementShortName">DAT_REQ[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_REQ[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/inst/DAT_WAIT" type="array">
+         <obj_property name="ElementShortName">DAT_WAIT[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_WAIT[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group599" type="group">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Val_i" type="array">
+         <obj_property name="ElementShortName">CSR_Val_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_illegal_i" type="logic">
+         <obj_property name="ElementShortName">CSR_Req_illegal_i</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_illegal_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_data_i" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_rdy_i" type="logic">
+         <obj_property name="ElementShortName">CC_rdy_i</obj_property>
+         <obj_property name="ObjectShortName">CC_rdy_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_err_i" type="logic">
+         <obj_property name="ElementShortName">CC_err_i</obj_property>
+         <obj_property name="ObjectShortName">CC_err_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Idata_i" type="array">
+         <obj_property name="ElementShortName">CC_Idata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Idata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Ddata_i" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID_PC" type="array">
+         <obj_property name="ElementShortName">ID_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID_Instruction" type="array">
+         <obj_property name="ElementShortName">ID_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/BU_Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">BU_Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">BU_Branch_Taken</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/Hazard_Stall" type="logic">
+         <obj_property name="ElementShortName">Hazard_Stall</obj_property>
+         <obj_property name="ObjectShortName">Hazard_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/EX_Funct3" type="array">
+         <obj_property name="ElementShortName">EX_Funct3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Funct3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/EX_Funct7" type="array">
+         <obj_property name="ElementShortName">EX_Funct7[7:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Funct7[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/inst_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">inst_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">inst_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/inst_mem_fault" type="logic">
+         <obj_property name="ElementShortName">inst_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">inst_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/csr_illegal" type="logic">
+         <obj_property name="ElementShortName">csr_illegal</obj_property>
+         <obj_property name="ObjectShortName">csr_illegal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/load_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">load_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">load_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/load_mem_fault" type="logic">
+         <obj_property name="ElementShortName">load_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">load_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/store_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">store_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">store_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/store_mem_fault" type="logic">
+         <obj_property name="ElementShortName">store_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">store_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/inst_page_fault" type="logic">
+         <obj_property name="ElementShortName">inst_page_fault</obj_property>
+         <obj_property name="ObjectShortName">inst_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/load_page_fault" type="logic">
+         <obj_property name="ElementShortName">load_page_fault</obj_property>
+         <obj_property name="ObjectShortName">load_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/store_page_fault" type="logic">
+         <obj_property name="ElementShortName">store_page_fault</obj_property>
+         <obj_property name="ObjectShortName">store_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_Overflow" type="logic">
+         <obj_property name="ElementShortName">ALU_Overflow</obj_property>
+         <obj_property name="ObjectShortName">ALU_Overflow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_Err" type="logic">
+         <obj_property name="ElementShortName">ALU_Err</obj_property>
+         <obj_property name="ObjectShortName">ALU_Err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/LIC_New_IP" type="logic">
+         <obj_property name="ElementShortName">LIC_New_IP</obj_property>
+         <obj_property name="ObjectShortName">LIC_New_IP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/LIC_IP_Cause" type="array">
+         <obj_property name="ElementShortName">LIC_IP_Cause[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Cause[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/LIC_IP_Lvl" type="array">
+         <obj_property name="ElementShortName">LIC_IP_Lvl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Lvl[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">IMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/DMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">DMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/DMEM_data_i" type="array">
+         <obj_property name="ElementShortName">DMEM_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Val_en_o" type="logic">
+         <obj_property name="ElementShortName">CSR_Val_en_o</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_en_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Val_addr_o" type="array">
+         <obj_property name="ElementShortName">CSR_Val_addr_o[11:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_addr_o[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_o" type="logic">
+         <obj_property name="ElementShortName">CSR_Req_o</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_mode_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_mode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_mode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_addr_o[11:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_addr_o[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CSR_Req_data_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Ivalid_o" type="logic">
+         <obj_property name="ElementShortName">CC_Ivalid_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Ivalid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Iaddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Iaddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Iaddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Ire_o" type="logic">
+         <obj_property name="ElementShortName">CC_Ire_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Ire_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Dvalid_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dvalid_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dvalid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Dbypass_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dbypass_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dbypass_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Dre_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dre_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dre_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Dwe_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dwe_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dwe_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Daddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Daddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Daddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Ddata_o" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CC_Dmode_o" type="array">
+         <obj_property name="ElementShortName">CC_Dmode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Dmode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/Stall" type="logic">
+         <obj_property name="ElementShortName">Stall</obj_property>
+         <obj_property name="ObjectShortName">Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IF2ID_Flush" type="logic">
+         <obj_property name="ElementShortName">IF2ID_Flush</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID2EX_Flush" type="logic">
+         <obj_property name="ElementShortName">ID2EX_Flush</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/EX2MEM_Flush" type="logic">
+         <obj_property name="ElementShortName">EX2MEM_Flush</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/MEM2WB_Flush" type="logic">
+         <obj_property name="ElementShortName">MEM2WB_Flush</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IF_PCWrite" type="logic">
+         <obj_property name="ElementShortName">IF_PCWrite</obj_property>
+         <obj_property name="ObjectShortName">IF_PCWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IF_PCSrc" type="logic">
+         <obj_property name="ElementShortName">IF_PCSrc</obj_property>
+         <obj_property name="ObjectShortName">IF_PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_EPCSrc" type="array">
+         <obj_property name="ElementShortName">CTL_EPCSrc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EPCSrc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IF2ID_Write" type="logic">
+         <obj_property name="ElementShortName">IF2ID_Write</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID_RegWr" type="logic">
+         <obj_property name="ElementShortName">ID_RegWr</obj_property>
+         <obj_property name="ObjectShortName">ID_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID_Unsigned" type="logic">
+         <obj_property name="ElementShortName">ID_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">ID_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/BU_BrJSrc" type="logic">
+         <obj_property name="ElementShortName">BU_BrJSrc</obj_property>
+         <obj_property name="ObjectShortName">BU_BrJSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/BU_Jump" type="logic">
+         <obj_property name="ElementShortName">BU_Jump</obj_property>
+         <obj_property name="ObjectShortName">BU_Jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/BU_BranchOp" type="array">
+         <obj_property name="ElementShortName">BU_BranchOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BU_BranchOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/BU_PC" type="array">
+         <obj_property name="ElementShortName">BU_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BU_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID2EX_Src" type="logic">
+         <obj_property name="ElementShortName">ID2EX_Src</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ID2EX_MemRd" type="logic">
+         <obj_property name="ElementShortName">ID2EX_MemRd</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_MemRd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/EX_CSR_Val" type="array">
+         <obj_property name="ElementShortName">EX_CSR_Val[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_CSR_Val[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_Unsigned" type="logic">
+         <obj_property name="ElementShortName">ALU_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">ALU_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_DataMode" type="array">
+         <obj_property name="ElementShortName">ALU_DataMode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_DataMode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_Ctl" type="array">
+         <obj_property name="ElementShortName">ALU_Ctl[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Ctl[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_SrcA" type="array">
+         <obj_property name="ElementShortName">ALU_SrcA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SrcA[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/ALU_SrcB" type="array">
+         <obj_property name="ElementShortName">ALU_SrcB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SrcB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/EX2MEM_RegWr" type="logic">
+         <obj_property name="ElementShortName">EX2MEM_RegWr</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/WB_MEMToGPR" type="logic">
+         <obj_property name="ElementShortName">WB_MEMToGPR</obj_property>
+         <obj_property name="ObjectShortName">WB_MEMToGPR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/IMEM_data_o" type="array">
+         <obj_property name="ElementShortName">IMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/DMEM_data_o" type="array">
+         <obj_property name="ElementShortName">DMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Exception" type="logic">
+         <obj_property name="ElementShortName">CTL_Exception</obj_property>
+         <obj_property name="ObjectShortName">CTL_Exception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Interrupt" type="logic">
+         <obj_property name="ElementShortName">CTL_Interrupt</obj_property>
+         <obj_property name="ObjectShortName">CTL_Interrupt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/epc" type="array">
+         <obj_property name="ElementShortName">epc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">epc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/exvec" type="array">
+         <obj_property name="ElementShortName">exvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">exvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/tval" type="array">
+         <obj_property name="ElementShortName">tval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tval[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/LIC_IP_Ack" type="logic">
+         <obj_property name="ElementShortName">LIC_IP_Ack</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Priv_o" type="array">
+         <obj_property name="ElementShortName">CTL_Priv_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_Priv_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Ret_o" type="logic">
+         <obj_property name="ElementShortName">CTL_Ret_o</obj_property>
+         <obj_property name="ObjectShortName">CTL_Ret_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Inst_Done" type="logic">
+         <obj_property name="ElementShortName">CTL_Inst_Done</obj_property>
+         <obj_property name="ObjectShortName">CTL_Inst_Done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/RV32I_ControlUnit_Ve_0/CTL_Inst_Event" type="array">
+         <obj_property name="ElementShortName">CTL_Inst_Event[6:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_Inst_Event[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/CTL_Stall" type="logic">
+      <obj_property name="ElementShortName">CTL_Stall</obj_property>
+      <obj_property name="ObjectShortName">CTL_Stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/IMEM_addr_i" type="array">
+      <obj_property name="ElementShortName">IMEM_addr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMEM_addr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/Cache_Controller/IMEM_data_o" type="array">
+      <obj_property name="ElementShortName">IMEM_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMEM_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/PC_Reg" type="array">
+      <obj_property name="ElementShortName">PC_Reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_PC" type="array">
+      <obj_property name="ElementShortName">IF2ID_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_Instruction" type="array">
+      <obj_property name="ElementShortName">IF2ID_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_PC" type="array">
+      <obj_property name="ElementShortName">ID2EX_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_4_tb/design_4_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Instruction" type="array">
+      <obj_property name="ElementShortName">ID2EX_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group709" type="group">
+      <obj_property name="label">DCache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_valid_i" type="logic">
+         <obj_property name="ElementShortName">req_valid_i</obj_property>
+         <obj_property name="ObjectShortName">req_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_re_i" type="logic">
+         <obj_property name="ElementShortName">req_re_i</obj_property>
+         <obj_property name="ObjectShortName">req_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_we_i" type="logic">
+         <obj_property name="ElementShortName">req_we_i</obj_property>
+         <obj_property name="ObjectShortName">req_we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_addr_i" type="array">
+         <obj_property name="ElementShortName">req_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_data_i" type="array">
+         <obj_property name="ElementShortName">req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_addr_i" type="array">
+         <obj_property name="ElementShortName">blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_data_i" type="array">
+         <obj_property name="ElementShortName">blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_hit_o" type="logic">
+         <obj_property name="ElementShortName">req_hit_o</obj_property>
+         <obj_property name="ObjectShortName">req_hit_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/req_data_o" type="array">
+         <obj_property name="ElementShortName">req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_addr_o" type="array">
+         <obj_property name="ElementShortName">blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/DCache/blk_data_o" type="array">
+         <obj_property name="ElementShortName">blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_o[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group741" type="group">
+      <obj_property name="label">ICache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_valid_i" type="logic">
+         <obj_property name="ElementShortName">req_valid_i</obj_property>
+         <obj_property name="ObjectShortName">req_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_re_i" type="logic">
+         <obj_property name="ElementShortName">req_re_i</obj_property>
+         <obj_property name="ObjectShortName">req_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_we_i" type="logic">
+         <obj_property name="ElementShortName">req_we_i</obj_property>
+         <obj_property name="ObjectShortName">req_we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_addr_i" type="array">
+         <obj_property name="ElementShortName">req_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_data_i" type="array">
+         <obj_property name="ElementShortName">req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_addr_i" type="array">
+         <obj_property name="ElementShortName">blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_data_i" type="array">
+         <obj_property name="ElementShortName">blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_hit_o" type="logic">
+         <obj_property name="ElementShortName">req_hit_o</obj_property>
+         <obj_property name="ObjectShortName">req_hit_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/req_data_o" type="array">
+         <obj_property name="ElementShortName">req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_addr_o" type="array">
+         <obj_property name="ElementShortName">blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/blk_data_o" type="array">
+         <obj_property name="ElementShortName">blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/way" type="array">
+         <obj_property name="ElementShortName">way[31:0]</obj_property>
+         <obj_property name="ObjectShortName">way[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/set" type="array">
+         <obj_property name="ElementShortName">set[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR_state" type="logic">
+         <obj_property name="ElementShortName">BR_state</obj_property>
+         <obj_property name="ObjectShortName">BR_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_req_valid" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_valid</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_req_we" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_we</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_req_re" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_re</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_req_addr" type="array">
+         <obj_property name="ElementShortName">AD2CS_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_req_data" type="array">
+         <obj_property name="ElementShortName">AD2CS_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_req_valid" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_valid</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_req_we" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_we</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_req_re" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_re</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_req_addr" type="array">
+         <obj_property name="ElementShortName">CS2BR_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_req_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_req_valid" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_valid</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_req_we" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_we</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_req_re" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_re</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_req_addr" type="array">
+         <obj_property name="ElementShortName">BR2DC_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_req_data" type="array">
+         <obj_property name="ElementShortName">BR2DC_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD_tag" type="array">
+         <obj_property name="ElementShortName">AD_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD_index" type="array">
+         <obj_property name="ElementShortName">AD_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD_offset" type="array">
+         <obj_property name="ElementShortName">AD_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_tag" type="array">
+         <obj_property name="ElementShortName">AD2CS_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_index" type="array">
+         <obj_property name="ElementShortName">AD2CS_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/AD2CS_offset" type="array">
+         <obj_property name="ElementShortName">AD2CS_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_tag" type="array">
+         <obj_property name="ElementShortName">CS2BR_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_index" type="array">
+         <obj_property name="ElementShortName">CS2BR_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_offset" type="array">
+         <obj_property name="ElementShortName">CS2BR_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_tag" type="array">
+         <obj_property name="ElementShortName">BR2DC_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_index" type="array">
+         <obj_property name="ElementShortName">BR2DC_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_offset" type="array">
+         <obj_property name="ElementShortName">BR2DC_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/ValidBits" type="array">
+         <obj_property name="ElementShortName">ValidBits[3:0][63:0]</obj_property>
+         <obj_property name="ObjectShortName">ValidBits[3:0][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/DirtyBits" type="array">
+         <obj_property name="ElementShortName">DirtyBits[3:0][63:0]</obj_property>
+         <obj_property name="ObjectShortName">DirtyBits[3:0][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/LRUBits" type="array">
+         <obj_property name="ElementShortName">LRUBits[3:0][63:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">LRUBits[3:0][63:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Tags" type="array">
+         <obj_property name="ElementShortName">Tags[3:0][63:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">Tags[3:0][63:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Data" type="array">
+         <obj_property name="ElementShortName">Data[3:0][63:0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">Data[3:0][63:0][127:0]</obj_property>
+         <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Data[3]" type="array">
+            <obj_property name="ElementShortName">[3][63:0][127:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][63:0][127:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Data[2]" type="array">
+            <obj_property name="ElementShortName">[2][63:0][127:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][63:0][127:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Data[1]" type="array">
+            <obj_property name="ElementShortName">[1][63:0][127:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][63:0][127:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/Data[0]" type="array">
+            <obj_property name="ElementShortName">[0][63:0][127:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][63:0][127:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_NWayHits" type="array">
+         <obj_property name="ElementShortName">CS2BR_NWayHits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_NWayHits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_NWayHits" type="array">
+         <obj_property name="ElementShortName">BR2DC_NWayHits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_NWayHits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_hit" type="logic">
+         <obj_property name="ElementShortName">CS_hit</obj_property>
+         <obj_property name="ObjectShortName">CS_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_hit" type="logic">
+         <obj_property name="ElementShortName">CS2BR_hit</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_hit" type="logic">
+         <obj_property name="ElementShortName">BR2DC_hit</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_hit_way" type="array">
+         <obj_property name="ElementShortName">CS_hit_way[3:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_hit_way[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_cache_data" type="array">
+         <obj_property name="ElementShortName">CS_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_cache_miss" type="logic">
+         <obj_property name="ElementShortName">CS_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">CS_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_cache_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_cache_miss" type="logic">
+         <obj_property name="ElementShortName">CS2BR_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_cache_data" type="array">
+         <obj_property name="ElementShortName">BR2DC_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_cache_miss" type="logic">
+         <obj_property name="ElementShortName">BR2DC_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_bypass_addr" type="array">
+         <obj_property name="ElementShortName">BR2DC_bypass_addr[32:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_bypass_addr[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/BR2DC_bypass_BlkDecision" type="array">
+         <obj_property name="ElementShortName">BR2DC_bypass_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_bypass_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_LRU0" type="array">
+         <obj_property name="ElementShortName">CS_LRU0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRU0[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_LRUNum0" type="array">
+         <obj_property name="ElementShortName">CS_LRUNum0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUNum0[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_LRU1" type="array">
+         <obj_property name="ElementShortName">CS_LRU1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRU1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_LRUNum1" type="array">
+         <obj_property name="ElementShortName">CS_LRUNum1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUNum1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_BlkDecision" type="array">
+         <obj_property name="ElementShortName">CS_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_BlkDecision" type="array">
+         <obj_property name="ElementShortName">CS2BR_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_NonValidBlk" type="logic">
+         <obj_property name="ElementShortName">CS_NonValidBlk</obj_property>
+         <obj_property name="ObjectShortName">CS_NonValidBlk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_NonValidBlkNum" type="array">
+         <obj_property name="ElementShortName">CS_NonValidBlkNum[2:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_NonValidBlkNum[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS_LRUTemp" type="array">
+         <obj_property name="ElementShortName">CS_LRUTemp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUTemp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_wb" type="logic">
+         <obj_property name="ElementShortName">CS2BR_wb</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_wb_tag" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_wb_index" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/CS2BR_wb_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/prev_blk_addr" type="array">
+         <obj_property name="ElementShortName">prev_blk_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">prev_blk_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/stall" type="logic">
+         <obj_property name="ElementShortName">stall</obj_property>
+         <obj_property name="ObjectShortName">stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_4_tb/design_4_i/ICache/inst/debug" type="array">
+         <obj_property name="ElementShortName">debug[31:0]</obj_property>
+         <obj_property name="ObjectShortName">debug[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

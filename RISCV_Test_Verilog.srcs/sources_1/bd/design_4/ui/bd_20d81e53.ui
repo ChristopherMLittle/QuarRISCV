@@ -1,0 +1,237 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.12226",
+   "Default View_TopLeft":"-1857,8",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 1530 -defaultsOSRD
+preplace port meip -pg 1 -lvl 0 -x 0 -y 1810 -defaultsOSRD
+preplace port mtip -pg 1 -lvl 0 -x 0 -y 1900 -defaultsOSRD
+preplace port resetn -pg 1 -lvl 0 -x 0 -y 1560 -defaultsOSRD
+preplace port seip -pg 1 -lvl 0 -x 0 -y 1780 -defaultsOSRD
+preplace port stip -pg 1 -lvl 0 -x 0 -y 1870 -defaultsOSRD
+preplace port ueip -pg 1 -lvl 0 -x 0 -y 1750 -defaultsOSRD
+preplace port utip -pg 1 -lvl 0 -x 0 -y 1840 -defaultsOSRD
+preplace port MIC_INIT_TXN_o -pg 1 -lvl 8 -x 4790 -y 1950 -defaultsOSRD
+preplace port MIC_IREQ_VALID_o -pg 1 -lvl 8 -x 4790 -y 1980 -defaultsOSRD
+preplace port MIC_DREQ_VALID_o -pg 1 -lvl 8 -x 4790 -y 2040 -defaultsOSRD
+preplace port MIC_IBLK_VALID_o -pg 1 -lvl 8 -x 4790 -y 2190 -defaultsOSRD
+preplace port MIC_DBLK_VALID_o -pg 1 -lvl 8 -x 4790 -y 2280 -defaultsOSRD
+preplace port MIC_DONE_i -pg 1 -lvl 0 -x 0 -y 2270 -defaultsOSRD
+preplace port bram_clk -pg 1 -lvl 0 -x 0 -y 2700 -defaultsOSRD
+preplace port MIC_DREQ_RW_o -pg 1 -lvl 8 -x 4790 -y 2070 -defaultsOSRD
+preplace portBus MIC_IREQ_ADDR_o -pg 1 -lvl 8 -x 4790 -y 2010 -defaultsOSRD
+preplace portBus MIC_DREQ_ADDR_o -pg 1 -lvl 8 -x 4790 -y 2130 -defaultsOSRD
+preplace portBus MIC_IBLK_ADDR_o -pg 1 -lvl 8 -x 4790 -y 2220 -defaultsOSRD
+preplace portBus MIC_IBLK_DATA_o -pg 1 -lvl 8 -x 4790 -y 2250 -defaultsOSRD
+preplace portBus MIC_DBLK_ADDR_o -pg 1 -lvl 8 -x 4790 -y 2310 -defaultsOSRD
+preplace portBus MIC_DBLK_DATA_o -pg 1 -lvl 8 -x 4790 -y 2340 -defaultsOSRD
+preplace portBus MIC_IREQ_DATA_i -pg 1 -lvl 0 -x 0 -y 2300 -defaultsOSRD
+preplace portBus MIC_DREQ_DATA_i -pg 1 -lvl 0 -x 0 -y 2230 -defaultsOSRD
+preplace portBus MIC_DREQ_DATAMODE_o -pg 1 -lvl 8 -x 4790 -y 2100 -defaultsOSRD
+preplace portBus MIC_DREQ_DATA_o -pg 1 -lvl 8 -x 4790 -y 2160 -defaultsOSRD
+preplace inst RV32I_EXBranch_Branc_0 -pg 1 -lvl 1 -x 390 -y 160 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -x 4630 -y 1860 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 7 -x 4630 -y 2750 -defaultsOSRD
+preplace inst RV32I_HazardUnit_Ver_0 -pg 1 -lvl 2 -x 1010 -y 1100 -defaultsOSRD
+preplace inst RV32_Local_Interrupt_0 -pg 1 -lvl 1 -x 390 -y 1910 -defaultsOSRD
+preplace inst RV32_CSR_Verilog_RTL_0 -pg 1 -lvl 2 -x 1010 -y 1800 -defaultsOSRD
+preplace inst RV32I_ControlUnit_Ve_0 -pg 1 -lvl 4 -x 2670 -y 590 -defaultsOSRD
+preplace inst RISCV32I_EXBranch_Da_0 -pg 1 -lvl 3 -x 1860 -y 730 -defaultsOSRD
+preplace inst DCache -pg 1 -lvl 6 -x 4250 -y 1840 -defaultsOSRD
+preplace inst ICache -pg 1 -lvl 4 -x 2670 -y 2430 -defaultsOSRD
+preplace inst Cache_Controller -pg 1 -lvl 5 -x 3660 -y 1930 -defaultsOSRD
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ALU_Err 1 3 1 2260 690n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ALU_LTS 1 0 4 80 10 NJ 10 NJ 10 2120
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ALU_LTU 1 0 4 110 20 NJ 20 NJ 20 2080
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ALU_Overflow 1 3 1 2280 670n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ALU_Zero 1 0 4 180 30 NJ 30 NJ 30 2070
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o 1 3 1 2210 770n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_DMEM_data_o 1 3 1 2190 790n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_EX_Funct3 1 3 1 2260 530n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_EX_Funct7 1 3 1 2280 550n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_EX_Opcode 1 0 4 210 40 NJ 40 NJ 40 2060
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ID_Instruction 1 3 1 2220 470n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_ID_PC 1 3 1 2210 450n
+preplace netloc RISCV32I_EXBranch_Da_0_CTL_IMEM_addr_o 1 3 1 2240 750n
+preplace netloc RISCV32I_EXBranch_Da_0_HU_EX_Rd_o 1 1 3 820 1290 1380J 1160 2070
+preplace netloc RISCV32I_EXBranch_Da_0_HU_EX_Rs1_o 1 1 3 810 1270 1390J 1170 2080
+preplace netloc RISCV32I_EXBranch_Da_0_HU_EX_Rs2_o 1 1 3 760 1320 NJ 1320 2100
+preplace netloc RISCV32I_EXBranch_Da_0_HU_ID_Rs1_o 1 1 3 790 1260 1410J 1220 2120
+preplace netloc RISCV32I_EXBranch_Da_0_HU_ID_Rs2_o 1 1 3 780 1280 NJ 1280 2110
+preplace netloc RISCV32I_EXBranch_Da_0_HU_MEM_Rd_o 1 1 3 830 1300 NJ 1300 2090
+preplace netloc RISCV32I_EXBranch_Da_0_HU_WB_Rd_o 1 1 3 840 1310 1430J 1180 2060
+preplace netloc RV32I_ControlUnit_Ve_0_ALU_Ctl 1 2 3 1520 1520 NJ 1520 3140
+preplace netloc RV32I_ControlUnit_Ve_0_ALU_DataMode 1 2 3 1550 1470 NJ 1470 3120
+preplace netloc RV32I_ControlUnit_Ve_0_ALU_SrcA 1 2 3 1480 1550 NJ 1550 3160
+preplace netloc RV32I_ControlUnit_Ve_0_ALU_SrcB 1 2 3 1540 1410 NJ 1410 3010
+preplace netloc RV32I_ControlUnit_Ve_0_ALU_Unsigned 1 0 5 140 910 NJ 910 1360 1240 NJ 1240 2910
+preplace netloc RV32I_ControlUnit_Ve_0_BU_BrJSrc 1 2 3 1560 1190 NJ 1190 2930
+preplace netloc RV32I_ControlUnit_Ve_0_BU_BranchOp 1 0 5 200 860 NJ 860 1350 1390 NJ 1390 3100
+preplace netloc RV32I_ControlUnit_Ve_0_BU_Jump 1 0 5 190 840 NJ 840 1400 1270 NJ 1270 2990
+preplace netloc RV32I_ControlUnit_Ve_0_BU_PC 1 2 3 1490 1510 NJ 1510 3180
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Req_addr_o 1 1 4 800 1360 NJ 1360 NJ 1360 3210
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Req_data_o 1 1 4 760 1340 NJ 1340 NJ 1340 3190
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Req_mode_o 1 1 4 820 1400 NJ 1400 NJ 1400 3220
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Req_o 1 1 4 830 1420 NJ 1420 NJ 1420 3240
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Val_addr_o 1 1 4 840 1430 NJ 1430 NJ 1430 3250
+preplace netloc RV32I_ControlUnit_Ve_0_CSR_Val_en_o 1 1 4 810 2190 NJ 2190 NJ 2190 3270
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_EPCSrc 1 2 3 1600 280 2230J 1300 3070
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Exception 1 0 5 110 440 NJ 440 1290 290 2140J 1350 2920
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Inst_Done 1 1 4 840 2140 NJ 2140 NJ 2140 3000
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Inst_Event 1 1 4 830 2200 NJ 2200 NJ 2200 3040
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Interrupt 1 2 3 1580 230 2320J 1280 2900
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Priv_o 1 0 5 160 1520 620 1460 NJ 1460 NJ 1460 2950
+preplace netloc RV32I_ControlUnit_Ve_0_CTL_Ret_o 1 0 5 80 480 NJ 480 1200 210 2330J 1320 2880
+preplace netloc RV32I_ControlUnit_Ve_0_DMEM_data_o 1 2 3 1590 1250 NJ 1250 2890
+preplace netloc RV32I_ControlUnit_Ve_0_EX2MEM_Flush 1 2 3 1470 200 2290J 1370 3170
+preplace netloc RV32I_ControlUnit_Ve_0_EX2MEM_RegWr 1 1 4 770 1440 NJ 1440 NJ 1440 3050
+preplace netloc RV32I_ControlUnit_Ve_0_EX_CSR_Val 1 2 3 1570 1310 NJ 1310 2960
+preplace netloc RV32I_ControlUnit_Ve_0_ID2EX_Flush 1 2 3 1590 300 2170J 1380 3200
+preplace netloc RV32I_ControlUnit_Ve_0_ID2EX_MemRd 1 1 4 750 1450 NJ 1450 NJ 1450 3150
+preplace netloc RV32I_ControlUnit_Ve_0_ID2EX_Src 1 2 3 1510 1290 NJ 1290 2970
+preplace netloc RV32I_ControlUnit_Ve_0_ID_RegWr 1 1 4 800 1330 1450 1330 NJ 1330 3080
+preplace netloc RV32I_ControlUnit_Ve_0_IF2ID_Flush 1 2 3 1570 240 2310J 1220 3030
+preplace netloc RV32I_ControlUnit_Ve_0_IF2ID_Write 1 2 3 1530 1230 NJ 1230 2980
+preplace netloc RV32I_ControlUnit_Ve_0_IF_PCSrc 1 2 3 1500 1260 NJ 1260 3020
+preplace netloc RV32I_ControlUnit_Ve_0_IF_PCWrite 1 2 3 1560 220 2340J 1180 2940
+preplace netloc RV32I_ControlUnit_Ve_0_IMEM_data_o 1 2 3 1600 1200 NJ 1200 2860
+preplace netloc RV32I_ControlUnit_Ve_0_LIC_IP_Ack 1 0 5 120 1550 650J 2150 NJ 2150 NJ 2150 3060
+preplace netloc RV32I_ControlUnit_Ve_0_MEM2WB_Flush 1 2 3 1470 1530 NJ 1530 3230
+preplace netloc RV32I_ControlUnit_Ve_0_Stall 1 2 3 1460 1540 NJ 1540 3260
+preplace netloc RV32I_ControlUnit_Ve_0_WB_MEMToGPR 1 2 3 1580 1210 NJ 1210 2870
+preplace netloc RV32I_ControlUnit_Ve_0_ecausevec 1 0 5 140 1560 630J 2170 NJ 2170 NJ 2170 3090
+preplace netloc RV32I_ControlUnit_Ve_0_epc 1 0 5 130 2230 NJ 2230 NJ 2230 NJ 2230 3130
+preplace netloc RV32I_ControlUnit_Ve_0_tval 1 0 5 210 2240 NJ 2240 NJ 2240 NJ 2240 3110
+preplace netloc RV32I_HazardUnit_Ver_0_ALU_ForwardA 1 2 1 1310 900n
+preplace netloc RV32I_HazardUnit_Ver_0_ALU_ForwardB 1 2 1 1330 920n
+preplace netloc RV32I_HazardUnit_Ver_0_Hazard_Stall 1 2 2 1180J 250 2350
+preplace netloc RV32I_IDBranch_Branc_0_Branch_Taken 1 1 3 640 190 NJ 190 2360
+preplace netloc RV32_AXI_Timer_Count_0_mtip 1 0 2 20 1570 750J
+preplace netloc RV32_AXI_Timer_Count_0_stip 1 0 2 40 1580 740J
+preplace netloc RV32_AXI_Timer_Count_0_utip 1 0 2 30 1590 730J
+preplace netloc RV32_CSR_Verilog_RTL_0_CSR_DATA_o 1 2 2 NJ 1640 2300
+preplace netloc RV32_CSR_Verilog_RTL_0_CSR_Val_o 1 2 2 NJ 1600 2250
+preplace netloc RV32_CSR_Verilog_RTL_0_illegal 1 2 2 NJ 1620 2270
+preplace netloc RV32_CSR_Verilog_RTL_0_medeleg 1 0 3 190 2290 NJ 2290 1190
+preplace netloc RV32_CSR_Verilog_RTL_0_mepc 1 2 1 1370 580n
+preplace netloc RV32_CSR_Verilog_RTL_0_mideleg 1 0 3 160 2300 NJ 2300 1210
+preplace netloc RV32_CSR_Verilog_RTL_0_mie 1 0 3 100 2320 NJ 2320 1270
+preplace netloc RV32_CSR_Verilog_RTL_0_mip 1 0 3 70 2350 NJ 2350 1260
+preplace netloc RV32_CSR_Verilog_RTL_0_mstatus 1 0 3 60 2340 NJ 2340 1250
+preplace netloc RV32_CSR_Verilog_RTL_0_mtvec 1 2 1 1300 520n
+preplace netloc RV32_CSR_Verilog_RTL_0_rsvec 1 2 1 1290 500n
+preplace netloc RV32_CSR_Verilog_RTL_0_sedeleg 1 0 3 150 2330 NJ 2330 1200
+preplace netloc RV32_CSR_Verilog_RTL_0_sepc 1 2 1 1420 600n
+preplace netloc RV32_CSR_Verilog_RTL_0_sideleg 1 0 3 180 1600 590J 2180 1180
+preplace netloc RV32_CSR_Verilog_RTL_0_sie 1 0 3 90 2310 NJ 2310 1280
+preplace netloc RV32_CSR_Verilog_RTL_0_sip 1 0 3 200 2220 NJ 2220 1220
+preplace netloc RV32_CSR_Verilog_RTL_0_stvec 1 2 1 1320 540n
+preplace netloc RV32_CSR_Verilog_RTL_0_uepc 1 2 1 1440 620n
+preplace netloc RV32_CSR_Verilog_RTL_0_uie 1 0 3 170 1540 660J 2160 1240
+preplace netloc RV32_CSR_Verilog_RTL_0_uip 1 0 3 170 2270 NJ 2270 1230
+preplace netloc RV32_CSR_Verilog_RTL_0_utvec 1 2 1 1340 560n
+preplace netloc RV32_Local_Interrupt_0_CSR_Commit 1 1 1 N 2060
+preplace netloc RV32_Local_Interrupt_0_CSR_Commit_Lvl 1 1 3 720 1380 NJ 1380 2160
+preplace netloc RV32_Local_Interrupt_0_New_IP 1 1 3 640J 1350 NJ 1350 2130
+preplace netloc RV32_Local_Interrupt_0_mcause 1 1 3 610 1370 NJ 1370 2150
+preplace netloc RV32_Local_Interrupt_0_mepc 1 1 1 670 1860n
+preplace netloc RV32_Local_Interrupt_0_mip_o 1 1 1 700 1800n
+preplace netloc RV32_Local_Interrupt_0_mstatus_o 1 1 1 710 1800n
+preplace netloc RV32_Local_Interrupt_0_mtval 1 1 1 570 1980n
+preplace netloc RV32_Local_Interrupt_0_scause 1 1 1 600 1940n
+preplace netloc RV32_Local_Interrupt_0_sepc 1 1 1 640 1880n
+preplace netloc RV32_Local_Interrupt_0_sip_o 1 1 1 690 1820n
+preplace netloc RV32_Local_Interrupt_0_stval 1 1 1 560 2000n
+preplace netloc RV32_Local_Interrupt_0_ucause 1 1 1 580 1960n
+preplace netloc RV32_Local_Interrupt_0_uepc 1 1 1 620 1900n
+preplace netloc RV32_Local_Interrupt_0_uip_o 1 1 1 680 1840n
+preplace netloc RV32_Local_Interrupt_0_utval 1 1 1 550 2020n
+preplace netloc meip_1 1 0 1 50J 1800n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 50 1530 630 360 1190 260 2200 1570 3400 1520 4020J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 6 60 1510 740 380 1210 270 2180 1560 3390 1510 4030J
+preplace netloc seip_1 1 0 1 NJ 1780
+preplace netloc ueip_1 1 0 1 50J 1750n
+preplace netloc Cache_Controller_DCache_Req_valid_o 1 5 1 3980 1760n
+preplace netloc Cache_Controller_DMEM_data_o 1 3 3 2390 1500 NJ 1500 3950
+preplace netloc Cache_Controller_ICache_Req_valid_o 1 3 3 2230 2650 NJ 2650 3960
+preplace netloc Cache_Controller_IMEM_data_o 1 3 3 2400 1480 NJ 1480 3960
+preplace netloc Cache_Controller_MEM_err_o 1 3 3 2380 1490 NJ 1490 3930
+preplace netloc Cache_Controller_MEM_rdy_o 1 3 3 2370 2220 3260J 2340 3940
+preplace netloc Cache_Controller_MIC_DBLK_ADDR_o 1 5 3 NJ 2260 NJ 2260 4740J
+preplace netloc Cache_Controller_MIC_DBLK_DATA_o 1 5 3 NJ 2280 NJ 2280 4730J
+preplace netloc Cache_Controller_MIC_DBLK_VALID_o 1 5 3 NJ 2240 NJ 2240 4750J
+preplace netloc Cache_Controller_MIC_DREQ_ADDR_o 1 5 3 4030J 2130 NJ 2130 NJ
+preplace netloc Cache_Controller_MIC_DREQ_VALID_o 1 5 3 4010J 2040 NJ 2040 NJ
+preplace netloc Cache_Controller_MIC_IBLK_ADDR_o 1 5 3 NJ 2200 NJ 2200 4770J
+preplace netloc Cache_Controller_MIC_IBLK_DATA_o 1 5 3 NJ 2220 NJ 2220 4760J
+preplace netloc Cache_Controller_MIC_IBLK_VALID_o 1 5 3 NJ 2180 NJ 2180 4760J
+preplace netloc Cache_Controller_MIC_INIT_TXN_o 1 5 3 4040J 2080 NJ 2080 4760J
+preplace netloc Cache_Controller_MIC_IREQ_ADDR_o 1 5 3 NJ 2060 NJ 2060 4770J
+preplace netloc Cache_Controller_MIC_IREQ_VALID_o 1 5 3 3990J 2050 NJ 2050 4750J
+preplace netloc DCache_blk_addr_o 1 4 3 3440 2370 NJ 2370 4420
+preplace netloc DCache_blk_data_o 1 4 3 3410 1460 NJ 1460 4450
+preplace netloc DCache_blk_valid_o 1 4 3 3440 1470 NJ 1470 4420
+preplace netloc DCache_req_data_o 1 4 3 3420 2380 NJ 2380 4440
+preplace netloc DCache_req_hit_o 1 4 3 3430 2360 NJ 2360 4430
+preplace netloc HarvardCacheControll_0_DCache_Blk_addr_o 1 5 1 4050 1900n
+preplace netloc HarvardCacheControll_0_DCache_Blk_data_o 1 5 1 4060 1920n
+preplace netloc HarvardCacheControll_0_DCache_Blk_valid_o 1 5 1 4040 1880n
+preplace netloc HarvardCacheControll_0_DCache_Req_addr_o 1 5 1 4010 1820n
+preplace netloc HarvardCacheControll_0_DCache_Req_data_o 1 5 1 4020 1840n
+preplace netloc HarvardCacheControll_0_DCache_Req_re_o 1 5 1 3990 1780n
+preplace netloc HarvardCacheControll_0_DCache_Req_we_o 1 5 1 4000 1800n
+preplace netloc HarvardCacheControll_0_ICache_Blk_addr_o 1 3 3 2380 2660 NJ 2660 3910
+preplace netloc HarvardCacheControll_0_ICache_Blk_data_o 1 3 3 2400 2610 NJ 2610 3880
+preplace netloc HarvardCacheControll_0_ICache_Blk_valid_o 1 3 3 2390 2620 NJ 2620 3890
+preplace netloc HarvardCacheControll_0_ICache_Req_addr_o 1 3 3 2350 2630 NJ 2630 3930
+preplace netloc HarvardCacheControll_0_ICache_Req_data_o 1 3 3 2310 2250 3000J 2350 3900
+preplace netloc HarvardCacheControll_0_ICache_Req_re_o 1 3 3 2080 2670 NJ 2670 3950
+preplace netloc HarvardCacheControll_0_ICache_Req_we_o 1 3 3 2150 2680 NJ 2680 3970
+preplace netloc ICache_blk_addr_o 1 4 1 3380 2010n
+preplace netloc ICache_blk_data_o 1 4 1 3400 2030n
+preplace netloc ICache_blk_valid_o 1 4 1 3350 1990n
+preplace netloc ICache_req_data_o 1 4 1 2900 1970n
+preplace netloc ICache_req_hit_o 1 4 1 3320 1950n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Daddr_o1 1 4 1 3310 320n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dbypass_o1 1 4 1 3340 260n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Ddata_o1 1 4 1 3300 340n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dre_o1 1 4 1 3330 280n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dvalid_o1 1 4 1 3350 240n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dwe_o1 1 4 1 3320 300n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Iaddr_o1 1 4 1 3370 200n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Ire_o1 1 4 1 3360 220n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Ivalid_o1 1 4 1 3380 180n
+preplace netloc RV32I_Memory_Interfa_0_dreq_rdata_o 1 0 5 20J 2250 700J 2210 NJ 2210 NJ 2210 3390J
+preplace netloc RV32I_Memory_Interfa_0_ireq_rdata_o 1 0 5 20J 2280 NJ 2280 1600J 2180 NJ 2180 3370J
+preplace netloc RV32I_Memory_Interfa_0_m00_axi_txn_done 1 0 5 20J 2260 NJ 2260 1520J 2160 NJ 2160 3340J
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dmode_o 1 4 1 3290 360n
+preplace netloc RV32I_ControlUnit_Ve_0_CC_Dunsigned_o 1 4 1 3280 380n
+preplace netloc blk_mem_gen_1_douta 1 3 4 2280 2720 NJ 2720 NJ 2720 NJ
+preplace netloc blk_mem_gen_1_doutb 1 3 4 2310 2840 NJ 2840 NJ 2840 NJ
+preplace netloc Net 1 0 7 NJ 2700 NJ 2700 NJ 2700 NJ 2700 NJ 2700 NJ 2700 4510
+preplace netloc ICache_bram_addra 1 4 3 3360 2550 NJ 2550 4530J
+preplace netloc ICache_bram_dina 1 4 3 3250 2560 NJ 2560 4520J
+preplace netloc ICache_bram_wea 1 4 3 3190 2570 NJ 2570 4500J
+preplace netloc ICache_bram_addrb 1 4 3 3120 2580 NJ 2580 4490J
+preplace netloc ICache_bram_dinb 1 4 3 3020 2590 NJ 2590 4460J
+preplace netloc ICache_bram_web 1 4 3 2890 2600 NJ 2600 4430J
+preplace netloc blk_mem_gen_0_douta 1 5 2 4070 2020 4490J
+preplace netloc blk_mem_gen_0_doutb 1 5 2 4080 2030 4530J
+preplace netloc DCache_bram_dina 1 6 1 4470 1810n
+preplace netloc DCache_bram_addra 1 6 1 4460 1770n
+preplace netloc DCache_bram_wea 1 6 1 4480 1850n
+preplace netloc DCache_bram_addrb 1 6 1 4500 1890n
+preplace netloc DCache_bram_dinb 1 6 1 4520 1920n
+preplace netloc DCache_bram_web 1 6 1 4520 1940n
+preplace netloc Cache_Controller_ICache_Req_datamode_o 1 3 3 2370 2640 NJ 2640 3920
+preplace netloc Cache_Controller_DCache_Req_datamode_o 1 5 1 4030 1860n
+preplace netloc Cache_Controller_MIC_DREQ_RW_o 1 5 3 4070J 2070 NJ 2070 NJ
+preplace netloc Cache_Controller_MIC_DREQ_DATAMODE_o 1 5 3 4080J 2100 NJ 2100 NJ
+preplace netloc Cache_Controller_MIC_DREQ_DATA_o 1 5 3 NJ 2160 NJ 2160 NJ
+levelinfo -pg 1 0 390 1010 1860 2670 3660 4250 4630 4790
+pagesize -pg 1 -db -bbox -sgen -220 0 5040 2920
+"
+}
+0

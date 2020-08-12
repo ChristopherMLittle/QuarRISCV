@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="378501fs"></ZoomEndTime>
+      <Cursor1Time time="135000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="123" />
+   <wvobject fp_name="/design_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/DMEM0" type="array">
+      <obj_property name="ElementShortName">DMEM0[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM0[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/DMEM1" type="array">
+      <obj_property name="ElementShortName">DMEM1[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM1[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/DMEM2" type="array">
+      <obj_property name="ElementShortName">DMEM2[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM2[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/DMEM3" type="array">
+      <obj_property name="ElementShortName">DMEM3[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM3[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/DMEM0" type="array">
+      <obj_property name="ElementShortName">DMEM0[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM0[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/DMEM1" type="array">
+      <obj_property name="ElementShortName">DMEM1[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM1[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/DMEM2" type="array">
+      <obj_property name="ElementShortName">DMEM2[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM2[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/DMEM3" type="array">
+      <obj_property name="ElementShortName">DMEM3[64:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM3[64:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IMEM" type="array">
+      <obj_property name="ElementShortName">IMEM[511:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">IMEM[511:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/PC_Reg" type="array">
+      <obj_property name="ElementShortName">PC_Reg[63:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_Reg[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2IF_PCBranchAddr" type="array">
+      <obj_property name="ElementShortName">ID2IF_PCBranchAddr[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2IF_PCBranchAddr[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF_PCWrite" type="logic">
+      <obj_property name="ElementShortName">IF_PCWrite</obj_property>
+      <obj_property name="ObjectShortName">IF_PCWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF_PCSrc" type="logic">
+      <obj_property name="ElementShortName">IF_PCSrc</obj_property>
+      <obj_property name="ObjectShortName">IF_PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF_PCIn" type="array">
+      <obj_property name="ElementShortName">IF_PCIn[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_PCIn[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF_PCOut" type="array">
+      <obj_property name="ElementShortName">IF_PCOut[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_PCOut[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF_IMEMOut" type="array">
+      <obj_property name="ElementShortName">IF_IMEMOut[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_IMEMOut[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF2ID_Flush" type="logic">
+      <obj_property name="ElementShortName">IF2ID_Flush</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF2ID_Write" type="logic">
+      <obj_property name="ElementShortName">IF2ID_Write</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF2ID_Instruction" type="array">
+      <obj_property name="ElementShortName">IF2ID_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Instruction[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/IF2ID_PC" type="array">
+      <obj_property name="ElementShortName">IF2ID_PC[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_PC[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/GPRegs" type="array">
+      <obj_property name="ElementShortName">GPRegs[31:0][63:0]</obj_property>
+      <obj_property name="ObjectShortName">GPRegs[31:0][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/WB2ID_Rd" type="array">
+      <obj_property name="ElementShortName">WB2ID_Rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WB2ID_Rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_RegRd1" type="array">
+      <obj_property name="ElementShortName">ID_RegRd1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_RegRd1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_RegRd2" type="array">
+      <obj_property name="ElementShortName">ID_RegRd2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_RegRd2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_RegRd1Out" type="array">
+      <obj_property name="ElementShortName">ID_RegRd1Out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_RegRd1Out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_RegRd2Out" type="array">
+      <obj_property name="ElementShortName">ID_RegRd2Out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_RegRd2Out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_WriteData" type="array">
+      <obj_property name="ElementShortName">ID_WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_WriteData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Instruction" type="array">
+      <obj_property name="ElementShortName">ID_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Opcode" type="array">
+      <obj_property name="ElementShortName">ID_Opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Rd" type="array">
+      <obj_property name="ElementShortName">ID_Rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Funct3" type="array">
+      <obj_property name="ElementShortName">ID_Funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Rs1" type="array">
+      <obj_property name="ElementShortName">ID_Rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Rs2" type="array">
+      <obj_property name="ElementShortName">ID_Rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Funct7" type="array">
+      <obj_property name="ElementShortName">ID_Funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Funct7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl" type="array">
+      <obj_property name="ElementShortName">ID_Ctl[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_WBCtl_MemToReg" type="logic">
+      <obj_property name="ElementShortName">ID_WBCtl_MemToReg</obj_property>
+      <obj_property name="ObjectShortName">ID_WBCtl_MemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_WBCtl_RegWrite" type="logic">
+      <obj_property name="ElementShortName">ID_WBCtl_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">ID_WBCtl_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_MEMCtl_MemRead" type="logic">
+      <obj_property name="ElementShortName">ID_MEMCtl_MemRead</obj_property>
+      <obj_property name="ObjectShortName">ID_MEMCtl_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_MEMCtl_MemWrite" type="logic">
+      <obj_property name="ElementShortName">ID_MEMCtl_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">ID_MEMCtl_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_EXCtl_ALUSrcA" type="logic">
+      <obj_property name="ElementShortName">ID_EXCtl_ALUSrcA</obj_property>
+      <obj_property name="ObjectShortName">ID_EXCtl_ALUSrcA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_EXCtl_ALUSrcB" type="logic">
+      <obj_property name="ElementShortName">ID_EXCtl_ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ID_EXCtl_ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_EXCtl_ALUOp" type="array">
+      <obj_property name="ElementShortName">ID_EXCtl_ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_EXCtl_ALUOp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_Unsigned" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_Unsigned</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_Unsigned</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_DataMode" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_DataMode</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_DataMode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_Jump" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_Jump</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_BranchOp" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_BranchOp</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_BranchOp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_BrJSrc" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_BrJSrc</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_BrJSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Ctl_Rs1Src" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_Rs1Src</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_Rs1Src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Hazard_Stall" type="logic">
+      <obj_property name="ElementShortName">ID_Hazard_Stall</obj_property>
+      <obj_property name="ObjectShortName">ID_Hazard_Stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Branch_Taken" type="logic">
+      <obj_property name="ElementShortName">ID_Branch_Taken</obj_property>
+      <obj_property name="ObjectShortName">ID_Branch_Taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Src" type="logic">
+      <obj_property name="ElementShortName">ID2EX_Src</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_Immediate" type="array">
+      <obj_property name="ElementShortName">ID_Immediate[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Immediate[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_IImm" type="array">
+      <obj_property name="ElementShortName">ID_IImm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_IImm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_SImm" type="array">
+      <obj_property name="ElementShortName">ID_SImm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_SImm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_SBImm" type="array">
+      <obj_property name="ElementShortName">ID_SBImm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_SBImm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_UImm" type="array">
+      <obj_property name="ElementShortName">ID_UImm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_UImm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID_UJImm" type="array">
+      <obj_property name="ElementShortName">ID_UJImm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_UJImm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Ctl_Unsigned" type="logic">
+      <obj_property name="ElementShortName">ID2EX_Ctl_Unsigned</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Ctl_Unsigned</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Ctl_DataMode" type="array">
+      <obj_property name="ElementShortName">ID2EX_Ctl_DataMode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Ctl_DataMode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_WBCtl_MemToReg" type="logic">
+      <obj_property name="ElementShortName">ID2EX_WBCtl_MemToReg</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_WBCtl_MemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_WBCtl_RegWrite" type="logic">
+      <obj_property name="ElementShortName">ID2EX_WBCtl_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_WBCtl_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_MEMCtl_MemRead" type="logic">
+      <obj_property name="ElementShortName">ID2EX_MEMCtl_MemRead</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_MEMCtl_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_MEMCtl_MemWrite" type="logic">
+      <obj_property name="ElementShortName">ID2EX_MEMCtl_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_MEMCtl_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_EXCtl_ALUSrcA" type="logic">
+      <obj_property name="ElementShortName">ID2EX_EXCtl_ALUSrcA</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_EXCtl_ALUSrcA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_EXCtl_ALUSrcB" type="logic">
+      <obj_property name="ElementShortName">ID2EX_EXCtl_ALUSrcB</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_EXCtl_ALUSrcB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_EXCtl_ALUOp" type="array">
+      <obj_property name="ElementShortName">ID2EX_EXCtl_ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_EXCtl_ALUOp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_PC" type="array">
+      <obj_property name="ElementShortName">ID2EX_PC[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_PC[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Rs1" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rs1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rs1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Rs2" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rs2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rs2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Funct3" type="array">
+      <obj_property name="ElementShortName">ID2EX_Funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Funct7" type="array">
+      <obj_property name="ElementShortName">ID2EX_Funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Funct7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_RegRd1" type="array">
+      <obj_property name="ElementShortName">ID2EX_RegRd1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_RegRd1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_RegRd2" type="array">
+      <obj_property name="ElementShortName">ID2EX_RegRd2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_RegRd2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Rd" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rd[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rd[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Instruction" type="array">
+      <obj_property name="ElementShortName">ID2EX_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/ID2EX_Immediate" type="array">
+      <obj_property name="ElementShortName">ID2EX_Immediate[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Immediate[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_SCAUSE" type="array">
+      <obj_property name="ElementShortName">EX_SCAUSE[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_SCAUSE[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_SEPC" type="array">
+      <obj_property name="ElementShortName">EX_SEPC[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_SEPC[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_A" type="array">
+      <obj_property name="ElementShortName">EX_ALU_A[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_A[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_B" type="array">
+      <obj_property name="ElementShortName">EX_ALU_B[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_B[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_ForwardA" type="logic">
+      <obj_property name="ElementShortName">EX_ALU_ForwardA</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_ForwardA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_ForwardB" type="logic">
+      <obj_property name="ElementShortName">EX_ALU_ForwardB</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_ForwardB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Ctl" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Ctl[6:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Ctl[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_And" type="array">
+      <obj_property name="ElementShortName">EX_ALU_And[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_And[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Or" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Or[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Or[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_XOR" type="array">
+      <obj_property name="ElementShortName">EX_ALU_XOR[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_XOR[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Add" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Add[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Add[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Sub" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Sub[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Sub[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_SLT" type="array">
+      <obj_property name="ElementShortName">EX_ALU_SLT[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_SLT[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_SLTU" type="array">
+      <obj_property name="ElementShortName">EX_ALU_SLTU[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_SLTU[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_SLL" type="array">
+      <obj_property name="ElementShortName">EX_ALU_SLL[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_SLL[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_SRL" type="array">
+      <obj_property name="ElementShortName">EX_ALU_SRL[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_SRL[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_SRA" type="array">
+      <obj_property name="ElementShortName">EX_ALU_SRA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_SRA[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Result" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Result[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Result[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALU_Out" type="array">
+      <obj_property name="ElementShortName">EX_ALU_Out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_ALU_Out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX_ALUZero" type="logic">
+      <obj_property name="ElementShortName">EX_ALUZero</obj_property>
+      <obj_property name="ObjectShortName">EX_ALUZero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_Ctl_Unsigned" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_Ctl_Unsigned</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Ctl_Unsigned</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_Ctl_DataMode" type="array">
+      <obj_property name="ElementShortName">EX2MEM_Ctl_DataMode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Ctl_DataMode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_WBCtl_MemToReg" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_WBCtl_MemToReg</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_WBCtl_MemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_WBCtl_RegWrite" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_WBCtl_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_WBCtl_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_MEMCtl_MemRead" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_MEMCtl_MemRead</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_MEMCtl_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_MEMCtl_MemWrite" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_MEMCtl_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_MEMCtl_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_Rs1" type="array">
+      <obj_property name="ElementShortName">EX2MEM_Rs1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Rs1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_Rs2" type="array">
+      <obj_property name="ElementShortName">EX2MEM_Rs2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Rs2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_Rd" type="array">
+      <obj_property name="ElementShortName">EX2MEM_Rd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Rd[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_ALUZero" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_ALUZero</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_ALUZero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_ALUResult" type="array">
+      <obj_property name="ElementShortName">EX2MEM_ALUResult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_ALUResult[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/EX2MEM_DMEM_WriteData" type="array">
+      <obj_property name="ElementShortName">EX2MEM_DMEM_WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_DMEM_WriteData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/DMEM" type="array">
+      <obj_property name="ElementShortName">DMEM[511:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">DMEM[511:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM_DMEM_In" type="array">
+      <obj_property name="ElementShortName">MEM_DMEM_In[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DMEM_In[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM_DMEM_Out" type="array">
+      <obj_property name="ElementShortName">MEM_DMEM_Out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_DMEM_Out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_Ctl_Unsigned" type="logic">
+      <obj_property name="ElementShortName">MEM2WB_Ctl_Unsigned</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Ctl_Unsigned</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_Ctl_DataMode" type="array">
+      <obj_property name="ElementShortName">MEM2WB_Ctl_DataMode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Ctl_DataMode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_WBCtl_MemToReg" type="logic">
+      <obj_property name="ElementShortName">MEM2WB_WBCtl_MemToReg</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_WBCtl_MemToReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_WBCtl_RegWrite" type="logic">
+      <obj_property name="ElementShortName">MEM2WB_WBCtl_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_WBCtl_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_Rs1" type="array">
+      <obj_property name="ElementShortName">MEM2WB_Rs1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Rs1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_Rs2" type="array">
+      <obj_property name="ElementShortName">MEM2WB_Rs2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Rs2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_Rd" type="array">
+      <obj_property name="ElementShortName">MEM2WB_Rd[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Rd[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_ALUAddr" type="array">
+      <obj_property name="ElementShortName">MEM2WB_ALUAddr[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_ALUAddr[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/dut/MEM2WB_DMEM_ReadData" type="array">
+      <obj_property name="ElementShortName">MEM2WB_DMEM_ReadData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_DMEM_ReadData[63:0]</obj_property>
+   </wvobject>
+</wave_config>

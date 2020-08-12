@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_3_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_3_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="214fs"></ZoomEndTime>
+      <Cursor1Time time="395fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="312"></NameColumnWidth>
+      <ValueColumnWidth column_width="141"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="69" />
+   <wvobject fp_name="/design_3_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="group197" type="group">
+      <obj_property name="label">Ints</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_3_tb/meip" type="logic">
+         <obj_property name="ElementShortName">meip</obj_property>
+         <obj_property name="ObjectShortName">meip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/mtip" type="logic">
+         <obj_property name="ElementShortName">mtip</obj_property>
+         <obj_property name="ObjectShortName">mtip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/seip" type="logic">
+         <obj_property name="ElementShortName">seip</obj_property>
+         <obj_property name="ObjectShortName">seip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/stip" type="logic">
+         <obj_property name="ElementShortName">stip</obj_property>
+         <obj_property name="ObjectShortName">stip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/ueip" type="logic">
+         <obj_property name="ElementShortName">ueip</obj_property>
+         <obj_property name="ObjectShortName">ueip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/utip" type="logic">
+         <obj_property name="ElementShortName">utip</obj_property>
+         <obj_property name="ObjectShortName">utip</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/CC_rdy_i" type="logic">
+         <obj_property name="ElementShortName">CC_rdy_i</obj_property>
+         <obj_property name="ObjectShortName">CC_rdy_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/CC_err_i" type="logic">
+         <obj_property name="ElementShortName">CC_err_i</obj_property>
+         <obj_property name="ObjectShortName">CC_err_i</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Ddata_i" type="array">
+      <obj_property name="ElementShortName">CC_Ddata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Ddata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Idata_i" type="array">
+      <obj_property name="ElementShortName">CC_Idata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Idata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Ivalid_o" type="logic">
+      <obj_property name="ElementShortName">CC_Ivalid_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Ivalid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Ire_o" type="logic">
+      <obj_property name="ElementShortName">CC_Ire_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Ire_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Iaddr_o" type="array">
+      <obj_property name="ElementShortName">CC_Iaddr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Iaddr_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Dvalid_o" type="logic">
+      <obj_property name="ElementShortName">CC_Dvalid_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Dvalid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Dmode_o" type="array">
+      <obj_property name="ElementShortName">CC_Dmode_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Dmode_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Dbypass_o" type="logic">
+      <obj_property name="ElementShortName">CC_Dbypass_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Dbypass_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Dre_o" type="logic">
+      <obj_property name="ElementShortName">CC_Dre_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Dre_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Dwe_o" type="logic">
+      <obj_property name="ElementShortName">CC_Dwe_o</obj_property>
+      <obj_property name="ObjectShortName">CC_Dwe_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Daddr_o" type="array">
+      <obj_property name="ElementShortName">CC_Daddr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Daddr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/CC_Ddata_o" type="array">
+      <obj_property name="ElementShortName">CC_Ddata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CC_Ddata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group198" type="group">
+      <obj_property name="label">Vals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_3_tb/IMEM" type="array">
+         <obj_property name="ElementShortName">IMEM[511:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM[511:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/DMEM" type="array">
+         <obj_property name="ElementShortName">DMEM[511:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM[511:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX_Branch" type="array">
+         <obj_property name="ElementShortName">EX_Branch[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Branch[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_Jump" type="logic">
+      <obj_property name="ElementShortName">ID_Ctl_Jump</obj_property>
+      <obj_property name="ObjectShortName">ID_Ctl_Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Opcode" type="array">
+      <obj_property name="ElementShortName">ID_Opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Opcode[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/BU_Branch_Taken" type="logic">
+      <obj_property name="ElementShortName">BU_Branch_Taken</obj_property>
+      <obj_property name="ObjectShortName">BU_Branch_Taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="group201" type="group">
+      <obj_property name="label">Branch Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/CTL_EX_Unsigned" type="logic">
+         <obj_property name="ElementShortName">CTL_EX_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/CTL_EX_Jump" type="logic">
+         <obj_property name="ElementShortName">CTL_EX_Jump</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/CTL_EX_BranchOp" type="array">
+         <obj_property name="ElementShortName">CTL_EX_BranchOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_BranchOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/CTL_EX_Opcode" type="array">
+         <obj_property name="ElementShortName">CTL_EX_Opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Opcode[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/EX_ALU_Zero" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_Zero</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/EX_ALU_LTS" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_LTS</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_LTS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/EX_ALU_LTU" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_LTU</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_LTU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">Branch_Taken</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/EX_ALU_Equals" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_Equals</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Equals</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_EXBranch_Branc_0/inst/EX_Branch_Opcode" type="logic">
+         <obj_property name="ElementShortName">EX_Branch_Opcode</obj_property>
+         <obj_property name="ObjectShortName">EX_Branch_Opcode</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/GPRegs[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/GPRegs[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_DMEM_ReadData" type="array">
+      <obj_property name="ElementShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/Branch_Taken" type="logic">
+      <obj_property name="ElementShortName">Branch_Taken</obj_property>
+      <obj_property name="ObjectShortName">Branch_Taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_Write" type="logic">
+      <obj_property name="ElementShortName">IF2ID_Write</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_Instruction" type="array">
+      <obj_property name="ElementShortName">IF2ID_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_Instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1963" type="group">
+      <obj_property name="label">Decode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Opcode" type="array">
+         <obj_property name="ElementShortName">ID_Opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Opcode[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Rd" type="array">
+         <obj_property name="ElementShortName">ID_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Funct3" type="array">
+         <obj_property name="ElementShortName">ID_Funct3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Funct3[2:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Rs1" type="array">
+         <obj_property name="ElementShortName">ID_Rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Rs2" type="array">
+         <obj_property name="ElementShortName">ID_Rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Funct7" type="array">
+         <obj_property name="ElementShortName">ID_Funct7[6:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Funct7[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Immediate" type="array">
+         <obj_property name="ElementShortName">ID_Immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_WBCtl_MemToReg" type="logic">
+         <obj_property name="ElementShortName">ID_WBCtl_MemToReg</obj_property>
+         <obj_property name="ObjectShortName">ID_WBCtl_MemToReg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_WBCtl_RegWrite" type="logic">
+         <obj_property name="ElementShortName">ID_WBCtl_RegWrite</obj_property>
+         <obj_property name="ObjectShortName">ID_WBCtl_RegWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_MEMCtl_MemRead" type="logic">
+         <obj_property name="ElementShortName">ID_MEMCtl_MemRead</obj_property>
+         <obj_property name="ObjectShortName">ID_MEMCtl_MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_MEMCtl_MemWrite" type="logic">
+         <obj_property name="ElementShortName">ID_MEMCtl_MemWrite</obj_property>
+         <obj_property name="ObjectShortName">ID_MEMCtl_MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_EXCtl_ALUSrcA" type="array">
+         <obj_property name="ElementShortName">ID_EXCtl_ALUSrcA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EXCtl_ALUSrcA[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_EXCtl_ALUSrcB" type="array">
+         <obj_property name="ElementShortName">ID_EXCtl_ALUSrcB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EXCtl_ALUSrcB[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_EXCtl_ALUOp" type="array">
+         <obj_property name="ElementShortName">ID_EXCtl_ALUOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_EXCtl_ALUOp[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_Unsigned" type="logic">
+         <obj_property name="ElementShortName">ID_Ctl_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_DataMode" type="array">
+         <obj_property name="ElementShortName">ID_Ctl_DataMode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_DataMode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_Jump" type="logic">
+         <obj_property name="ElementShortName">ID_Ctl_Jump</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_Jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_BranchOp" type="array">
+         <obj_property name="ElementShortName">ID_Ctl_BranchOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_BranchOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_BrJSrc" type="logic">
+         <obj_property name="ElementShortName">ID_Ctl_BrJSrc</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_BrJSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl_Rs1Src" type="logic">
+         <obj_property name="ElementShortName">ID_Ctl_Rs1Src</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl_Rs1Src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Exception" type="logic">
+         <obj_property name="ElementShortName">ID_Exception</obj_property>
+         <obj_property name="ObjectShortName">ID_Exception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ID_Ctl" type="array">
+         <obj_property name="ElementShortName">ID_Ctl[16:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Ctl[16:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Instruction" type="array">
+      <obj_property name="ElementShortName">ID2EX_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group202" type="group">
+      <obj_property name="label">Hazard Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/ID_Rs1" type="array">
+         <obj_property name="ElementShortName">ID_Rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/ID_Rs2" type="array">
+         <obj_property name="ElementShortName">ID_Rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/EX_MemRd" type="logic">
+         <obj_property name="ElementShortName">EX_MemRd</obj_property>
+         <obj_property name="ObjectShortName">EX_MemRd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/EX_Rs1" type="array">
+         <obj_property name="ElementShortName">EX_Rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/EX_Rs2" type="array">
+         <obj_property name="ElementShortName">EX_Rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/EX_Rd" type="array">
+         <obj_property name="ElementShortName">EX_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/MEM_RegWR" type="logic">
+         <obj_property name="ElementShortName">MEM_RegWR</obj_property>
+         <obj_property name="ObjectShortName">MEM_RegWR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/MEM_Rd" type="array">
+         <obj_property name="ElementShortName">MEM_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/WB_RegWr" type="logic">
+         <obj_property name="ElementShortName">WB_RegWr</obj_property>
+         <obj_property name="ObjectShortName">WB_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/WB_Rd" type="array">
+         <obj_property name="ElementShortName">WB_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">WB_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/Hazard_Stall" type="logic">
+         <obj_property name="ElementShortName">Hazard_Stall</obj_property>
+         <obj_property name="ObjectShortName">Hazard_Stall</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/ALU_ForwardA" type="array">
+      <obj_property name="ElementShortName">ALU_ForwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_ForwardA[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_HazardUnit_Ver_0/ALU_ForwardB" type="array">
+      <obj_property name="ElementShortName">ALU_ForwardB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_ForwardB[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/Hazard_Stall" type="logic">
+      <obj_property name="ElementShortName">Hazard_Stall</obj_property>
+      <obj_property name="ObjectShortName">Hazard_Stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/CTL_Stall" type="logic">
+      <obj_property name="ElementShortName">CTL_Stall</obj_property>
+      <obj_property name="ObjectShortName">CTL_Stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Src" type="logic">
+      <obj_property name="ElementShortName">ID2EX_Src</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Rs1" type="array">
+      <obj_property name="ElementShortName">ID_Rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Rs2" type="array">
+      <obj_property name="ElementShortName">ID_Rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Rs1" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Rs2" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rs2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd1" type="array">
+      <obj_property name="ElementShortName">ID2EX_RegRd1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_RegRd1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd2" type="array">
+      <obj_property name="ElementShortName">ID2EX_RegRd2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_RegRd2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Rd" type="array">
+      <obj_property name="ElementShortName">ID2EX_Rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_Rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ALU_SrcA" type="array">
+      <obj_property name="ElementShortName">ALU_SrcA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_SrcA[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/ALU_SrcB" type="array">
+      <obj_property name="ElementShortName">ALU_SrcB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_SrcB[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_Rd" type="array">
+      <obj_property name="ElementShortName">EX2MEM_Rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_Rd" type="array">
+      <obj_property name="ElementShortName">MEM2WB_Rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_Rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_WBCtl_RegWrite" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_WBCtl_RegWrite</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_WBCtl_RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID_RegWr" type="logic">
+      <obj_property name="ElementShortName">ID_RegWr</obj_property>
+      <obj_property name="ObjectShortName">ID_RegWr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_ALUResult" type="array">
+      <obj_property name="ElementShortName">EX2MEM_ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group196" type="group">
+      <obj_property name="label">GPR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider1165">
+         <obj_property name="label">GPR</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/we" type="logic">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/rs1" type="array">
+         <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/rs2" type="array">
+         <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/rd" type="array">
+         <obj_property name="ElementShortName">rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/data" type="array">
+         <obj_property name="ElementShortName">data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/regrd1" type="array">
+         <obj_property name="ElementShortName">regrd1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">regrd1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/regrd2" type="array">
+         <obj_property name="ElementShortName">regrd2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">regrd2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/GPRegs" type="array">
+         <obj_property name="ElementShortName">GPRegs[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">GPRegs[31:0][31:0]</obj_property>
+         <obj_property name="Reversed">false</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group195" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider1211">
+         <obj_property name="label">ALU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_A_i" type="array">
+         <obj_property name="ElementShortName">ALU_A_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_A_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_B_i" type="array">
+         <obj_property name="ElementShortName">ALU_B_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_B_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Ctl_i" type="array">
+         <obj_property name="ElementShortName">ALU_Ctl_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Ctl_i[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/Ctl_Unsigned_i" type="logic">
+         <obj_property name="ElementShortName">Ctl_Unsigned_i</obj_property>
+         <obj_property name="ObjectShortName">Ctl_Unsigned_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/Ctl_DataMode_i" type="array">
+         <obj_property name="ElementShortName">Ctl_DataMode_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Ctl_DataMode_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Out_o" type="array">
+         <obj_property name="ElementShortName">ALU_Out_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Out_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Zero_o" type="logic">
+         <obj_property name="ElementShortName">ALU_Zero_o</obj_property>
+         <obj_property name="ObjectShortName">ALU_Zero_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Lt_o" type="logic">
+         <obj_property name="ElementShortName">ALU_Lt_o</obj_property>
+         <obj_property name="ObjectShortName">ALU_Lt_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Overflow_o" type="logic">
+         <obj_property name="ElementShortName">ALU_Overflow_o</obj_property>
+         <obj_property name="ObjectShortName">ALU_Overflow_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Err_o" type="logic">
+         <obj_property name="ElementShortName">ALU_Err_o</obj_property>
+         <obj_property name="ObjectShortName">ALU_Err_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_And" type="array">
+         <obj_property name="ElementShortName">ALU_And[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_And[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Or" type="array">
+         <obj_property name="ElementShortName">ALU_Or[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Or[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_XOR" type="array">
+         <obj_property name="ElementShortName">ALU_XOR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_XOR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Add" type="array">
+         <obj_property name="ElementShortName">ALU_Add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Add[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Sub" type="array">
+         <obj_property name="ElementShortName">ALU_Sub[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Sub[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_SLT" type="array">
+         <obj_property name="ElementShortName">ALU_SLT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SLT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_SLTU" type="array">
+         <obj_property name="ElementShortName">ALU_SLTU[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SLTU[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_SLL" type="array">
+         <obj_property name="ElementShortName">ALU_SLL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SLL[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_SRL" type="array">
+         <obj_property name="ElementShortName">ALU_SRL[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SRL[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_SRA" type="array">
+         <obj_property name="ElementShortName">ALU_SRA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SRA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_CSRRW" type="array">
+         <obj_property name="ElementShortName">ALU_CSRRW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_CSRRW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_CSRRC" type="array">
+         <obj_property name="ElementShortName">ALU_CSRRC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_CSRRC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ALU/ALU_Result" type="array">
+         <obj_property name="ElementShortName">ALU_Result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Result[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group194" type="group">
+      <obj_property name="label">Imm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider1575">
+         <obj_property name="label">Imm</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/Instruction" type="array">
+         <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/Opcode" type="array">
+         <obj_property name="ElementShortName">Opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">Opcode[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/Immediate" type="array">
+         <obj_property name="ElementShortName">Immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/IImm" type="array">
+         <obj_property name="ElementShortName">IImm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IImm[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/SImm" type="array">
+         <obj_property name="ElementShortName">SImm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SImm[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/SBImm" type="array">
+         <obj_property name="ElementShortName">SBImm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SBImm[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/UImm" type="array">
+         <obj_property name="ElementShortName">UImm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">UImm[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ImmGen/UJImm" type="array">
+         <obj_property name="ElementShortName">UJImm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">UJImm[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group193" type="group">
+      <obj_property name="label">CTL Wrap</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider1616">
+         <obj_property name="label">Ctl Wrap</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Val_i" type="array">
+         <obj_property name="ElementShortName">CSR_Val_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_illegal_i" type="logic">
+         <obj_property name="ElementShortName">CSR_Req_illegal_i</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_illegal_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_data_i" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_rdy_i" type="logic">
+         <obj_property name="ElementShortName">CC_rdy_i</obj_property>
+         <obj_property name="ObjectShortName">CC_rdy_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_err_i" type="logic">
+         <obj_property name="ElementShortName">CC_err_i</obj_property>
+         <obj_property name="ObjectShortName">CC_err_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Idata_i" type="array">
+         <obj_property name="ElementShortName">CC_Idata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Idata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Ddata_i" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID_PC" type="array">
+         <obj_property name="ElementShortName">ID_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID_Instruction" type="array">
+         <obj_property name="ElementShortName">ID_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/BU_Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">BU_Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">BU_Branch_Taken</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/Hazard_Stall" type="logic">
+         <obj_property name="ElementShortName">Hazard_Stall</obj_property>
+         <obj_property name="ObjectShortName">Hazard_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/EX_Funct3" type="array">
+         <obj_property name="ElementShortName">EX_Funct3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Funct3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/EX_Funct7" type="array">
+         <obj_property name="ElementShortName">EX_Funct7[7:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Funct7[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">inst_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">inst_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst_mem_fault" type="logic">
+         <obj_property name="ElementShortName">inst_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">inst_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/csr_illegal" type="logic">
+         <obj_property name="ElementShortName">csr_illegal</obj_property>
+         <obj_property name="ObjectShortName">csr_illegal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/load_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">load_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">load_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/load_mem_fault" type="logic">
+         <obj_property name="ElementShortName">load_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">load_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/store_mem_misaligned" type="logic">
+         <obj_property name="ElementShortName">store_mem_misaligned</obj_property>
+         <obj_property name="ObjectShortName">store_mem_misaligned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/store_mem_fault" type="logic">
+         <obj_property name="ElementShortName">store_mem_fault</obj_property>
+         <obj_property name="ObjectShortName">store_mem_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst_page_fault" type="logic">
+         <obj_property name="ElementShortName">inst_page_fault</obj_property>
+         <obj_property name="ObjectShortName">inst_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/load_page_fault" type="logic">
+         <obj_property name="ElementShortName">load_page_fault</obj_property>
+         <obj_property name="ObjectShortName">load_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/store_page_fault" type="logic">
+         <obj_property name="ElementShortName">store_page_fault</obj_property>
+         <obj_property name="ObjectShortName">store_page_fault</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_Overflow" type="logic">
+         <obj_property name="ElementShortName">ALU_Overflow</obj_property>
+         <obj_property name="ObjectShortName">ALU_Overflow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_Err" type="logic">
+         <obj_property name="ElementShortName">ALU_Err</obj_property>
+         <obj_property name="ObjectShortName">ALU_Err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/LIC_New_IP" type="logic">
+         <obj_property name="ElementShortName">LIC_New_IP</obj_property>
+         <obj_property name="ObjectShortName">LIC_New_IP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/LIC_IP_Cause" type="array">
+         <obj_property name="ElementShortName">LIC_IP_Cause[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Cause[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/LIC_IP_Lvl" type="array">
+         <obj_property name="ElementShortName">LIC_IP_Lvl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Lvl[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">IMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/DMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">DMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/DMEM_data_i" type="array">
+         <obj_property name="ElementShortName">DMEM_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Val_en_o" type="logic">
+         <obj_property name="ElementShortName">CSR_Val_en_o</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_en_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Val_addr_o" type="array">
+         <obj_property name="ElementShortName">CSR_Val_addr_o[11:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_addr_o[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_o" type="logic">
+         <obj_property name="ElementShortName">CSR_Req_o</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_mode_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_mode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_mode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_addr_o[11:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_addr_o[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_data_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Ivalid_o" type="logic">
+         <obj_property name="ElementShortName">CC_Ivalid_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Ivalid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Iaddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Iaddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Iaddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Ire_o" type="logic">
+         <obj_property name="ElementShortName">CC_Ire_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Ire_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Dvalid_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dvalid_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dvalid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Dbypass_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dbypass_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dbypass_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Dre_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dre_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dre_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Dwe_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dwe_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dwe_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Daddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Daddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Daddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CC_Ddata_o" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/Stall" type="logic">
+         <obj_property name="ElementShortName">Stall</obj_property>
+         <obj_property name="ObjectShortName">Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IF2ID_Flush" type="logic">
+         <obj_property name="ElementShortName">IF2ID_Flush</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID2EX_Flush" type="logic">
+         <obj_property name="ElementShortName">ID2EX_Flush</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/EX2MEM_Flush" type="logic">
+         <obj_property name="ElementShortName">EX2MEM_Flush</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/MEM2WB_Flush" type="logic">
+         <obj_property name="ElementShortName">MEM2WB_Flush</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IF_PCWrite" type="logic">
+         <obj_property name="ElementShortName">IF_PCWrite</obj_property>
+         <obj_property name="ObjectShortName">IF_PCWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IF_PCSrc" type="logic">
+         <obj_property name="ElementShortName">IF_PCSrc</obj_property>
+         <obj_property name="ObjectShortName">IF_PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_EPCSrc" type="array">
+         <obj_property name="ElementShortName">CTL_EPCSrc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EPCSrc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IF2ID_Write" type="logic">
+         <obj_property name="ElementShortName">IF2ID_Write</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID_RegWr" type="logic">
+         <obj_property name="ElementShortName">ID_RegWr</obj_property>
+         <obj_property name="ObjectShortName">ID_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID_Unsigned" type="logic">
+         <obj_property name="ElementShortName">ID_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">ID_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/BU_BrJSrc" type="logic">
+         <obj_property name="ElementShortName">BU_BrJSrc</obj_property>
+         <obj_property name="ObjectShortName">BU_BrJSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/BU_Jump" type="logic">
+         <obj_property name="ElementShortName">BU_Jump</obj_property>
+         <obj_property name="ObjectShortName">BU_Jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/BU_BranchOp" type="array">
+         <obj_property name="ElementShortName">BU_BranchOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BU_BranchOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/BU_PC" type="array">
+         <obj_property name="ElementShortName">BU_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BU_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID2EX_Src" type="logic">
+         <obj_property name="ElementShortName">ID2EX_Src</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Src</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ID2EX_MemRd" type="logic">
+         <obj_property name="ElementShortName">ID2EX_MemRd</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_MemRd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/EX_CSR_Val" type="array">
+         <obj_property name="ElementShortName">EX_CSR_Val[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_CSR_Val[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_Unsigned" type="logic">
+         <obj_property name="ElementShortName">ALU_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">ALU_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_DataMode" type="array">
+         <obj_property name="ElementShortName">ALU_DataMode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_DataMode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_Ctl" type="array">
+         <obj_property name="ElementShortName">ALU_Ctl[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Ctl[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_SrcA" type="array">
+         <obj_property name="ElementShortName">ALU_SrcA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SrcA[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/ALU_SrcB" type="array">
+         <obj_property name="ElementShortName">ALU_SrcB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_SrcB[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/EX2MEM_RegWr" type="logic">
+         <obj_property name="ElementShortName">EX2MEM_RegWr</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/WB_MEMToGPR" type="logic">
+         <obj_property name="ElementShortName">WB_MEMToGPR</obj_property>
+         <obj_property name="ObjectShortName">WB_MEMToGPR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/IMEM_data_o" type="array">
+         <obj_property name="ElementShortName">IMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/DMEM_data_o" type="array">
+         <obj_property name="ElementShortName">DMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Exception" type="logic">
+         <obj_property name="ElementShortName">CTL_Exception</obj_property>
+         <obj_property name="ObjectShortName">CTL_Exception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Interrupt" type="logic">
+         <obj_property name="ElementShortName">CTL_Interrupt</obj_property>
+         <obj_property name="ObjectShortName">CTL_Interrupt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/epc" type="array">
+         <obj_property name="ElementShortName">epc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">epc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/exvec" type="array">
+         <obj_property name="ElementShortName">exvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">exvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/tval" type="array">
+         <obj_property name="ElementShortName">tval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tval[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/LIC_IP_Ack" type="logic">
+         <obj_property name="ElementShortName">LIC_IP_Ack</obj_property>
+         <obj_property name="ObjectShortName">LIC_IP_Ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Priv_o" type="array">
+         <obj_property name="ElementShortName">CTL_Priv_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_Priv_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Ret_o" type="logic">
+         <obj_property name="ElementShortName">CTL_Ret_o</obj_property>
+         <obj_property name="ObjectShortName">CTL_Ret_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Inst_Done" type="logic">
+         <obj_property name="ElementShortName">CTL_Inst_Done</obj_property>
+         <obj_property name="ObjectShortName">CTL_Inst_Done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CTL_Inst_Event" type="array">
+         <obj_property name="ElementShortName">CTL_Inst_Event[6:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_Inst_Event[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1811" type="group">
+      <obj_property name="label">CSR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_val_i" type="logic">
+         <obj_property name="ElementShortName">csr_val_i</obj_property>
+         <obj_property name="ObjectShortName">csr_val_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_valaddr_i" type="array">
+         <obj_property name="ElementShortName">csr_valaddr_i[11:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_valaddr_i[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_req_i" type="logic">
+         <obj_property name="ElementShortName">csr_req_i</obj_property>
+         <obj_property name="ObjectShortName">csr_req_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_mode_i" type="array">
+         <obj_property name="ElementShortName">csr_mode_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_mode_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_priv_i" type="array">
+         <obj_property name="ElementShortName">csr_priv_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_priv_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_addr_i" type="array">
+         <obj_property name="ElementShortName">csr_addr_i[11:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_addr_i[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/csr_data_i" type="array">
+         <obj_property name="ElementShortName">csr_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">csr_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/utip_i" type="logic">
+         <obj_property name="ElementShortName">utip_i</obj_property>
+         <obj_property name="ObjectShortName">utip_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/stip_i" type="logic">
+         <obj_property name="ElementShortName">stip_i</obj_property>
+         <obj_property name="ObjectShortName">stip_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mtip_i" type="logic">
+         <obj_property name="ElementShortName">mtip_i</obj_property>
+         <obj_property name="ObjectShortName">mtip_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/inst_done" type="logic">
+         <obj_property name="ElementShortName">inst_done</obj_property>
+         <obj_property name="ObjectShortName">inst_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/inst_event" type="logic">
+         <obj_property name="ElementShortName">inst_event</obj_property>
+         <obj_property name="ObjectShortName">inst_event</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mstatus_i" type="array">
+         <obj_property name="ElementShortName">mstatus_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mstatus_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mip_i" type="array">
+         <obj_property name="ElementShortName">mip_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mip_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sip_i" type="array">
+         <obj_property name="ElementShortName">sip_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sip_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uip_i" type="array">
+         <obj_property name="ElementShortName">uip_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uip_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mepc_i" type="array">
+         <obj_property name="ElementShortName">mepc_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mepc_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sepc_i" type="array">
+         <obj_property name="ElementShortName">sepc_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sepc_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uepc_i" type="array">
+         <obj_property name="ElementShortName">uepc_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uepc_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcause_i" type="array">
+         <obj_property name="ElementShortName">mcause_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcause_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/scause_i" type="array">
+         <obj_property name="ElementShortName">scause_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">scause_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/ucause_i" type="array">
+         <obj_property name="ElementShortName">ucause_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ucause_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mtval_i" type="array">
+         <obj_property name="ElementShortName">mtval_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mtval_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/stval_i" type="array">
+         <obj_property name="ElementShortName">stval_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">stval_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/utval_i" type="array">
+         <obj_property name="ElementShortName">utval_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">utval_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/CSR_Commit" type="logic">
+         <obj_property name="ElementShortName">CSR_Commit</obj_property>
+         <obj_property name="ObjectShortName">CSR_Commit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/CSR_Commit_Lvl" type="array">
+         <obj_property name="ElementShortName">CSR_Commit_Lvl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Commit_Lvl[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/CSR_Val_o" type="array">
+         <obj_property name="ElementShortName">CSR_Val_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/illegal" type="logic">
+         <obj_property name="ElementShortName">illegal</obj_property>
+         <obj_property name="ObjectShortName">illegal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/CSR_DATA_o" type="array">
+         <obj_property name="ElementShortName">CSR_DATA_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_DATA_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uie" type="array">
+         <obj_property name="ElementShortName">uie[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uie[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sie" type="array">
+         <obj_property name="ElementShortName">sie[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sie[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mie" type="array">
+         <obj_property name="ElementShortName">mie[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mie[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uip" type="array">
+         <obj_property name="ElementShortName">uip[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uip[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sip" type="array">
+         <obj_property name="ElementShortName">sip[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sip[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mip" type="array">
+         <obj_property name="ElementShortName">mip[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mip[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mstatus" type="array">
+         <obj_property name="ElementShortName">mstatus[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mstatus[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mideleg" type="array">
+         <obj_property name="ElementShortName">mideleg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mideleg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/medeleg" type="array">
+         <obj_property name="ElementShortName">medeleg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">medeleg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sideleg" type="array">
+         <obj_property name="ElementShortName">sideleg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sideleg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sedeleg" type="array">
+         <obj_property name="ElementShortName">sedeleg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sedeleg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/rsvec" type="array">
+         <obj_property name="ElementShortName">rsvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rsvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mtvec" type="array">
+         <obj_property name="ElementShortName">mtvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mtvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/stvec" type="array">
+         <obj_property name="ElementShortName">stvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">stvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/utvec" type="array">
+         <obj_property name="ElementShortName">utvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">utvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mepc" type="array">
+         <obj_property name="ElementShortName">mepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sepc" type="array">
+         <obj_property name="ElementShortName">sepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uepc" type="array">
+         <obj_property name="ElementShortName">uepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/req_number" type="array">
+         <obj_property name="ElementShortName">req_number[7:0]</obj_property>
+         <obj_property name="ObjectShortName">req_number[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/req_rw_type" type="array">
+         <obj_property name="ElementShortName">req_rw_type[1:0]</obj_property>
+         <obj_property name="ObjectShortName">req_rw_type[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/req_level" type="array">
+         <obj_property name="ElementShortName">req_level[1:0]</obj_property>
+         <obj_property name="ObjectShortName">req_level[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/req_subselect" type="array">
+         <obj_property name="ElementShortName">req_subselect[3:0]</obj_property>
+         <obj_property name="ObjectShortName">req_subselect[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/ustatus" type="array">
+         <obj_property name="ElementShortName">ustatus[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ustatus[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/uscratch" type="array">
+         <obj_property name="ElementShortName">uscratch[31:0]</obj_property>
+         <obj_property name="ObjectShortName">uscratch[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/ucause" type="array">
+         <obj_property name="ElementShortName">ucause[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ucause[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/utval" type="array">
+         <obj_property name="ElementShortName">utval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">utval[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/fflags" type="array">
+         <obj_property name="ElementShortName">fflags[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fflags[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/frm" type="array">
+         <obj_property name="ElementShortName">frm[31:0]</obj_property>
+         <obj_property name="ObjectShortName">frm[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/fcsr" type="array">
+         <obj_property name="ElementShortName">fcsr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">fcsr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/cycle" type="array">
+         <obj_property name="ElementShortName">cycle[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cycle[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/instret" type="array">
+         <obj_property name="ElementShortName">instret[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instret[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/hpmcounter3" type="array">
+         <obj_property name="ElementShortName">hpmcounter3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hpmcounter3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/hpmcounter4" type="array">
+         <obj_property name="ElementShortName">hpmcounter4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hpmcounter4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/cycleh" type="array">
+         <obj_property name="ElementShortName">cycleh[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cycleh[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/instreth" type="array">
+         <obj_property name="ElementShortName">instreth[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instreth[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/hpmcounter3h" type="array">
+         <obj_property name="ElementShortName">hpmcounter3h[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hpmcounter3h[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/hpmcounter4h" type="array">
+         <obj_property name="ElementShortName">hpmcounter4h[31:0]</obj_property>
+         <obj_property name="ObjectShortName">hpmcounter4h[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/countinhibit" type="array">
+         <obj_property name="ElementShortName">countinhibit[31:0]</obj_property>
+         <obj_property name="ObjectShortName">countinhibit[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sstatus" type="array">
+         <obj_property name="ElementShortName">sstatus[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sstatus[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/scounteren" type="array">
+         <obj_property name="ElementShortName">scounteren[31:0]</obj_property>
+         <obj_property name="ObjectShortName">scounteren[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/sscratch" type="array">
+         <obj_property name="ElementShortName">sscratch[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sscratch[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/scause" type="array">
+         <obj_property name="ElementShortName">scause[31:0]</obj_property>
+         <obj_property name="ObjectShortName">scause[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/stval" type="array">
+         <obj_property name="ElementShortName">stval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">stval[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/satp" type="array">
+         <obj_property name="ElementShortName">satp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">satp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/misa" type="array">
+         <obj_property name="ElementShortName">misa[31:0]</obj_property>
+         <obj_property name="ObjectShortName">misa[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcounteren" type="array">
+         <obj_property name="ElementShortName">mcounteren[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcounteren[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mstatush" type="array">
+         <obj_property name="ElementShortName">mstatush[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mstatush[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcountinhibit" type="array">
+         <obj_property name="ElementShortName">mcountinhibit[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcountinhibit[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mtimecmp" type="array">
+         <obj_property name="ElementShortName">mtimecmp[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mtimecmp[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmevents" type="array">
+         <obj_property name="ElementShortName">mhpmevents[28:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmevents[28:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mscratch" type="array">
+         <obj_property name="ElementShortName">mscratch[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mscratch[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcause" type="array">
+         <obj_property name="ElementShortName">mcause[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcause[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mtval" type="array">
+         <obj_property name="ElementShortName">mtval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mtval[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mbase" type="array">
+         <obj_property name="ElementShortName">mbase[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mbase[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mbound" type="array">
+         <obj_property name="ElementShortName">mbound[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mbound[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mibase" type="array">
+         <obj_property name="ElementShortName">mibase[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mibase[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mibound" type="array">
+         <obj_property name="ElementShortName">mibound[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mibound[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mdbase" type="array">
+         <obj_property name="ElementShortName">mdbase[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mdbase[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mdbound" type="array">
+         <obj_property name="ElementShortName">mdbound[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mdbound[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/pmpcfg0" type="array">
+         <obj_property name="ElementShortName">pmpcfg0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pmpcfg0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/pmpcfg1" type="array">
+         <obj_property name="ElementShortName">pmpcfg1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pmpcfg1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/pmpcfg2" type="array">
+         <obj_property name="ElementShortName">pmpcfg2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pmpcfg2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/pmpcfg3" type="array">
+         <obj_property name="ElementShortName">pmpcfg3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">pmpcfg3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/pmpaddrs" type="array">
+         <obj_property name="ElementShortName">pmpaddrs[15:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pmpaddrs[15:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcycle" type="array">
+         <obj_property name="ElementShortName">mcycle[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcycle[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/minstret" type="array">
+         <obj_property name="ElementShortName">minstret[31:0]</obj_property>
+         <obj_property name="ObjectShortName">minstret[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmcounter3" type="array">
+         <obj_property name="ElementShortName">mhpmcounter3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmcounter3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmcounter4" type="array">
+         <obj_property name="ElementShortName">mhpmcounter4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmcounter4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mcycleh" type="array">
+         <obj_property name="ElementShortName">mcycleh[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mcycleh[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/minstreth" type="array">
+         <obj_property name="ElementShortName">minstreth[31:0]</obj_property>
+         <obj_property name="ObjectShortName">minstreth[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmcounter3h" type="array">
+         <obj_property name="ElementShortName">mhpmcounter3h[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmcounter3h[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmcounter4h" type="array">
+         <obj_property name="ElementShortName">mhpmcounter4h[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmcounter4h[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmevent3" type="array">
+         <obj_property name="ElementShortName">mhpmevent3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmevent3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhpmevent4" type="array">
+         <obj_property name="ElementShortName">mhpmevent4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhpmevent4[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/tselect" type="array">
+         <obj_property name="ElementShortName">tselect[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tselect[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/tdata1" type="array">
+         <obj_property name="ElementShortName">tdata1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/tdata2" type="array">
+         <obj_property name="ElementShortName">tdata2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/tdata3" type="array">
+         <obj_property name="ElementShortName">tdata3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tdata3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/dcsr" type="array">
+         <obj_property name="ElementShortName">dcsr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dcsr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/dpc" type="array">
+         <obj_property name="ElementShortName">dpc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dpc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/dscratch0" type="array">
+         <obj_property name="ElementShortName">dscratch0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dscratch0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/dscratch1" type="array">
+         <obj_property name="ElementShortName">dscratch1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dscratch1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mvendorid" type="array">
+         <obj_property name="ElementShortName">mvendorid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mvendorid[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/marchid" type="array">
+         <obj_property name="ElementShortName">marchid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">marchid[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mimpid" type="array">
+         <obj_property name="ElementShortName">mimpid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mimpid[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/mhartid" type="array">
+         <obj_property name="ElementShortName">mhartid[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mhartid[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32_CSR_Verilog_RTL_0/inst/legal" type="logic">
+         <obj_property name="ElementShortName">legal</obj_property>
+         <obj_property name="ObjectShortName">legal</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Val_en_o" type="logic">
+      <obj_property name="ElementShortName">CSR_Val_en_o</obj_property>
+      <obj_property name="ObjectShortName">CSR_Val_en_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Val_addr_o" type="array">
+      <obj_property name="ElementShortName">CSR_Val_addr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_Val_addr_o[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_o" type="logic">
+      <obj_property name="ElementShortName">CSR_Req_o</obj_property>
+      <obj_property name="ObjectShortName">CSR_Req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_mode_o" type="array">
+      <obj_property name="ElementShortName">CSR_Req_mode_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_Req_mode_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_addr_o" type="array">
+      <obj_property name="ElementShortName">CSR_Req_addr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_Req_addr_o[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/CSR_Req_data_o" type="array">
+      <obj_property name="ElementShortName">CSR_Req_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR_Req_data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_PC" type="array">
+      <obj_property name="ElementShortName">EX2MEM_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_Exception" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_Exception</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Exception</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_exvec" type="array">
+      <obj_property name="ElementShortName">EX2MEM_exvec[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_exvec[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_Interrupt" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_Interrupt</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Interrupt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_IPCause" type="array">
+      <obj_property name="ElementShortName">EX2MEM_IPCause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_IPCause[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_Return" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_Return</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_Return</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_CSR_Req" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_CSR_Req</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_Req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_CSR_Req_Mode" type="array">
+      <obj_property name="ElementShortName">EX2MEM_CSR_Req_Mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_Req_Mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_CSR_Req_Addr" type="array">
+      <obj_property name="ElementShortName">EX2MEM_CSR_Req_Addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_Req_Addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group2008" type="group">
+      <obj_property name="label">Data Flow</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/CTL_IF_PCSrc" type="logic">
+         <obj_property name="ElementShortName">CTL_IF_PCSrc</obj_property>
+         <obj_property name="ObjectShortName">CTL_IF_PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/PCBranchAddr" type="array">
+         <obj_property name="ElementShortName">PCBranchAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCBranchAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/PC_Reg" type="array">
+         <obj_property name="ElementShortName">PC_Reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PC_Reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Iaddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Iaddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Iaddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Idata_i" type="array">
+         <obj_property name="ElementShortName">CC_Idata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Idata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_Instruction" type="array">
+         <obj_property name="ElementShortName">IF2ID_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Val_i" type="array">
+         <obj_property name="ElementShortName">CSR_Val_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Val_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_PC" type="array">
+         <obj_property name="ElementShortName">IF2ID_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_RegRd1Out" type="array">
+         <obj_property name="ElementShortName">ID_RegRd1Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RegRd1Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_RegRd2Out" type="array">
+         <obj_property name="ElementShortName">ID_RegRd2Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RegRd2Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_Immediate" type="array">
+         <obj_property name="ElementShortName">ID_Immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Instruction" type="array">
+         <obj_property name="ElementShortName">ID2EX_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_PC" type="array">
+         <obj_property name="ElementShortName">ID2EX_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd1" type="array">
+         <obj_property name="ElementShortName">ID2EX_RegRd1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_RegRd1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd2" type="array">
+         <obj_property name="ElementShortName">ID2EX_RegRd2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_RegRd2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Immediate" type="array">
+         <obj_property name="ElementShortName">ID2EX_Immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_A" type="array">
+         <obj_property name="ElementShortName">EX_ALU_A[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_A[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_B" type="array">
+         <obj_property name="ElementShortName">EX_ALU_B[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_B[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_Ctl" type="array">
+         <obj_property name="ElementShortName">EX_ALU_Ctl[7:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Ctl[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_Out" type="array">
+         <obj_property name="ElementShortName">EX_ALU_Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_ALUResult" type="array">
+         <obj_property name="ElementShortName">EX2MEM_ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_DMEM_WriteData" type="array">
+         <obj_property name="ElementShortName">EX2MEM_DMEM_WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_DMEM_WriteData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/EX2MEM_PC" type="array">
+         <obj_property name="ElementShortName">EX2MEM_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Dre_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dre_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dre_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Dwe_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dwe_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dwe_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/CC_Dmode_o" type="array">
+         <obj_property name="ElementShortName">CC_Dmode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Dmode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Daddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Daddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Daddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Ddata_o" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CC_Ddata_i" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Req_o" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">CSR_Req_o</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_o</obj_property>
+         <obj_property name="label">CSR_Req_/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Req_oo</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_addr_o[11:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_addr_o[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Req_data_o" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/CSR_Req_data_i" type="array">
+         <obj_property name="ElementShortName">CSR_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CSR_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RV32I_ControlUnit_Ve_0/inst/MEM2WB_PC" type="array">
+         <obj_property name="ElementShortName">MEM2WB_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_ALUAddr" type="array">
+         <obj_property name="ElementShortName">MEM2WB_ALUAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_ALUAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_DMEM_ReadData" type="array">
+         <obj_property name="ElementShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/ID_WriteData" type="array">
+         <obj_property name="ElementShortName">ID_WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_WriteData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/WB2ID_Rd" type="array">
+         <obj_property name="ElementShortName">WB2ID_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">WB2ID_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_3_tb/design_3_i/RISCV32I_EXBranch_Da_0/inst/CTL_ID_RegWr" type="logic">
+         <obj_property name="ElementShortName">CTL_ID_RegWr</obj_property>
+         <obj_property name="ObjectShortName">CTL_ID_RegWr</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

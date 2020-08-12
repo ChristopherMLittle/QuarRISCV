@@ -1,0 +1,2037 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1A924EF4F45FFB2A",
+      "device": "xc7z020clg484-1",
+      "name": "design_3",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "RV32I_EXBranch_Branc_0": "",
+      "RV32I_HazardUnit_Ver_0": "",
+      "RV32_Local_Interrupt_0": "",
+      "RV32_CSR_Verilog_RTL_0": "",
+      "RV32I_ControlUnit_Ve_0": "",
+      "RISCV32I_EXBranch_Da_0": ""
+    },
+    "ports": {
+      "meip": {
+        "direction": "I"
+      },
+      "seip": {
+        "direction": "I"
+      },
+      "ueip": {
+        "direction": "I"
+      },
+      "CC_Ivalid_o": {
+        "direction": "O"
+      },
+      "CC_Iaddr_o": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "CC_Ire_o": {
+        "direction": "O"
+      },
+      "CC_Dvalid_o": {
+        "direction": "O"
+      },
+      "CC_Dbypass_o": {
+        "direction": "O"
+      },
+      "CC_Dre_o": {
+        "direction": "O"
+      },
+      "CC_Dwe_o": {
+        "direction": "O"
+      },
+      "CC_Daddr_o": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "CC_Ddata_o": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "CC_rdy_i": {
+        "direction": "I"
+      },
+      "CC_err_i": {
+        "direction": "I"
+      },
+      "CC_Idata_i": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "CC_Ddata_i": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "utip": {
+        "direction": "I"
+      },
+      "stip": {
+        "direction": "I"
+      },
+      "mtip": {
+        "direction": "I"
+      },
+      "resetn": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "CC_Dmode_o": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      }
+    },
+    "components": {
+      "RV32I_EXBranch_Branc_0": {
+        "vlnv": "xilinx.com:module_ref:RV32I_EXBranch_BranchUnit_Verilog_RTL:1.0",
+        "xci_name": "design_3_RV32I_EXBranch_Branc_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RV32I_EXBranch_BranchUnit_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CTL_EX_Unsigned": {
+            "direction": "I"
+          },
+          "CTL_EX_Jump": {
+            "direction": "I"
+          },
+          "CTL_EX_BranchOp": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_EX_Opcode": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "EX_ALU_Zero": {
+            "direction": "I"
+          },
+          "EX_ALU_LTS": {
+            "direction": "I"
+          },
+          "EX_ALU_LTU": {
+            "direction": "I"
+          },
+          "Branch_Taken": {
+            "direction": "O"
+          }
+        }
+      },
+      "RV32I_HazardUnit_Ver_0": {
+        "vlnv": "xilinx.com:module_ref:RV32I_HazardUnit_Verilog_RTL:1.0",
+        "xci_name": "design_3_RV32I_HazardUnit_Ver_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RV32I_HazardUnit_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Branch_Taken": {
+            "direction": "I"
+          },
+          "ID_Rs1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ID_Rs2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "EX_MemRd": {
+            "direction": "I"
+          },
+          "EX_Rs1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "EX_Rs2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "EX_Rd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "MEM_RegWR": {
+            "direction": "I"
+          },
+          "MEM_Rd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "WB_RegWr": {
+            "direction": "I"
+          },
+          "WB_Rd": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Hazard_Stall": {
+            "direction": "O"
+          },
+          "ALU_ForwardA": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALU_ForwardB": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "RV32_Local_Interrupt_0": {
+        "vlnv": "xilinx.com:module_ref:RV32_Local_Interrupt_Controller_Verilog_RTL:1.0",
+        "xci_name": "design_3_RV32_Local_Interrupt_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RV32_Local_Interrupt_Controller_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "priv_lvl": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "PC": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mstatus_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ueip": {
+            "direction": "I"
+          },
+          "seip": {
+            "direction": "I"
+          },
+          "meip": {
+            "direction": "I"
+          },
+          "utip": {
+            "direction": "I"
+          },
+          "stip": {
+            "direction": "I"
+          },
+          "mtip": {
+            "direction": "I"
+          },
+          "csr_uie_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_sie_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_mie_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_mip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_sip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_uip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_mideleg_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_medeleg_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_sideleg_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "csr_sedeleg_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctl_exception_i": {
+            "direction": "I"
+          },
+          "ctl_exvec_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctl_tval": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ctl_ip_ack": {
+            "direction": "I"
+          },
+          "xret": {
+            "direction": "I"
+          },
+          "New_IP": {
+            "direction": "O"
+          },
+          "trap_priv": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "mip_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sip_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uip_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mcause": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "scause": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ucause": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mtval": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "stval": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "utval": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mstatus_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CSR_Commit": {
+            "direction": "O"
+          }
+        }
+      },
+      "RV32_CSR_Verilog_RTL_0": {
+        "vlnv": "xilinx.com:module_ref:RV32_CSR_Verilog_RTL:1.0",
+        "xci_name": "design_3_RV32_CSR_Verilog_RTL_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RV32_CSR_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "csr_val_i": {
+            "direction": "I"
+          },
+          "csr_valaddr_i": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "csr_req_i": {
+            "direction": "I"
+          },
+          "csr_mode_i": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "csr_priv_i": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "csr_addr_i": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "csr_data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "utip_i": {
+            "direction": "I"
+          },
+          "stip_i": {
+            "direction": "I"
+          },
+          "mtip_i": {
+            "direction": "I"
+          },
+          "inst_done": {
+            "direction": "I"
+          },
+          "inst_event": {
+            "direction": "I"
+          },
+          "mstatus_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "uip_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mepc_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sepc_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "uepc_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mcause_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "scause_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ucause_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mtval_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "stval_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "utval_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CSR_Commit": {
+            "direction": "I"
+          },
+          "CSR_Commit_Lvl": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CSR_Val_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "illegal": {
+            "direction": "O"
+          },
+          "CSR_DATA_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uie": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sie": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mie": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uip": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sip": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mip": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mstatus": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mideleg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "medeleg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sideleg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sedeleg": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "rsvec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mtvec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "stvec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "utvec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "sepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "uepc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "RV32I_ControlUnit_Ve_0": {
+        "vlnv": "xilinx.com:module_ref:RV32I_ControlUnit_Verilog_RTL:1.0",
+        "xci_name": "design_3_RV32I_ControlUnit_Ve_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RV32I_ControlUnit_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CSR_Val_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CSR_Req_illegal_i": {
+            "direction": "I"
+          },
+          "CSR_Req_data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_rdy_i": {
+            "direction": "I"
+          },
+          "CC_err_i": {
+            "direction": "I"
+          },
+          "CC_Idata_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_Ddata_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ID_PC": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ID_Instruction": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "BU_Branch_Taken": {
+            "direction": "I"
+          },
+          "Hazard_Stall": {
+            "direction": "I"
+          },
+          "EX_Funct3": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "EX_Funct7": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "inst_mem_misaligned": {
+            "direction": "I"
+          },
+          "inst_mem_fault": {
+            "direction": "I"
+          },
+          "csr_illegal": {
+            "direction": "I"
+          },
+          "load_mem_misaligned": {
+            "direction": "I"
+          },
+          "load_mem_fault": {
+            "direction": "I"
+          },
+          "store_mem_misaligned": {
+            "direction": "I"
+          },
+          "store_mem_fault": {
+            "direction": "I"
+          },
+          "inst_page_fault": {
+            "direction": "I"
+          },
+          "load_page_fault": {
+            "direction": "I"
+          },
+          "store_page_fault": {
+            "direction": "I"
+          },
+          "ALU_Overflow": {
+            "direction": "I"
+          },
+          "ALU_Err": {
+            "direction": "I"
+          },
+          "LIC_New_IP": {
+            "direction": "I"
+          },
+          "LIC_IP_Cause": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "LIC_IP_Lvl": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "IMEM_addr_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "DMEM_addr_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "DMEM_data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CSR_Val_en_o": {
+            "direction": "O"
+          },
+          "CSR_Val_addr_o": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "CSR_Req_o": {
+            "direction": "O"
+          },
+          "CSR_Req_mode_o": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "CSR_Req_addr_o": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "CSR_Req_data_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_Ivalid_o": {
+            "direction": "O"
+          },
+          "CC_Iaddr_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_Ire_o": {
+            "direction": "O"
+          },
+          "CC_Dvalid_o": {
+            "direction": "O"
+          },
+          "CC_Dbypass_o": {
+            "direction": "O"
+          },
+          "CC_Dre_o": {
+            "direction": "O"
+          },
+          "CC_Dwe_o": {
+            "direction": "O"
+          },
+          "CC_Daddr_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_Ddata_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CC_Dmode_o": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "CC_Dunsigned_o": {
+            "direction": "O"
+          },
+          "Stall": {
+            "direction": "O"
+          },
+          "IF2ID_Flush": {
+            "direction": "O"
+          },
+          "ID2EX_Flush": {
+            "direction": "O"
+          },
+          "EX2MEM_Flush": {
+            "direction": "O"
+          },
+          "MEM2WB_Flush": {
+            "direction": "O"
+          },
+          "IF_PCWrite": {
+            "direction": "O"
+          },
+          "IF_PCSrc": {
+            "direction": "O"
+          },
+          "CTL_EPCSrc": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "IF2ID_Write": {
+            "direction": "O"
+          },
+          "ID_RegWr": {
+            "direction": "O"
+          },
+          "ID_Unsigned": {
+            "direction": "O"
+          },
+          "BU_BrJSrc": {
+            "direction": "O"
+          },
+          "BU_Jump": {
+            "direction": "O"
+          },
+          "BU_BranchOp": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "BU_PC": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ID2EX_Src": {
+            "direction": "O"
+          },
+          "ID2EX_MemRd": {
+            "direction": "O"
+          },
+          "EX_CSR_Val": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ALU_Unsigned": {
+            "direction": "O"
+          },
+          "ALU_DataMode": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALU_Ctl": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ALU_SrcA": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALU_SrcB": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "EX2MEM_RegWr": {
+            "direction": "O"
+          },
+          "WB_MEMToGPR": {
+            "direction": "O"
+          },
+          "IMEM_data_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DMEM_data_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_Exception": {
+            "direction": "O"
+          },
+          "CTL_Interrupt": {
+            "type": "intr",
+            "direction": "O"
+          },
+          "epc": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "exvec": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "tval": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "LIC_IP_Ack": {
+            "direction": "O"
+          },
+          "CTL_Priv_o": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_Ret_o": {
+            "direction": "O"
+          },
+          "CTL_Inst_Done": {
+            "direction": "O"
+          },
+          "CTL_Inst_Event": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "RISCV32I_EXBranch_Da_0": {
+        "vlnv": "xilinx.com:module_ref:RISCV32I_EXBranch_Datapath_Verilog_RTL:1.0",
+        "xci_name": "design_3_RISCV32I_EXBranch_Da_0_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RISCV32I_EXBranch_Datapath_Verilog_RTL",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CTL_Stall": {
+            "direction": "I"
+          },
+          "CTL_Interrupt": {
+            "type": "intr",
+            "direction": "I"
+          },
+          "CTL_Exception": {
+            "direction": "I"
+          },
+          "CTL_EPCSrc": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_Return": {
+            "direction": "I"
+          },
+          "CTL_rsvec": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_mtvec": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_stvec": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_utvec": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_mepc": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_sepc": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_uepc": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_IF2ID_Flush": {
+            "direction": "I"
+          },
+          "CTL_ID2EX_Flush": {
+            "direction": "I"
+          },
+          "CTL_EX2MEM_Flush": {
+            "direction": "I"
+          },
+          "CTL_MEM2WB_Flush": {
+            "direction": "I"
+          },
+          "CTL_IF_PCWrite": {
+            "direction": "I"
+          },
+          "CTL_IF_PCSrc": {
+            "direction": "I"
+          },
+          "CTL_IF2ID_Write": {
+            "direction": "I"
+          },
+          "CTL_ID2EX_Src": {
+            "direction": "I"
+          },
+          "CTL_ID_RegWr": {
+            "direction": "I"
+          },
+          "CTL_BU_BrJSrc": {
+            "direction": "I"
+          },
+          "CTL_BU_Jump": {
+            "direction": "I"
+          },
+          "CTL_BU_BranchOp": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_BU_PC": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_ALU_ForwardA": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_ALU_ForwardB": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_ALU_SrcA": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_ALU_SrcB": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_ALU_Unsigned": {
+            "direction": "I"
+          },
+          "CTL_ALU_DataMode": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CTL_ALU_Ctl": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "CTL_WB_MEMToGPR": {
+            "direction": "I"
+          },
+          "CTL_CSR_val_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_IMEM_data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_DMEM_data_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_ID_PC": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_ID_Instruction": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_EX_Opcode": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "CTL_EX_Funct3": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "CTL_EX_Funct7": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "CTL_ALU_Zero": {
+            "direction": "O"
+          },
+          "CTL_ALU_LTS": {
+            "direction": "O"
+          },
+          "CTL_ALU_LTU": {
+            "direction": "O"
+          },
+          "CTL_ALU_Overflow": {
+            "direction": "O"
+          },
+          "CTL_ALU_Err": {
+            "direction": "O"
+          },
+          "EX_ALU_A": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "EX_ALU_B": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_IMEM_addr_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_DMEM_addr_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "CTL_DMEM_data_o": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "HU_ID_Rs1_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_ID_Rs2_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_EX_Rs1_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_EX_Rs2_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_EX_Rd_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_MEM_Rd_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_WB_Rd_o": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "HU_WB_RegWr": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "RISCV32I_EXBranch_Da_0_CTL_ALU_Err": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_Err",
+          "RV32I_ControlUnit_Ve_0/ALU_Err"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ALU_LTS": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_LTS",
+          "RV32I_EXBranch_Branc_0/EX_ALU_LTS"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ALU_LTU": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_LTU",
+          "RV32I_EXBranch_Branc_0/EX_ALU_LTU"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ALU_Overflow": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_Overflow",
+          "RV32I_ControlUnit_Ve_0/ALU_Overflow"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ALU_Zero": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_Zero",
+          "RV32I_EXBranch_Branc_0/EX_ALU_Zero"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_DMEM_addr_o",
+          "RV32I_ControlUnit_Ve_0/DMEM_addr_i"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_DMEM_data_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_DMEM_data_o",
+          "RV32I_ControlUnit_Ve_0/DMEM_data_i"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_EX_Funct3": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_EX_Funct3",
+          "RV32I_ControlUnit_Ve_0/EX_Funct3"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_EX_Funct7": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_EX_Funct7",
+          "RV32I_ControlUnit_Ve_0/EX_Funct7"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_EX_Opcode": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_EX_Opcode",
+          "RV32I_EXBranch_Branc_0/CTL_EX_Opcode"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ID_Instruction": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ID_Instruction",
+          "RV32I_ControlUnit_Ve_0/ID_Instruction"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_ID_PC": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_ID_PC",
+          "RV32I_ControlUnit_Ve_0/ID_PC"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_CTL_IMEM_addr_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/CTL_IMEM_addr_o",
+          "RV32I_ControlUnit_Ve_0/IMEM_addr_i"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_EX_Rd_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_EX_Rd_o",
+          "RV32I_HazardUnit_Ver_0/EX_Rd"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_EX_Rs1_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_EX_Rs1_o",
+          "RV32I_HazardUnit_Ver_0/EX_Rs1"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_EX_Rs2_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_EX_Rs2_o",
+          "RV32I_HazardUnit_Ver_0/EX_Rs2"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_ID_Rs1_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_ID_Rs1_o",
+          "RV32I_HazardUnit_Ver_0/ID_Rs1"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_ID_Rs2_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_ID_Rs2_o",
+          "RV32I_HazardUnit_Ver_0/ID_Rs2"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_MEM_Rd_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_MEM_Rd_o",
+          "RV32I_HazardUnit_Ver_0/MEM_Rd"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ALU_Ctl": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ALU_Ctl",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_Ctl"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ALU_SrcA": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ALU_SrcA",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_SrcA"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ALU_SrcB": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ALU_SrcB",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_SrcB"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ALU_Unsigned": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ALU_Unsigned",
+          "RV32I_EXBranch_Branc_0/CTL_EX_Unsigned",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_Unsigned"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_BU_BrJSrc": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/BU_BrJSrc",
+          "RISCV32I_EXBranch_Da_0/CTL_BU_BrJSrc"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_BU_BranchOp": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/BU_BranchOp",
+          "RV32I_EXBranch_Branc_0/CTL_EX_BranchOp",
+          "RISCV32I_EXBranch_Da_0/CTL_BU_BranchOp"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_BU_Jump": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/BU_Jump",
+          "RV32I_EXBranch_Branc_0/CTL_EX_Jump",
+          "RISCV32I_EXBranch_Da_0/CTL_BU_Jump"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_BU_PC": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/BU_PC",
+          "RISCV32I_EXBranch_Da_0/CTL_BU_PC"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Req_addr_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Req_addr_o",
+          "RV32_CSR_Verilog_RTL_0/csr_addr_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Req_data_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Req_data_o",
+          "RV32_CSR_Verilog_RTL_0/csr_data_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Req_mode_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Req_mode_o",
+          "RV32_CSR_Verilog_RTL_0/csr_mode_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Req_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Req_o",
+          "RV32_CSR_Verilog_RTL_0/csr_req_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Val_addr_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Val_addr_o",
+          "RV32_CSR_Verilog_RTL_0/csr_valaddr_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CSR_Val_en_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CSR_Val_en_o",
+          "RV32_CSR_Verilog_RTL_0/csr_val_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_EPCSrc": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_EPCSrc",
+          "RISCV32I_EXBranch_Da_0/CTL_EPCSrc"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Exception": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Exception",
+          "RV32_Local_Interrupt_0/ctl_exception_i",
+          "RISCV32I_EXBranch_Da_0/CTL_Exception"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Inst_Done": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Inst_Done",
+          "RV32_CSR_Verilog_RTL_0/inst_done"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Inst_Event": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Inst_Event",
+          "RV32_CSR_Verilog_RTL_0/inst_event"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Interrupt": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Interrupt",
+          "RISCV32I_EXBranch_Da_0/CTL_Interrupt"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Priv_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Priv_o",
+          "RV32_Local_Interrupt_0/priv_lvl",
+          "RV32_CSR_Verilog_RTL_0/csr_priv_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CTL_Ret_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CTL_Ret_o",
+          "RV32_Local_Interrupt_0/xret",
+          "RISCV32I_EXBranch_Da_0/CTL_Return"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_DMEM_data_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/DMEM_data_o",
+          "RISCV32I_EXBranch_Da_0/CTL_DMEM_data_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_EX2MEM_Flush": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/EX2MEM_Flush",
+          "RISCV32I_EXBranch_Da_0/CTL_EX2MEM_Flush"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_EX2MEM_RegWr": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/EX2MEM_RegWr",
+          "RV32I_HazardUnit_Ver_0/MEM_RegWR"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_EX_CSR_Val": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/EX_CSR_Val",
+          "RISCV32I_EXBranch_Da_0/CTL_CSR_val_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ID2EX_Flush": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ID2EX_Flush",
+          "RISCV32I_EXBranch_Da_0/CTL_ID2EX_Flush"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ID2EX_MemRd": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ID2EX_MemRd",
+          "RV32I_HazardUnit_Ver_0/EX_MemRd"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ID2EX_Src": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ID2EX_Src",
+          "RISCV32I_EXBranch_Da_0/CTL_ID2EX_Src"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ID_RegWr": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ID_RegWr",
+          "RV32I_HazardUnit_Ver_0/WB_RegWr",
+          "RISCV32I_EXBranch_Da_0/CTL_ID_RegWr"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_IF2ID_Flush": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/IF2ID_Flush",
+          "RISCV32I_EXBranch_Da_0/CTL_IF2ID_Flush"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_IF2ID_Write": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/IF2ID_Write",
+          "RISCV32I_EXBranch_Da_0/CTL_IF2ID_Write"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_IF_PCSrc": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/IF_PCSrc",
+          "RISCV32I_EXBranch_Da_0/CTL_IF_PCSrc"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_IF_PCWrite": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/IF_PCWrite",
+          "RISCV32I_EXBranch_Da_0/CTL_IF_PCWrite"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_IMEM_data_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/IMEM_data_o",
+          "RISCV32I_EXBranch_Da_0/CTL_IMEM_data_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_LIC_IP_Ack": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/LIC_IP_Ack",
+          "RV32_Local_Interrupt_0/ctl_ip_ack"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_MEM2WB_Flush": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/MEM2WB_Flush",
+          "RISCV32I_EXBranch_Da_0/CTL_MEM2WB_Flush"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_Stall": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/Stall",
+          "RISCV32I_EXBranch_Da_0/CTL_Stall"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_WB_MEMToGPR": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/WB_MEMToGPR",
+          "RISCV32I_EXBranch_Da_0/CTL_WB_MEMToGPR"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ecausevec": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/exvec",
+          "RV32_Local_Interrupt_0/ctl_exvec_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_epc": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/epc",
+          "RV32_Local_Interrupt_0/PC"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_tval": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/tval",
+          "RV32_Local_Interrupt_0/ctl_tval"
+        ]
+      },
+      "RV32I_HazardUnit_Ver_0_ALU_ForwardA": {
+        "ports": [
+          "RV32I_HazardUnit_Ver_0/ALU_ForwardA",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_ForwardA"
+        ]
+      },
+      "RV32I_HazardUnit_Ver_0_ALU_ForwardB": {
+        "ports": [
+          "RV32I_HazardUnit_Ver_0/ALU_ForwardB",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_ForwardB"
+        ]
+      },
+      "RV32I_HazardUnit_Ver_0_Hazard_Stall": {
+        "ports": [
+          "RV32I_HazardUnit_Ver_0/Hazard_Stall",
+          "RV32I_ControlUnit_Ve_0/Hazard_Stall"
+        ]
+      },
+      "RV32I_IDBranch_Branc_0_Branch_Taken": {
+        "ports": [
+          "RV32I_EXBranch_Branc_0/Branch_Taken",
+          "RV32I_HazardUnit_Ver_0/Branch_Taken",
+          "RV32I_ControlUnit_Ve_0/BU_Branch_Taken"
+        ]
+      },
+      "RV32_AXI_Timer_Count_0_mtip": {
+        "ports": [
+          "mtip",
+          "RV32_Local_Interrupt_0/mtip",
+          "RV32_CSR_Verilog_RTL_0/mtip_i"
+        ]
+      },
+      "RV32_AXI_Timer_Count_0_stip": {
+        "ports": [
+          "stip",
+          "RV32_Local_Interrupt_0/stip",
+          "RV32_CSR_Verilog_RTL_0/stip_i"
+        ]
+      },
+      "RV32_AXI_Timer_Count_0_utip": {
+        "ports": [
+          "utip",
+          "RV32_Local_Interrupt_0/utip",
+          "RV32_CSR_Verilog_RTL_0/utip_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_CSR_DATA_o": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/CSR_DATA_o",
+          "RV32I_ControlUnit_Ve_0/CSR_Req_data_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_CSR_Val_o": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/CSR_Val_o",
+          "RV32I_ControlUnit_Ve_0/CSR_Val_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_illegal": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/illegal",
+          "RV32I_ControlUnit_Ve_0/CSR_Req_illegal_i",
+          "RV32I_ControlUnit_Ve_0/csr_illegal"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_medeleg": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/medeleg",
+          "RV32_Local_Interrupt_0/csr_medeleg_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mepc": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mepc",
+          "RISCV32I_EXBranch_Da_0/CTL_mepc"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mideleg": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mideleg",
+          "RV32_Local_Interrupt_0/csr_mideleg_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mie": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mie",
+          "RV32_Local_Interrupt_0/csr_mie_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mip": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mip",
+          "RV32_Local_Interrupt_0/csr_mip_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mstatus": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mstatus",
+          "RV32_Local_Interrupt_0/mstatus_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_mtvec": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/mtvec",
+          "RISCV32I_EXBranch_Da_0/CTL_mtvec"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_rsvec": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/rsvec",
+          "RISCV32I_EXBranch_Da_0/CTL_rsvec"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_sedeleg": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/sedeleg",
+          "RV32_Local_Interrupt_0/csr_sedeleg_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_sepc": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/sepc",
+          "RISCV32I_EXBranch_Da_0/CTL_sepc"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_sideleg": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/sideleg",
+          "RV32_Local_Interrupt_0/csr_sideleg_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_sie": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/sie",
+          "RV32_Local_Interrupt_0/csr_sie_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_sip": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/sip",
+          "RV32_Local_Interrupt_0/csr_sip_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_stvec": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/stvec",
+          "RISCV32I_EXBranch_Da_0/CTL_stvec"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_uepc": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/uepc",
+          "RISCV32I_EXBranch_Da_0/CTL_uepc"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_uie": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/uie",
+          "RV32_Local_Interrupt_0/csr_uie_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_uip": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/uip",
+          "RV32_Local_Interrupt_0/csr_uip_i"
+        ]
+      },
+      "RV32_CSR_Verilog_RTL_0_utvec": {
+        "ports": [
+          "RV32_CSR_Verilog_RTL_0/utvec",
+          "RISCV32I_EXBranch_Da_0/CTL_utvec"
+        ]
+      },
+      "RV32_Local_Interrupt_0_CSR_Commit": {
+        "ports": [
+          "RV32_Local_Interrupt_0/CSR_Commit",
+          "RV32_CSR_Verilog_RTL_0/CSR_Commit"
+        ]
+      },
+      "RV32_Local_Interrupt_0_CSR_Commit_Lvl": {
+        "ports": [
+          "RV32_Local_Interrupt_0/trap_priv",
+          "RV32_CSR_Verilog_RTL_0/CSR_Commit_Lvl",
+          "RV32I_ControlUnit_Ve_0/LIC_IP_Lvl"
+        ]
+      },
+      "RV32_Local_Interrupt_0_New_IP": {
+        "ports": [
+          "RV32_Local_Interrupt_0/New_IP",
+          "RV32I_ControlUnit_Ve_0/LIC_New_IP"
+        ]
+      },
+      "RV32_Local_Interrupt_0_mcause": {
+        "ports": [
+          "RV32_Local_Interrupt_0/mcause",
+          "RV32_CSR_Verilog_RTL_0/mcause_i",
+          "RV32I_ControlUnit_Ve_0/LIC_IP_Cause"
+        ]
+      },
+      "RV32_Local_Interrupt_0_mepc": {
+        "ports": [
+          "RV32_Local_Interrupt_0/mepc",
+          "RV32_CSR_Verilog_RTL_0/mepc_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_mip_o": {
+        "ports": [
+          "RV32_Local_Interrupt_0/mip_o",
+          "RV32_CSR_Verilog_RTL_0/mip_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_mstatus_o": {
+        "ports": [
+          "RV32_Local_Interrupt_0/mstatus_o",
+          "RV32_CSR_Verilog_RTL_0/mstatus_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_mtval": {
+        "ports": [
+          "RV32_Local_Interrupt_0/mtval",
+          "RV32_CSR_Verilog_RTL_0/mtval_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_scause": {
+        "ports": [
+          "RV32_Local_Interrupt_0/scause",
+          "RV32_CSR_Verilog_RTL_0/scause_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_sepc": {
+        "ports": [
+          "RV32_Local_Interrupt_0/sepc",
+          "RV32_CSR_Verilog_RTL_0/sepc_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_sip_o": {
+        "ports": [
+          "RV32_Local_Interrupt_0/sip_o",
+          "RV32_CSR_Verilog_RTL_0/sip_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_stval": {
+        "ports": [
+          "RV32_Local_Interrupt_0/stval",
+          "RV32_CSR_Verilog_RTL_0/stval_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_ucause": {
+        "ports": [
+          "RV32_Local_Interrupt_0/ucause",
+          "RV32_CSR_Verilog_RTL_0/ucause_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_uepc": {
+        "ports": [
+          "RV32_Local_Interrupt_0/uepc",
+          "RV32_CSR_Verilog_RTL_0/uepc_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_uip_o": {
+        "ports": [
+          "RV32_Local_Interrupt_0/uip_o",
+          "RV32_CSR_Verilog_RTL_0/uip_i"
+        ]
+      },
+      "RV32_Local_Interrupt_0_utval": {
+        "ports": [
+          "RV32_Local_Interrupt_0/utval",
+          "RV32_CSR_Verilog_RTL_0/utval_i"
+        ]
+      },
+      "meip_1": {
+        "ports": [
+          "meip",
+          "RV32_Local_Interrupt_0/meip"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "clk",
+          "RV32_Local_Interrupt_0/clk",
+          "RV32_CSR_Verilog_RTL_0/clk",
+          "RV32I_ControlUnit_Ve_0/clk",
+          "RISCV32I_EXBranch_Da_0/clock"
+        ]
+      },
+      "rst_ps7_0_100M_peripheral_aresetn": {
+        "ports": [
+          "resetn",
+          "RV32_Local_Interrupt_0/resetn",
+          "RV32_CSR_Verilog_RTL_0/resetn",
+          "RV32I_ControlUnit_Ve_0/resetn",
+          "RISCV32I_EXBranch_Da_0/resetn"
+        ]
+      },
+      "seip_1": {
+        "ports": [
+          "seip",
+          "RV32_Local_Interrupt_0/seip"
+        ]
+      },
+      "ueip_1": {
+        "ports": [
+          "ueip",
+          "RV32_Local_Interrupt_0/ueip"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Ivalid_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Ivalid_o",
+          "CC_Ivalid_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Iaddr_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Iaddr_o",
+          "CC_Iaddr_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Ire_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Ire_o",
+          "CC_Ire_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Dvalid_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Dvalid_o",
+          "CC_Dvalid_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Dbypass_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Dbypass_o",
+          "CC_Dbypass_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Dre_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Dre_o",
+          "CC_Dre_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Dwe_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Dwe_o",
+          "CC_Dwe_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Daddr_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Daddr_o",
+          "CC_Daddr_o"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Ddata_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Ddata_o",
+          "CC_Ddata_o"
+        ]
+      },
+      "CC_rdy_i_1": {
+        "ports": [
+          "CC_rdy_i",
+          "RV32I_ControlUnit_Ve_0/CC_rdy_i"
+        ]
+      },
+      "CC_err_i_1": {
+        "ports": [
+          "CC_err_i",
+          "RV32I_ControlUnit_Ve_0/CC_err_i"
+        ]
+      },
+      "CC_Idata_i_1": {
+        "ports": [
+          "CC_Idata_i",
+          "RV32I_ControlUnit_Ve_0/CC_Idata_i"
+        ]
+      },
+      "CC_Ddata_i_1": {
+        "ports": [
+          "CC_Ddata_i",
+          "RV32I_ControlUnit_Ve_0/CC_Ddata_i"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_ALU_DataMode": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/ALU_DataMode",
+          "RISCV32I_EXBranch_Da_0/CTL_ALU_DataMode"
+        ]
+      },
+      "RISCV32I_EXBranch_Da_0_HU_WB_Rd_o": {
+        "ports": [
+          "RISCV32I_EXBranch_Da_0/HU_WB_Rd_o",
+          "RV32I_HazardUnit_Ver_0/WB_Rd"
+        ]
+      },
+      "RV32I_ControlUnit_Ve_0_CC_Dmode_o": {
+        "ports": [
+          "RV32I_ControlUnit_Ve_0/CC_Dmode_o",
+          "CC_Dmode_o"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="G:/Computer_Architecture/RISCV_Test_Verilog/RISCV_Test_Verilog.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="120fs"></ZoomStartTime>
+      <ZoomEndTime time="210fs"></ZoomEndTime>
+      <Cursor1Time time="6976fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="422"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_5_i/RISCV32I_EXBranch_Da_0_CTL_ID_PC" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RISCV32I_EXBranch_Da_0_CTL_ID_PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RISCV32I_EXBranch_Da_0_CTL_ID_PC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RISCV32I_EXBranch_Da_0_CTL_ID_Instruction" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RISCV32I_EXBranch_Da_0_CTL_ID_Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RISCV32I_EXBranch_Da_0_CTL_ID_Instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/rst_ps7_0_100M_peripheral_aresetn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/rst_ps7_0_100M_peripheral_aresetn</obj_property>
+      <obj_property name="ObjectShortName">rst_ps7_0_100M_peripheral_aresetn</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/processing_system7_0_FCLK_CLK0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/processing_system7_0_FCLK_CLK0</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_FCLK_CLK0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RV32I_ControlUnit_Ve_0_Stall" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RV32I_ControlUnit_Ve_0_Stall</obj_property>
+      <obj_property name="ObjectShortName">RV32I_ControlUnit_Ve_0_Stall</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/Cache_Controller_MEM_rdy_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/Cache_Controller_MEM_rdy_o</obj_property>
+      <obj_property name="ObjectShortName">Cache_Controller_MEM_rdy_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RV32I_IDBranch_Branc_0_Branch_Taken" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RV32I_IDBranch_Branc_0_Branch_Taken</obj_property>
+      <obj_property name="ObjectShortName">RV32I_IDBranch_Branc_0_Branch_Taken</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/processing_system7_0_FCLK_CLK1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/processing_system7_0_FCLK_CLK1</obj_property>
+      <obj_property name="ObjectShortName">processing_system7_0_FCLK_CLK1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RISCV32I_EXBranch_Da_0_EX_ALU_A" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RISCV32I_EXBranch_Da_0_EX_ALU_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RISCV32I_EXBranch_Da_0_EX_ALU_A[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RISCV32I_EXBranch_Da_0_EX_ALU_B" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RISCV32I_EXBranch_Da_0_EX_ALU_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RISCV32I_EXBranch_Da_0_EX_ALU_B[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/Cache_Controller_DMEM_data_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/Cache_Controller_DMEM_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Cache_Controller_DMEM_data_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_5_i/RV32I_ControlUnit_Ve_0_CC_Ddata_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_5_i/RV32I_ControlUnit_Ve_0_CC_Ddata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RV32I_ControlUnit_Ve_0_CC_Ddata_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

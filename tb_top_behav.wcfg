@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="std" />
+            <top_module name="tb_top" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="943652689fs"></ZoomStartTime>
+      <ZoomEndTime time="944536556fs"></ZoomEndTime>
+      <Cursor1Time time="943780000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="291"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wave_markers>
+      <marker time="20000" label="" />
+   </wave_markers>
+   <wvobject fp_name="group3425" type="group">
+      <obj_property name="label">Cache Controller TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group3516" type="group">
+      <obj_property name="label">Datapath TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group3710" type="group">
+      <obj_property name="label">Combined TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group3740" type="group">
+         <obj_property name="label">TB Values</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group3741" type="group">
+         <obj_property name="label">Cache Controller</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group4026" type="group">
+         <obj_property name="label">ICache</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group3832" type="group">
+         <obj_property name="label">Control Unit</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group4248" type="group">
+         <obj_property name="label">Datapath</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group4373" type="group">
+         <obj_property name="label">Inst Flow</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group4736" type="group">
+         <obj_property name="label">IBRAM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group1671" type="group">
+         <obj_property name="label">DCache</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group4737" type="group">
+         <obj_property name="label">DBRAM</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="group1601" type="group">
+         <obj_property name="label">HL Flow</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1747" type="group">
+      <obj_property name="label">AXI TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1748" type="group">
+      <obj_property name="label">Datapath</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1808" type="group">
+      <obj_property name="label">MIC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/M00_AXI" type="protoinst">
+         <obj_property name="ElementShortName">M00_AXI</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI</obj_property>
+         <obj_property name="children_use_element_short_name">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+         <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="Render_Data">/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/M00_AXI.readWriteSummary</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CellHeight">36</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IREQ_VALID" type="logic">
+         <obj_property name="ElementShortName">CC_IREQ_VALID</obj_property>
+         <obj_property name="ObjectShortName">CC_IREQ_VALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IREQ_RADDR" type="array">
+         <obj_property name="ElementShortName">CC_IREQ_RADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_IREQ_RADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IREQ_RDATA" type="array">
+         <obj_property name="ElementShortName">CC_IREQ_RDATA[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_IREQ_RDATA[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_VALID" type="logic">
+         <obj_property name="ElementShortName">CC_DREQ_VALID</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_VALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_RW" type="logic">
+         <obj_property name="ElementShortName">CC_DREQ_RW</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_RW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_DATAMODE" type="array">
+         <obj_property name="ElementShortName">CC_DREQ_DATAMODE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_DATAMODE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_ADDR" type="array">
+         <obj_property name="ElementShortName">CC_DREQ_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_WDATA" type="array">
+         <obj_property name="ElementShortName">CC_DREQ_WDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_WDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DREQ_RDATA" type="array">
+         <obj_property name="ElementShortName">CC_DREQ_RDATA[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DREQ_RDATA[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IBLK_VALID" type="logic">
+         <obj_property name="ElementShortName">CC_IBLK_VALID</obj_property>
+         <obj_property name="ObjectShortName">CC_IBLK_VALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IBLK_WADDR" type="array">
+         <obj_property name="ElementShortName">CC_IBLK_WADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_IBLK_WADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_IBLK_WDATA" type="array">
+         <obj_property name="ElementShortName">CC_IBLK_WDATA[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_IBLK_WDATA[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DBLK_VALID" type="logic">
+         <obj_property name="ElementShortName">CC_DBLK_VALID</obj_property>
+         <obj_property name="ObjectShortName">CC_DBLK_VALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DBLK_WADDR" type="array">
+         <obj_property name="ElementShortName">CC_DBLK_WADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DBLK_WADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/CC_DBLK_WDATA" type="array">
+         <obj_property name="ElementShortName">CC_DBLK_WDATA[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_DBLK_WDATA[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/INIT_AXI_TXN" type="logic">
+         <obj_property name="ElementShortName">INIT_AXI_TXN</obj_property>
+         <obj_property name="ObjectShortName">INIT_AXI_TXN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/TXN_DONE" type="logic">
+         <obj_property name="ElementShortName">TXN_DONE</obj_property>
+         <obj_property name="ObjectShortName">TXN_DONE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/ERROR" type="logic">
+         <obj_property name="ElementShortName">ERROR</obj_property>
+         <obj_property name="ObjectShortName">ERROR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ACLK" type="logic">
+         <obj_property name="ElementShortName">M_AXI_ACLK</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARESETN" type="logic">
+         <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWID" type="array">
+         <obj_property name="ElementShortName">M_AXI_AWID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWADDR" type="array">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWLEN" type="array">
+         <obj_property name="ElementShortName">M_AXI_AWLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWSIZE" type="array">
+         <obj_property name="ElementShortName">M_AXI_AWSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWBURST" type="array">
+         <obj_property name="ElementShortName">M_AXI_AWBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWVALID" type="logic">
+         <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_AWREADY" type="logic">
+         <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WDATA" type="array">
+         <obj_property name="ElementShortName">M_AXI_WDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WSTRB" type="array">
+         <obj_property name="ElementShortName">M_AXI_WSTRB[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WSTRB[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WLAST" type="logic">
+         <obj_property name="ElementShortName">M_AXI_WLAST</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WLAST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WUSER" type="array">
+         <obj_property name="ElementShortName">M_AXI_WUSER[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WUSER[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WVALID" type="logic">
+         <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_WREADY" type="logic">
+         <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_BID" type="array">
+         <obj_property name="ElementShortName">M_AXI_BID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_BID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_BRESP" type="array">
+         <obj_property name="ElementShortName">M_AXI_BRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_BRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_BUSER" type="array">
+         <obj_property name="ElementShortName">M_AXI_BUSER[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_BUSER[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_BVALID" type="logic">
+         <obj_property name="ElementShortName">M_AXI_BVALID</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_BVALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_BREADY" type="logic">
+         <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARID" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARADDR" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARLEN" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARSIZE" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARBURST" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARLOCK" type="logic">
+         <obj_property name="ElementShortName">M_AXI_ARLOCK</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARLOCK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARCACHE" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARPROT" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARQOS" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARQOS[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARQOS[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARUSER" type="array">
+         <obj_property name="ElementShortName">M_AXI_ARUSER[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARUSER[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARVALID" type="logic">
+         <obj_property name="ElementShortName">M_AXI_ARVALID</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARVALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_ARREADY" type="logic">
+         <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RID" type="array">
+         <obj_property name="ElementShortName">M_AXI_RID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RDATA" type="array">
+         <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RRESP" type="array">
+         <obj_property name="ElementShortName">M_AXI_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RLAST" type="logic">
+         <obj_property name="ElementShortName">M_AXI_RLAST</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RLAST</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RUSER" type="array">
+         <obj_property name="ElementShortName">M_AXI_RUSER[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RUSER[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RVALID" type="logic">
+         <obj_property name="ElementShortName">M_AXI_RVALID</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RVALID</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/M_AXI_RREADY" type="logic">
+         <obj_property name="ElementShortName">M_AXI_RREADY</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RREADY</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/mst_exec_state" type="array">
+         <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_awaddr" type="array">
+         <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_awvalid" type="logic">
+         <obj_property name="ElementShortName">axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_wdata" type="array">
+         <obj_property name="ElementShortName">axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_wlast" type="logic">
+         <obj_property name="ElementShortName">axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">axi_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_wvalid" type="logic">
+         <obj_property name="ElementShortName">axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_bready" type="logic">
+         <obj_property name="ElementShortName">axi_bready</obj_property>
+         <obj_property name="ObjectShortName">axi_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_araddr" type="array">
+         <obj_property name="ElementShortName">axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_arvalid" type="logic">
+         <obj_property name="ElementShortName">axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/axi_rready" type="logic">
+         <obj_property name="ElementShortName">axi_rready</obj_property>
+         <obj_property name="ObjectShortName">axi_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_index" type="array">
+         <obj_property name="ElementShortName">write_index[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_index[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_index" type="array">
+         <obj_property name="ElementShortName">read_index[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_index[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/burst_size_bytes" type="array">
+         <obj_property name="ElementShortName">burst_size_bytes[4:0]</obj_property>
+         <obj_property name="ObjectShortName">burst_size_bytes[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_burst_counter" type="array">
+         <obj_property name="ElementShortName">write_burst_counter[0:0]</obj_property>
+         <obj_property name="ObjectShortName">write_burst_counter[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_burst_counter" type="array">
+         <obj_property name="ElementShortName">read_burst_counter[0:0]</obj_property>
+         <obj_property name="ObjectShortName">read_burst_counter[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/reset_loop" type="logic">
+         <obj_property name="ElementShortName">reset_loop</obj_property>
+         <obj_property name="ObjectShortName">reset_loop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/reinit_txn" type="logic">
+         <obj_property name="ElementShortName">reinit_txn</obj_property>
+         <obj_property name="ObjectShortName">reinit_txn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/start_single_burst_write" type="logic">
+         <obj_property name="ElementShortName">start_single_burst_write</obj_property>
+         <obj_property name="ObjectShortName">start_single_burst_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/start_single_burst_read" type="logic">
+         <obj_property name="ElementShortName">start_single_burst_read</obj_property>
+         <obj_property name="ObjectShortName">start_single_burst_read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/writes_done" type="logic">
+         <obj_property name="ElementShortName">writes_done</obj_property>
+         <obj_property name="ObjectShortName">writes_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/reads_done" type="logic">
+         <obj_property name="ElementShortName">reads_done</obj_property>
+         <obj_property name="ObjectShortName">reads_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/error_reg" type="logic">
+         <obj_property name="ElementShortName">error_reg</obj_property>
+         <obj_property name="ObjectShortName">error_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/data_done" type="logic">
+         <obj_property name="ElementShortName">data_done</obj_property>
+         <obj_property name="ObjectShortName">data_done</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_mismatch" type="logic">
+         <obj_property name="ElementShortName">read_mismatch</obj_property>
+         <obj_property name="ObjectShortName">read_mismatch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/burst_write_active" type="logic">
+         <obj_property name="ElementShortName">burst_write_active</obj_property>
+         <obj_property name="ObjectShortName">burst_write_active</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/burst_read_active" type="logic">
+         <obj_property name="ElementShortName">burst_read_active</obj_property>
+         <obj_property name="ObjectShortName">burst_read_active</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/expected_rdata" type="array">
+         <obj_property name="ElementShortName">expected_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">expected_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_resp_error" type="logic">
+         <obj_property name="ElementShortName">write_resp_error</obj_property>
+         <obj_property name="ObjectShortName">write_resp_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_resp_error" type="logic">
+         <obj_property name="ElementShortName">read_resp_error</obj_property>
+         <obj_property name="ObjectShortName">read_resp_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/wnext" type="logic">
+         <obj_property name="ElementShortName">wnext</obj_property>
+         <obj_property name="ObjectShortName">wnext</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/rnext" type="logic">
+         <obj_property name="ElementShortName">rnext</obj_property>
+         <obj_property name="ObjectShortName">rnext</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/init_txn_ff" type="logic">
+         <obj_property name="ElementShortName">init_txn_ff</obj_property>
+         <obj_property name="ObjectShortName">init_txn_ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/init_txn_ff2" type="logic">
+         <obj_property name="ElementShortName">init_txn_ff2</obj_property>
+         <obj_property name="ObjectShortName">init_txn_ff2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/init_txn_edge" type="logic">
+         <obj_property name="ElementShortName">init_txn_edge</obj_property>
+         <obj_property name="ObjectShortName">init_txn_edge</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/init_txn_pulse" type="logic">
+         <obj_property name="ElementShortName">init_txn_pulse</obj_property>
+         <obj_property name="ObjectShortName">init_txn_pulse</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_enable" type="logic">
+         <obj_property name="ElementShortName">read_enable</obj_property>
+         <obj_property name="ObjectShortName">read_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_enable" type="logic">
+         <obj_property name="ElementShortName">write_enable</obj_property>
+         <obj_property name="ObjectShortName">write_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_address" type="array">
+         <obj_property name="ElementShortName">read_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">read_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/read_data" type="array">
+         <obj_property name="ElementShortName">read_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">read_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_address" type="array">
+         <obj_property name="ElementShortName">write_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/write_data" type="array">
+         <obj_property name="ElementShortName">write_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">write_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iread_enable" type="logic">
+         <obj_property name="ElementShortName">Iread_enable</obj_property>
+         <obj_property name="ObjectShortName">Iread_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iwrite_enable" type="logic">
+         <obj_property name="ElementShortName">Iwrite_enable</obj_property>
+         <obj_property name="ObjectShortName">Iwrite_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iread_address" type="array">
+         <obj_property name="ElementShortName">Iread_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Iread_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iread_data" type="array">
+         <obj_property name="ElementShortName">Iread_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">Iread_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iwrite_address" type="array">
+         <obj_property name="ElementShortName">Iwrite_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Iwrite_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Iwrite_data" type="array">
+         <obj_property name="ElementShortName">Iwrite_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">Iwrite_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dread_enable" type="logic">
+         <obj_property name="ElementShortName">Dread_enable</obj_property>
+         <obj_property name="ObjectShortName">Dread_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dwrite_enable" type="logic">
+         <obj_property name="ElementShortName">Dwrite_enable</obj_property>
+         <obj_property name="ObjectShortName">Dwrite_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dread_address" type="array">
+         <obj_property name="ElementShortName">Dread_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dread_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dread_data" type="array">
+         <obj_property name="ElementShortName">Dread_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">Dread_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dwrite_address" type="array">
+         <obj_property name="ElementShortName">Dwrite_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Dwrite_address[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/Dwrite_data" type="array">
+         <obj_property name="ElementShortName">Dwrite_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">Dwrite_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/i_active" type="logic">
+         <obj_property name="ElementShortName">i_active</obj_property>
+         <obj_property name="ObjectShortName">i_active</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/d_active" type="logic">
+         <obj_property name="ElementShortName">d_active</obj_property>
+         <obj_property name="ObjectShortName">d_active</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/clear_status" type="logic">
+         <obj_property name="ElementShortName">clear_status</obj_property>
+         <obj_property name="ObjectShortName">clear_status</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/dbypass" type="logic">
+         <obj_property name="ElementShortName">dbypass</obj_property>
+         <obj_property name="ObjectShortName">dbypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/wvalid_delay" type="logic">
+         <obj_property name="ElementShortName">wvalid_delay</obj_property>
+         <obj_property name="ObjectShortName">wvalid_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_CPU_DATASIZE" type="array">
+         <obj_property name="ElementShortName">C_CPU_DATASIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_CPU_DATASIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_CPU_ADDRSIZE" type="array">
+         <obj_property name="ElementShortName">C_CPU_ADDRSIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_CPU_ADDRSIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_TARGET_SLAVE_BASE_ADDR" type="array">
+         <obj_property name="ElementShortName">C_M_TARGET_SLAVE_BASE_ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_TARGET_SLAVE_BASE_ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_BURST_LEN" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_BURST_LEN[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_BURST_LEN[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_ID_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_ID_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_ID_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_ADDR_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_ADDR_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_ADDR_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_DATA_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_DATA_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_DATA_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_AWUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_AWUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_AWUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_ARUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_ARUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_ARUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_WUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_WUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_WUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_RUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_RUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_RUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_M_AXI_BUSER_WIDTH" type="array">
+         <obj_property name="ElementShortName">C_M_AXI_BUSER_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_M_AXI_BUSER_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_TRANSACTIONS_NUM" type="array">
+         <obj_property name="ElementShortName">C_TRANSACTIONS_NUM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_TRANSACTIONS_NUM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_MASTER_LENGTH" type="array">
+         <obj_property name="ElementShortName">C_MASTER_LENGTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_MASTER_LENGTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/C_NO_BURSTS_REQ" type="array">
+         <obj_property name="ElementShortName">C_NO_BURSTS_REQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">C_NO_BURSTS_REQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/INIT_ITXN" type="array">
+         <obj_property name="ElementShortName">INIT_ITXN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">INIT_ITXN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/INIT_DTXN" type="array">
+         <obj_property name="ElementShortName">INIT_DTXN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">INIT_DTXN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_Memory_Interfa_0/inst/RV32I_Memory_Interface_Controller_v1_0_M00_AXI_inst/DONE" type="array">
+         <obj_property name="ElementShortName">DONE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DONE[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group23819" type="group">
+      <obj_property name="label">Inst Data BRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group1897" type="group">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group2011" type="group">
+      <obj_property name="label">CC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/cpu_clk" type="logic">
+         <obj_property name="ElementShortName">cpu_clk</obj_property>
+         <obj_property name="ObjectShortName">cpu_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/IMEM_valid_i" type="logic">
+         <obj_property name="ElementShortName">IMEM_valid_i</obj_property>
+         <obj_property name="ObjectShortName">IMEM_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/IMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">IMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/IMEM_re_i" type="logic">
+         <obj_property name="ElementShortName">IMEM_re_i</obj_property>
+         <obj_property name="ObjectShortName">IMEM_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_valid_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_valid_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_bypass" type="logic">
+         <obj_property name="ElementShortName">DMEM_bypass</obj_property>
+         <obj_property name="ObjectShortName">DMEM_bypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_re_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_re_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_we_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_we_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_addr_i" type="array">
+         <obj_property name="ElementShortName">DMEM_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_data_i" type="array">
+         <obj_property name="ElementShortName">DMEM_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_datamode_i" type="array">
+         <obj_property name="ElementShortName">DMEM_datamode_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_datamode_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_unsigned_i" type="logic">
+         <obj_property name="ElementShortName">DMEM_unsigned_i</obj_property>
+         <obj_property name="ObjectShortName">DMEM_unsigned_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_hit_i" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_hit_i</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_hit_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_data_i" type="array">
+         <obj_property name="ElementShortName">ICache_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">ICache_Blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_addr_i" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_data_i" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_hit_i" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_hit_i</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_hit_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_data_i" type="array">
+         <obj_property name="ElementShortName">DCache_Req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">DCache_Blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_addr_i" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_data_i" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DONE_i" type="logic">
+         <obj_property name="ElementShortName">MIC_DONE_i</obj_property>
+         <obj_property name="ObjectShortName">MIC_DONE_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IREQ_DATA_i" type="array">
+         <obj_property name="ElementShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_DATA_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_DATA_i" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_DATA_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MEM_rdy_o" type="logic">
+         <obj_property name="ElementShortName">MEM_rdy_o</obj_property>
+         <obj_property name="ObjectShortName">MEM_rdy_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MEM_err_o" type="logic">
+         <obj_property name="ElementShortName">MEM_err_o</obj_property>
+         <obj_property name="ObjectShortName">MEM_err_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/IMEM_data_o" type="array">
+         <obj_property name="ElementShortName">IMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_data_o" type="array">
+         <obj_property name="ElementShortName">DMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_valid_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_valid_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_we_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_we_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_we_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_re_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Req_re_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_re_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">ICache_Req_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_data_o" type="array">
+         <obj_property name="ElementShortName">ICache_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Req_datamode_o" type="array">
+         <obj_property name="ElementShortName">ICache_Req_datamode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Req_datamode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">ICache_Blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_addr_o" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ICache_Blk_data_o" type="array">
+         <obj_property name="ElementShortName">ICache_Blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">ICache_Blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_valid_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_valid_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_we_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_we_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_we_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_re_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Req_re_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_re_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_addr_o" type="array">
+         <obj_property name="ElementShortName">DCache_Req_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_data_o" type="array">
+         <obj_property name="ElementShortName">DCache_Req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Req_datamode_o" type="array">
+         <obj_property name="ElementShortName">DCache_Req_datamode_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Req_datamode_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_data_o" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_addr_o" type="array">
+         <obj_property name="ElementShortName">DCache_Blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DCache_Blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">DCache_Blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">DCache_Blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_INIT_TXN_o" type="logic">
+         <obj_property name="ElementShortName">MIC_INIT_TXN_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_INIT_TXN_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IREQ_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_IREQ_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IREQ_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IREQ_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_DREQ_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_RW_o" type="logic">
+         <obj_property name="ElementShortName">MIC_DREQ_RW_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_RW_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_DATAMODE_o" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_DATAMODE_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_DATAMODE_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DREQ_DATA_o" type="array">
+         <obj_property name="ElementShortName">MIC_DREQ_DATA_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DREQ_DATA_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IBLK_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_IBLK_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IBLK_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_IBLK_DATA_o" type="array">
+         <obj_property name="ElementShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_IBLK_DATA_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DBLK_VALID_o" type="logic">
+         <obj_property name="ElementShortName">MIC_DBLK_VALID_o</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_VALID_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DBLK_ADDR_o" type="array">
+         <obj_property name="ElementShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_ADDR_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/MIC_DBLK_DATA_o" type="array">
+         <obj_property name="ElementShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">MIC_DBLK_DATA_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_state" type="array">
+         <obj_property name="ElementShortName">dat_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/stall_signal" type="logic">
+         <obj_property name="ElementShortName">stall_signal</obj_property>
+         <obj_property name="ObjectShortName">stall_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/init_req_signal" type="logic">
+         <obj_property name="ElementShortName">init_req_signal</obj_property>
+         <obj_property name="ObjectShortName">init_req_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/ready_signal" type="logic">
+         <obj_property name="ElementShortName">ready_signal</obj_property>
+         <obj_property name="ObjectShortName">ready_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_signal" type="logic">
+         <obj_property name="ElementShortName">chk_signal</obj_property>
+         <obj_property name="ObjectShortName">chk_signal</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/req_valid" type="logic">
+         <obj_property name="ElementShortName">req_valid</obj_property>
+         <obj_property name="ObjectShortName">req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_ivalid" type="logic">
+         <obj_property name="ElementShortName">chk_ivalid</obj_property>
+         <obj_property name="ObjectShortName">chk_ivalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_iread" type="logic">
+         <obj_property name="ElementShortName">chk_iread</obj_property>
+         <obj_property name="ObjectShortName">chk_iread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_iaddr" type="array">
+         <obj_property name="ElementShortName">chk_iaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_iaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dvalid" type="logic">
+         <obj_property name="ElementShortName">chk_dvalid</obj_property>
+         <obj_property name="ObjectShortName">chk_dvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dbypass" type="logic">
+         <obj_property name="ElementShortName">chk_dbypass</obj_property>
+         <obj_property name="ObjectShortName">chk_dbypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dread" type="logic">
+         <obj_property name="ElementShortName">chk_dread</obj_property>
+         <obj_property name="ObjectShortName">chk_dread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dwrite" type="logic">
+         <obj_property name="ElementShortName">chk_dwrite</obj_property>
+         <obj_property name="ObjectShortName">chk_dwrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_daddr" type="array">
+         <obj_property name="ElementShortName">chk_daddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_daddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_ddata" type="array">
+         <obj_property name="ElementShortName">chk_ddata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_ddata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_datamode" type="array">
+         <obj_property name="ElementShortName">chk_datamode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_datamode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_unsigned" type="logic">
+         <obj_property name="ElementShortName">chk_unsigned</obj_property>
+         <obj_property name="ObjectShortName">chk_unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_imiss" type="logic">
+         <obj_property name="ElementShortName">chk_imiss</obj_property>
+         <obj_property name="ObjectShortName">chk_imiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dmiss" type="logic">
+         <obj_property name="ElementShortName">chk_dmiss</obj_property>
+         <obj_property name="ObjectShortName">chk_dmiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_valid" type="logic">
+         <obj_property name="ElementShortName">chk_valid</obj_property>
+         <obj_property name="ObjectShortName">chk_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_icache_data" type="array">
+         <obj_property name="ElementShortName">chk_icache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_icache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/chk_dcache_data" type="array">
+         <obj_property name="ElementShortName">chk_dcache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">chk_dcache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_valid" type="logic">
+         <obj_property name="ElementShortName">dat_valid</obj_property>
+         <obj_property name="ObjectShortName">dat_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_iread" type="logic">
+         <obj_property name="ElementShortName">dat_iread</obj_property>
+         <obj_property name="ObjectShortName">dat_iread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_iaddr" type="array">
+         <obj_property name="ElementShortName">dat_iaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_iaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_dbypass" type="logic">
+         <obj_property name="ElementShortName">dat_dbypass</obj_property>
+         <obj_property name="ObjectShortName">dat_dbypass</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_dread" type="logic">
+         <obj_property name="ElementShortName">dat_dread</obj_property>
+         <obj_property name="ObjectShortName">dat_dread</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_dwrite" type="logic">
+         <obj_property name="ElementShortName">dat_dwrite</obj_property>
+         <obj_property name="ObjectShortName">dat_dwrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_daddr" type="array">
+         <obj_property name="ElementShortName">dat_daddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_daddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_ddata" type="array">
+         <obj_property name="ElementShortName">dat_ddata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_ddata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_datamode" type="array">
+         <obj_property name="ElementShortName">dat_datamode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_datamode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_unsigned" type="logic">
+         <obj_property name="ElementShortName">dat_unsigned</obj_property>
+         <obj_property name="ObjectShortName">dat_unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_imiss" type="logic">
+         <obj_property name="ElementShortName">dat_imiss</obj_property>
+         <obj_property name="ObjectShortName">dat_imiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_dmiss" type="logic">
+         <obj_property name="ElementShortName">dat_dmiss</obj_property>
+         <obj_property name="ObjectShortName">dat_dmiss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_icache_data" type="array">
+         <obj_property name="ElementShortName">dat_icache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_icache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/dat_dcache_data" type="array">
+         <obj_property name="ElementShortName">dat_dcache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">dat_dcache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/byte_offset_shift" type="array">
+         <obj_property name="ElementShortName">byte_offset_shift[5:0]</obj_property>
+         <obj_property name="ObjectShortName">byte_offset_shift[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/datamode_mask" type="array">
+         <obj_property name="ElementShortName">datamode_mask[31:0]</obj_property>
+         <obj_property name="ObjectShortName">datamode_mask[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_data" type="array">
+         <obj_property name="ElementShortName">DMEM_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_data_shift" type="array">
+         <obj_property name="ElementShortName">DMEM_data_shift[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_data_shift[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_addr" type="array">
+         <obj_property name="ElementShortName">DMEM_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_datamode" type="array">
+         <obj_property name="ElementShortName">DMEM_datamode[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DMEM_datamode[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DMEM_unsigned" type="logic">
+         <obj_property name="ElementShortName">DMEM_unsigned</obj_property>
+         <obj_property name="ObjectShortName">DMEM_unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DAT_IDLE" type="array">
+         <obj_property name="ElementShortName">DAT_IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DAT_CHK" type="array">
+         <obj_property name="ElementShortName">DAT_CHK[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_CHK[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DAT_REQ" type="array">
+         <obj_property name="ElementShortName">DAT_REQ[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_REQ[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/Cache_Controller/inst/DAT_WAIT" type="array">
+         <obj_property name="ElementShortName">DAT_WAIT[1:0]</obj_property>
+         <obj_property name="ObjectShortName">DAT_WAIT[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group37025" type="group">
+      <obj_property name="label">DCache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_valid_i" type="logic">
+         <obj_property name="ElementShortName">req_valid_i</obj_property>
+         <obj_property name="ObjectShortName">req_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_re_i" type="logic">
+         <obj_property name="ElementShortName">req_re_i</obj_property>
+         <obj_property name="ObjectShortName">req_re_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_we_i" type="logic">
+         <obj_property name="ElementShortName">req_we_i</obj_property>
+         <obj_property name="ObjectShortName">req_we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_addr_i" type="array">
+         <obj_property name="ElementShortName">req_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_data_i" type="array">
+         <obj_property name="ElementShortName">req_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_data_mode_i" type="array">
+         <obj_property name="ElementShortName">req_data_mode_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_mode_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_valid_i" type="logic">
+         <obj_property name="ElementShortName">blk_valid_i</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_addr_i" type="array">
+         <obj_property name="ElementShortName">blk_addr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_data_i" type="array">
+         <obj_property name="ElementShortName">blk_data_i[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_i[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_douta" type="array">
+         <obj_property name="ElementShortName">bram_douta[127:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_douta[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_doutb" type="array">
+         <obj_property name="ElementShortName">bram_doutb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_doutb[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_hit_o" type="logic">
+         <obj_property name="ElementShortName">req_hit_o</obj_property>
+         <obj_property name="ObjectShortName">req_hit_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/req_data_o" type="array">
+         <obj_property name="ElementShortName">req_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">req_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_valid_o" type="logic">
+         <obj_property name="ElementShortName">blk_valid_o</obj_property>
+         <obj_property name="ObjectShortName">blk_valid_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_addr_o" type="array">
+         <obj_property name="ElementShortName">blk_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/blk_data_o" type="array">
+         <obj_property name="ElementShortName">blk_data_o[127:0]</obj_property>
+         <obj_property name="ObjectShortName">blk_data_o[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_addra" type="array">
+         <obj_property name="ElementShortName">bram_addra[7:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addra[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_dina" type="array">
+         <obj_property name="ElementShortName">bram_dina[127:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_dina[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_wea" type="array">
+         <obj_property name="ElementShortName">bram_wea[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_wea[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_addrb" type="array">
+         <obj_property name="ElementShortName">bram_addrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_addrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_dinb" type="array">
+         <obj_property name="ElementShortName">bram_dinb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_dinb[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/bram_web" type="array">
+         <obj_property name="ElementShortName">bram_web[15:0]</obj_property>
+         <obj_property name="ObjectShortName">bram_web[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/way" type="array">
+         <obj_property name="ElementShortName">way[31:0]</obj_property>
+         <obj_property name="ObjectShortName">way[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/set" type="array">
+         <obj_property name="ElementShortName">set[31:0]</obj_property>
+         <obj_property name="ObjectShortName">set[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR_state" type="logic">
+         <obj_property name="ElementShortName">BR_state</obj_property>
+         <obj_property name="ObjectShortName">BR_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_req_valid" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_valid</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_req_we" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_we</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_req_re" type="logic">
+         <obj_property name="ElementShortName">AD2CS_req_re</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_req_addr" type="array">
+         <obj_property name="ElementShortName">AD2CS_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_req_data" type="array">
+         <obj_property name="ElementShortName">AD2CS_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_req_valid" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_valid</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_req_we" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_we</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_req_re" type="logic">
+         <obj_property name="ElementShortName">CS2BR_req_re</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_req_addr" type="array">
+         <obj_property name="ElementShortName">CS2BR_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_req_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_req_valid" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_valid</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_req_we" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_we</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_req_re" type="logic">
+         <obj_property name="ElementShortName">BR2DC_req_re</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_re</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_req_addr" type="array">
+         <obj_property name="ElementShortName">BR2DC_req_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_req_data" type="array">
+         <obj_property name="ElementShortName">BR2DC_req_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_req_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD_tag" type="array">
+         <obj_property name="ElementShortName">AD_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD_index" type="array">
+         <obj_property name="ElementShortName">AD_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD_offset" type="array">
+         <obj_property name="ElementShortName">AD_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">AD_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_tag" type="array">
+         <obj_property name="ElementShortName">AD2CS_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_index" type="array">
+         <obj_property name="ElementShortName">AD2CS_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/AD2CS_offset" type="array">
+         <obj_property name="ElementShortName">AD2CS_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">AD2CS_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_tag" type="array">
+         <obj_property name="ElementShortName">CS2BR_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_index" type="array">
+         <obj_property name="ElementShortName">CS2BR_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_offset" type="array">
+         <obj_property name="ElementShortName">CS2BR_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_tag" type="array">
+         <obj_property name="ElementShortName">BR2DC_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_index" type="array">
+         <obj_property name="ElementShortName">BR2DC_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_offset" type="array">
+         <obj_property name="ElementShortName">BR2DC_offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/ValidBits" type="array">
+         <obj_property name="ElementShortName">ValidBits[3:0][63:0]</obj_property>
+         <obj_property name="ObjectShortName">ValidBits[3:0][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/DirtyBits" type="array">
+         <obj_property name="ElementShortName">DirtyBits[3:0][63:0]</obj_property>
+         <obj_property name="ObjectShortName">DirtyBits[3:0][63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/LRUBits" type="array">
+         <obj_property name="ElementShortName">LRUBits[3:0][63:0][1:0]</obj_property>
+         <obj_property name="ObjectShortName">LRUBits[3:0][63:0][1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/Tags" type="array">
+         <obj_property name="ElementShortName">Tags[3:0][63:0][17:0]</obj_property>
+         <obj_property name="ObjectShortName">Tags[3:0][63:0][17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_NWayHits" type="array">
+         <obj_property name="ElementShortName">CS2BR_NWayHits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_NWayHits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_NWayHits" type="array">
+         <obj_property name="ElementShortName">BR2DC_NWayHits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_NWayHits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_hit" type="logic">
+         <obj_property name="ElementShortName">CS_hit</obj_property>
+         <obj_property name="ObjectShortName">CS_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_hit" type="logic">
+         <obj_property name="ElementShortName">CS2BR_hit</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_hit" type="logic">
+         <obj_property name="ElementShortName">BR2DC_hit</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_hit_way" type="array">
+         <obj_property name="ElementShortName">CS_hit_way[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_hit_way[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_cache_data" type="array">
+         <obj_property name="ElementShortName">CS_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_cache_miss" type="logic">
+         <obj_property name="ElementShortName">CS_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">CS_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_cache_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_cache_miss" type="logic">
+         <obj_property name="ElementShortName">CS2BR_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_cache_data" type="array">
+         <obj_property name="ElementShortName">BR2DC_cache_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_cache_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_cache_miss" type="logic">
+         <obj_property name="ElementShortName">BR2DC_cache_miss</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_cache_miss</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_bypass_addr" type="array">
+         <obj_property name="ElementShortName">BR2DC_bypass_addr[32:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_bypass_addr[32:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/BR2DC_bypass_BlkDecision" type="array">
+         <obj_property name="ElementShortName">BR2DC_bypass_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">BR2DC_bypass_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_LRU0" type="array">
+         <obj_property name="ElementShortName">CS_LRU0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRU0[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_LRUNum0" type="array">
+         <obj_property name="ElementShortName">CS_LRUNum0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUNum0[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_LRU1" type="array">
+         <obj_property name="ElementShortName">CS_LRU1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRU1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_LRUNum1" type="array">
+         <obj_property name="ElementShortName">CS_LRUNum1[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUNum1[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_BlkDecision" type="array">
+         <obj_property name="ElementShortName">CS_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_BlkDecision" type="array">
+         <obj_property name="ElementShortName">CS2BR_BlkDecision[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_BlkDecision[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_NonValidBlk" type="logic">
+         <obj_property name="ElementShortName">CS_NonValidBlk</obj_property>
+         <obj_property name="ObjectShortName">CS_NonValidBlk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_NonValidBlkNum" type="array">
+         <obj_property name="ElementShortName">CS_NonValidBlkNum[2:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_NonValidBlkNum[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS_LRUTemp" type="array">
+         <obj_property name="ElementShortName">CS_LRUTemp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CS_LRUTemp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_wb" type="logic">
+         <obj_property name="ElementShortName">CS2BR_wb</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_wb_tag" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_tag[17:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_tag[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_wb_index" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CS2BR_wb_data" type="array">
+         <obj_property name="ElementShortName">CS2BR_wb_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">CS2BR_wb_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/datamode_mask" type="array">
+         <obj_property name="ElementShortName">datamode_mask[31:0]</obj_property>
+         <obj_property name="ObjectShortName">datamode_mask[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/datamode_en_mask" type="array">
+         <obj_property name="ElementShortName">datamode_en_mask[3:0]</obj_property>
+         <obj_property name="ObjectShortName">datamode_en_mask[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/byte_offset_shift" type="array">
+         <obj_property name="ElementShortName">byte_offset_shift[5:0]</obj_property>
+         <obj_property name="ObjectShortName">byte_offset_shift[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/prev_blk_addr" type="array">
+         <obj_property name="ElementShortName">prev_blk_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">prev_blk_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/stall" type="logic">
+         <obj_property name="ElementShortName">stall</obj_property>
+         <obj_property name="ObjectShortName">stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/debug" type="array">
+         <obj_property name="ElementShortName">debug[31:0]</obj_property>
+         <obj_property name="ObjectShortName">debug[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/NWAY" type="array">
+         <obj_property name="ElementShortName">NWAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NWAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/CACHESIZE" type="array">
+         <obj_property name="ElementShortName">CACHESIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CACHESIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/SETSPWAY" type="array">
+         <obj_property name="ElementShortName">SETSPWAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SETSPWAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/INDEXSIZE" type="array">
+         <obj_property name="ElementShortName">INDEXSIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">INDEXSIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/TAGSIZE" type="array">
+         <obj_property name="ElementShortName">TAGSIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TAGSIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/DATASIZE" type="array">
+         <obj_property name="ElementShortName">DATASIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATASIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/OFFSETBITS" type="array">
+         <obj_property name="ElementShortName">OFFSETBITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">OFFSETBITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/COMMIT" type="array">
+         <obj_property name="ElementShortName">COMMIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">COMMIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/DCache/inst/WAIT" type="array">
+         <obj_property name="ElementShortName">WAIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group37126" type="group">
+      <obj_property name="label">DBRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/clka" type="logic">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/wea" type="array">
+         <obj_property name="ElementShortName">wea[15:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/addra" type="array">
+         <obj_property name="ElementShortName">addra[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/dina" type="array">
+         <obj_property name="ElementShortName">dina[127:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/douta" type="array">
+         <obj_property name="ElementShortName">douta[127:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/clkb" type="logic">
+         <obj_property name="ElementShortName">clkb</obj_property>
+         <obj_property name="ObjectShortName">clkb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/web" type="array">
+         <obj_property name="ElementShortName">web[15:0]</obj_property>
+         <obj_property name="ObjectShortName">web[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/addrb" type="array">
+         <obj_property name="ElementShortName">addrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">addrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/dinb" type="array">
+         <obj_property name="ElementShortName">dinb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">dinb[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/blk_mem_gen_0/doutb" type="array">
+         <obj_property name="ElementShortName">doutb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">doutb[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2563" type="group">
+      <obj_property name="label">Branch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/CTL_EX_Unsigned" type="logic">
+         <obj_property name="ElementShortName">CTL_EX_Unsigned</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Unsigned</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/CTL_EX_Jump" type="logic">
+         <obj_property name="ElementShortName">CTL_EX_Jump</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/CTL_EX_BranchOp" type="array">
+         <obj_property name="ElementShortName">CTL_EX_BranchOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_BranchOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/CTL_EX_Opcode" type="array">
+         <obj_property name="ElementShortName">CTL_EX_Opcode[6:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_EX_Opcode[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/EX_ALU_Zero" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_Zero</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/EX_ALU_LTS" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_LTS</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_LTS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/EX_ALU_LTU" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_LTU</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_LTU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">Branch_Taken</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2572" type="group">
+      <obj_property name="label">Hazard</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">Branch_Taken</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/ID_Rs1" type="array">
+         <obj_property name="ElementShortName">ID_Rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/ID_Rs2" type="array">
+         <obj_property name="ElementShortName">ID_Rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_Rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/EX_MemRd" type="logic">
+         <obj_property name="ElementShortName">EX_MemRd</obj_property>
+         <obj_property name="ObjectShortName">EX_MemRd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/EX_Rs1" type="array">
+         <obj_property name="ElementShortName">EX_Rs1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rs1[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/EX_Rs2" type="array">
+         <obj_property name="ElementShortName">EX_Rs2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rs2[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/EX_Rd" type="array">
+         <obj_property name="ElementShortName">EX_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/MEM_RegWR" type="logic">
+         <obj_property name="ElementShortName">MEM_RegWR</obj_property>
+         <obj_property name="ObjectShortName">MEM_RegWR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/MEM_Rd" type="array">
+         <obj_property name="ElementShortName">MEM_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/WB_RegWr" type="logic">
+         <obj_property name="ElementShortName">WB_RegWr</obj_property>
+         <obj_property name="ObjectShortName">WB_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/WB_Rd" type="array">
+         <obj_property name="ElementShortName">WB_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">WB_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/Hazard_Stall" type="logic">
+         <obj_property name="ElementShortName">Hazard_Stall</obj_property>
+         <obj_property name="ObjectShortName">Hazard_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/ALU_ForwardA" type="array">
+         <obj_property name="ElementShortName">ALU_ForwardA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ForwardA[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/ALU_ForwardB" type="array">
+         <obj_property name="ElementShortName">ALU_ForwardB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ForwardB[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group37191" type="group">
+      <obj_property name="label">HL Flow</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/CTL_Stall" type="logic">
+         <obj_property name="ElementShortName">CTL_Stall</obj_property>
+         <obj_property name="ObjectShortName">CTL_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/CTL_Return" type="logic">
+         <obj_property name="ElementShortName">CTL_Return</obj_property>
+         <obj_property name="ObjectShortName">CTL_Return</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/Branch_Taken" type="logic">
+         <obj_property name="ElementShortName">Branch_Taken</obj_property>
+         <obj_property name="ObjectShortName">Branch_Taken</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/CTL_mepc" type="array">
+         <obj_property name="ElementShortName">CTL_mepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_mepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/PCBranchAddr" type="array">
+         <obj_property name="ElementShortName">PCBranchAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCBranchAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/PC_Reg" type="array">
+         <obj_property name="ElementShortName">PC_Reg[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PC_Reg[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_PC" type="array">
+         <obj_property name="ElementShortName">IF2ID_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/IF2ID_Instruction" type="array">
+         <obj_property name="ElementShortName">IF2ID_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF2ID_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/GPRegs/GPRegs" type="array">
+         <obj_property name="ElementShortName">GPRegs[31:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">GPRegs[31:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_PC" type="array">
+         <obj_property name="ElementShortName">ID2EX_PC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_PC[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Instruction" type="array">
+         <obj_property name="ElementShortName">ID2EX_Instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd1" type="array">
+         <obj_property name="ElementShortName">ID2EX_RegRd1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_RegRd1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_RegRd2" type="array">
+         <obj_property name="ElementShortName">ID2EX_RegRd2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_RegRd2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/ID2EX_Immediate" type="array">
+         <obj_property name="ElementShortName">ID2EX_Immediate[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID2EX_Immediate[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_A" type="array">
+         <obj_property name="ElementShortName">EX_ALU_A[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_A[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_B" type="array">
+         <obj_property name="ElementShortName">EX_ALU_B[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_B[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/EX_ALU_Out" type="array">
+         <obj_property name="ElementShortName">EX_ALU_Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/EX_ALU_Zero" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_Zero</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_Zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_EXBranch_Branc_0/EX_ALU_LTU" type="logic">
+         <obj_property name="ElementShortName">EX_ALU_LTU</obj_property>
+         <obj_property name="ObjectShortName">EX_ALU_LTU</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_ALUResult" type="array">
+         <obj_property name="ElementShortName">EX2MEM_ALUResult[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_ALUResult[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/EX2MEM_DMEM_WriteData" type="array">
+         <obj_property name="ElementShortName">EX2MEM_DMEM_WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX2MEM_DMEM_WriteData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/CTL_DMEM_addr_o" type="array">
+         <obj_property name="ElementShortName">CTL_DMEM_addr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_DMEM_addr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_ControlUnit_Ve_0/CC_Daddr_o" type="array">
+         <obj_property name="ElementShortName">CC_Daddr_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Daddr_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_ControlUnit_Ve_0/CC_Ddata_o" type="array">
+         <obj_property name="ElementShortName">CC_Ddata_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CC_Ddata_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_ControlUnit_Ve_0/CC_Dre_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dre_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dre_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_ControlUnit_Ve_0/CC_Dwe_o" type="logic">
+         <obj_property name="ElementShortName">CC_Dwe_o</obj_property>
+         <obj_property name="ObjectShortName">CC_Dwe_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/CTL_DMEM_data_i" type="array">
+         <obj_property name="ElementShortName">CTL_DMEM_data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_DMEM_data_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/CTL_DMEM_data_o" type="array">
+         <obj_property name="ElementShortName">CTL_DMEM_data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CTL_DMEM_data_o[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RV32I_HazardUnit_Ver_0/WB_RegWr" type="logic">
+         <obj_property name="ElementShortName">WB_RegWr</obj_property>
+         <obj_property name="ObjectShortName">WB_RegWr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_Rd" type="array">
+         <obj_property name="ElementShortName">MEM2WB_Rd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_Rd[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_ALUAddr" type="array">
+         <obj_property name="ElementShortName">MEM2WB_ALUAddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_ALUAddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/RISCV32I_EXBranch_Da_0/inst/MEM2WB_DMEM_ReadData" type="array">
+         <obj_property name="ElementShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM2WB_DMEM_ReadData[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group39560" type="group">
+      <obj_property name="label">AXI GPIO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_aresetn" type="logic">
+         <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_awaddr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awaddr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_wstrb" type="array">
+         <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_araddr[8:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_araddr[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/s_axi_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/gpio_io_o" type="array">
+         <obj_property name="ElementShortName">gpio_io_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">gpio_io_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/d5/design_5_i/axi_gpio_0/S_AXI" type="protoinst">
+         <obj_property name="children_use_element_short_name">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+         <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="Render_Data">/tb_top/d5/design_5_i/axi_gpio_0/S_AXI.readWriteSummary</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CellHeight">36</obj_property>
+         <obj_property name="ElementShortName">S_AXI</obj_property>
+         <obj_property name="ObjectShortName">S_AXI</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group49116" type="group">
+      <obj_property name="label">AXI Interconnect</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group5469" type="group">
+      <obj_property name="label">test</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

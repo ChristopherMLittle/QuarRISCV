@@ -1,0 +1,84 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Company: Independent
+// Engineer: Christopher M Little, Computer Engineer and Iowa State EE/CprE Alum
+// 
+// Create Date: 0X/XX/2020
+// Design Name: 
+// Module Name: COMPONENT_tb
+// Project Name: 
+// Target Devices: Any
+// Tool Versions: 
+// Description: Test bench to ensure custom designed COMPONENT operates as desired. 
+// 
+// Dependencies: COMPONENT.v
+// 
+// Revision: 0.01
+//
+// History:
+// Revision 0.01 - File Created
+//
+// Current Revision Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+`timescale 1ns/1ps
+
+//NOTE: Timing
+//      We want to keep time as an integer for better and easier tracking.
+//      Default time convention is that period = 10ns. 
+//      Half of a period = 5 ns. 
+//      Number of total periods (clock cycles) at time = time/10ns. 
+//      Non-Event value setting should occur at 
+
+module COMPONENT_tb();
+  //Test Bench DUT Input Registers
+    reg         clk                     ;
+    reg         resetn                  ;
+    reg         COMPONENT_logic_input_i ;
+    reg[SIZE:0] COMPONENT_vector_input_i;
+
+  //Test Bench DUT Outputs
+    wire          COMPONENT_logic_output_o;
+    wire[SIZE:0]  COMPONENT_vector_output_o;
+
+    COMPONENT dut(
+        .clk(clk),
+        .resetn(resetn),
+        .COMPONENT_logic_input_i(COMPONENT_logic_input_i),
+        .COMPONENT_vector_input_i(COMPONENT_vector_input_i),
+        .COMPONENT_logic_output_o(COMPONENT_logic_output_o),
+        .COMPONENT_vector_output_o(COMPONENT_vector_output_o)
+    );
+
+    always@(*)
+        #5 clk <= ~clk;
+    
+    initial
+    begin
+    // "Power On" state of DUT inputs (zeros or test initial condition)
+        clk                     = 0;
+        resetn                  = 0;
+        COMPONENT_logic_input_i = 0;
+        COMPONENT_logic_input_i = 0;
+
+    // End Reset
+    #5  resetn      = 0;
+    #5
+
+    // Testing Mid-Transition Input Effects on Non-Reg Procedural Blocks
+
+    // Testing Expected COMPONENT-specific RTL Behavior
+
+    // Testing for Non-Spec Input Behavior
+
+    // Reset at Mid-clock
+
+    // Continuing RTL Behavior
+
+    end
+
+    
+    
+
+
+endmodule

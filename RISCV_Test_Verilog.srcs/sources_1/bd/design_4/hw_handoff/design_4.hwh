@@ -1,0 +1,2578 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jul 12 02:17:24 2020" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_4" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="clock"/>
+        <CONNECTION INSTANCE="DCache" PORT="clk"/>
+        <CONNECTION INSTANCE="ICache" PORT="clk"/>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="clk"/>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="cpu_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="meip" SIGIS="undef" SIGNAME="External_Ports_meip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="meip"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mtip" SIGIS="undef" SIGNAME="External_Ports_mtip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mtip"/>
+        <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mtip_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="resetn" SIGIS="undef" SIGNAME="External_Ports_resetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="resetn"/>
+        <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="resetn"/>
+        <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="resetn"/>
+        <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="resetn"/>
+        <CONNECTION INSTANCE="DCache" PORT="resetn"/>
+        <CONNECTION INSTANCE="ICache" PORT="resetn"/>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="resetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="seip" SIGIS="undef" SIGNAME="External_Ports_seip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="seip"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="stip" SIGIS="undef" SIGNAME="External_Ports_stip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="stip"/>
+        <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="stip_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ueip" SIGIS="undef" SIGNAME="External_Ports_ueip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ueip"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="utip" SIGIS="undef" SIGNAME="External_Ports_utip">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="utip"/>
+        <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="utip_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_INIT_TXN_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_INIT_TXN_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_INIT_TXN_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_IREQ_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IREQ_VALID_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IREQ_VALID_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MIC_IREQ_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IREQ_ADDR_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IREQ_ADDR_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_DREQ_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_VALID_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_VALID_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MIC_DREQ_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_ADDR_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_ADDR_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_IBLK_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_VALID_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IBLK_VALID_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MIC_IBLK_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_ADDR_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IBLK_ADDR_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="127" NAME="MIC_IBLK_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_DATA_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IBLK_DATA_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_DBLK_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_VALID_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DBLK_VALID_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MIC_DBLK_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_ADDR_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DBLK_ADDR_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="127" NAME="MIC_DBLK_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_DATA_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DBLK_DATA_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="MIC_DONE_i" SIGIS="undef" SIGNAME="External_Ports_MIC_DONE_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DONE_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="127" NAME="MIC_IREQ_DATA_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MIC_IREQ_DATA_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_IREQ_DATA_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="127" NAME="MIC_DREQ_DATA_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MIC_DREQ_DATA_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_DATA_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="bram_clk" SIGIS="undef" SIGNAME="External_Ports_bram_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
+        <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
+        <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
+        <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MIC_DREQ_RW_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_RW_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_RW_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="MIC_DREQ_DATAMODE_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_DATAMODE_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_DATAMODE_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MIC_DREQ_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_DATA_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Cache_Controller" PORT="MIC_DREQ_DATA_o"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Cache_Controller" HWVERSION="1.0" INSTANCE="Cache_Controller" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HarvardCacheController" VLNV="xilinx.com:module_ref:HarvardCacheController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DAT_IDLE" VALUE="&quot;00&quot;"/>
+        <PARAMETER NAME="DAT_CHK" VALUE="&quot;01&quot;"/>
+        <PARAMETER NAME="DAT_REQ" VALUE="&quot;10&quot;"/>
+        <PARAMETER NAME="DAT_WAIT" VALUE="&quot;11&quot;"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_Cache_Controller_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="cpu_clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IMEM_valid_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ivalid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Ivalid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="IMEM_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Iaddr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Iaddr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IMEM_re_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ire_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Ire_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMEM_valid_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dvalid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dvalid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMEM_bypass" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dbypass_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dbypass_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMEM_re_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dre_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dre_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMEM_we_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dwe_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dwe_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DMEM_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Daddr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Daddr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DMEM_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ddata_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Ddata_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="DMEM_datamode_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dmode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dmode_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMEM_unsigned_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dunsigned_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Dunsigned_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ICache_Req_hit_i" SIGIS="undef" SIGNAME="ICache_req_hit_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_hit_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ICache_Req_data_i" RIGHT="0" SIGIS="undef" SIGNAME="ICache_req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ICache_Blk_valid_i" SIGIS="undef" SIGNAME="ICache_blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ICache_Blk_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="ICache_blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="ICache_Blk_data_i" RIGHT="0" SIGIS="undef" SIGNAME="ICache_blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DCache_Req_hit_i" SIGIS="undef" SIGNAME="DCache_req_hit_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_hit_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DCache_Req_data_i" RIGHT="0" SIGIS="undef" SIGNAME="DCache_req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DCache_Blk_valid_i" SIGIS="undef" SIGNAME="DCache_blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DCache_Blk_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="DCache_blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="DCache_Blk_data_i" RIGHT="0" SIGIS="undef" SIGNAME="DCache_blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MIC_DONE_i" SIGIS="undef" SIGNAME="External_Ports_MIC_DONE_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DONE_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="MIC_IREQ_DATA_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MIC_IREQ_DATA_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IREQ_DATA_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="MIC_DREQ_DATA_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MIC_DREQ_DATA_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_DATA_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MEM_rdy_o" SIGIS="undef" SIGNAME="Cache_Controller_MEM_rdy_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_rdy_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MEM_err_o" SIGIS="undef" SIGNAME="Cache_Controller_MEM_err_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_err_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="IMEM_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_IMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Idata_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DMEM_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CC_Ddata_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ICache_Req_valid_o" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ICache_Req_we_o" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_we_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_we_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ICache_Req_re_o" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_re_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_re_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ICache_Req_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ICache_Req_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ICache_Req_datamode_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_datamode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="req_data_mode_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ICache_Blk_valid_o" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ICache_Blk_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="ICache_Blk_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="blk_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DCache_Req_valid_o" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DCache_Req_we_o" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_we_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_we_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DCache_Req_re_o" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_re_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_re_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DCache_Req_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DCache_Req_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="DCache_Req_datamode_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_datamode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="req_data_mode_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="DCache_Blk_data_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DCache_Blk_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DCache_Blk_valid_o" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="blk_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_INIT_TXN_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_INIT_TXN_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_INIT_TXN_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_IREQ_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IREQ_VALID_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IREQ_VALID_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MIC_IREQ_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IREQ_ADDR_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IREQ_ADDR_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_DREQ_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_VALID_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_VALID_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_DREQ_RW_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_RW_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_RW_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="MIC_DREQ_DATAMODE_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_DATAMODE_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_DATAMODE_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MIC_DREQ_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_ADDR_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_ADDR_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MIC_DREQ_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DREQ_DATA_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DREQ_DATA_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_IBLK_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_VALID_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IBLK_VALID_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MIC_IBLK_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_ADDR_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IBLK_ADDR_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="MIC_IBLK_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_IBLK_DATA_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_IBLK_DATA_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MIC_DBLK_VALID_o" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_VALID_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DBLK_VALID_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MIC_DBLK_ADDR_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_ADDR_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DBLK_ADDR_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="MIC_DBLK_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_MIC_DBLK_DATA_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MIC_DBLK_DATA_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DCache" HWVERSION="1.0" INSTANCE="DCache" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Pipelined4WayLoneCache" VLNV="xilinx.com:module_ref:Pipelined4WayLoneCache:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NWAY" VALUE="4"/>
+        <PARAMETER NAME="CACHESIZE" VALUE="4096"/>
+        <PARAMETER NAME="SETSPWAY" VALUE="64"/>
+        <PARAMETER NAME="INDEXSIZE" VALUE="6"/>
+        <PARAMETER NAME="TAGSIZE" VALUE="18"/>
+        <PARAMETER NAME="DATASIZE" VALUE="128"/>
+        <PARAMETER NAME="OFFSETBITS" VALUE="2"/>
+        <PARAMETER NAME="COMMIT" VALUE="0"/>
+        <PARAMETER NAME="WAIT" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_DCache_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_valid_i" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_re_i" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_re_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_re_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_we_i" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_we_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_we_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="req_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="req_data_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="req_data_mode_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Req_datamode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_datamode_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="blk_valid_i" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="blk_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="blk_data_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DCache_Blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="bram_douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="bram_doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="req_hit_o" SIGIS="undef" SIGNAME="DCache_req_hit_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_hit_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="req_data_o" RIGHT="0" SIGIS="undef" SIGNAME="DCache_req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Req_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="blk_valid_o" SIGIS="undef" SIGNAME="DCache_blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="blk_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="DCache_blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="blk_data_o" RIGHT="0" SIGIS="undef" SIGNAME="DCache_blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DCache_Blk_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="bram_addra" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="bram_dina" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_wea" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="bram_addrb" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_addrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="bram_dinb" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_web" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ICache" HWVERSION="1.0" INSTANCE="ICache" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Pipelined4WayLoneCache" VLNV="xilinx.com:module_ref:Pipelined4WayLoneCache:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NWAY" VALUE="4"/>
+        <PARAMETER NAME="CACHESIZE" VALUE="4096"/>
+        <PARAMETER NAME="SETSPWAY" VALUE="64"/>
+        <PARAMETER NAME="INDEXSIZE" VALUE="6"/>
+        <PARAMETER NAME="TAGSIZE" VALUE="18"/>
+        <PARAMETER NAME="DATASIZE" VALUE="128"/>
+        <PARAMETER NAME="OFFSETBITS" VALUE="2"/>
+        <PARAMETER NAME="COMMIT" VALUE="0"/>
+        <PARAMETER NAME="WAIT" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_ICache_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_valid_i" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_re_i" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_re_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_re_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="req_we_i" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_we_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_we_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="req_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="req_data_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="req_data_mode_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Req_datamode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_datamode_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="blk_valid_i" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_valid_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="blk_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="blk_data_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_ICache_Blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="bram_douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="bram_doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="req_hit_o" SIGIS="undef" SIGNAME="ICache_req_hit_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_hit_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="req_data_o" RIGHT="0" SIGIS="undef" SIGNAME="ICache_req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Req_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="blk_valid_o" SIGIS="undef" SIGNAME="ICache_blk_valid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="blk_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="ICache_blk_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="blk_data_o" RIGHT="0" SIGIS="undef" SIGNAME="ICache_blk_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="ICache_Blk_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="bram_addra" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="bram_dina" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_wea" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="bram_addrb" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_addrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="bram_dinb" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="bram_web" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RISCV32I_EXBranch_Da_0" HWVERSION="1.0" INSTANCE="RISCV32I_EXBranch_Da_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RISCV32I_EXBranch_Datapath_Verilog_RTL" VLNV="xilinx.com:module_ref:RISCV32I_EXBranch_Datapath_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RISCV32I_EXBranch_Da_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_Stall" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_Stall">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="Stall"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_Interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Interrupt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Interrupt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_Exception" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Exception">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Exception"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_EPCSrc" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_EPCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_EPCSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_Return" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Ret_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Ret_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_rsvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_rsvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="rsvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_mtvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mtvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mtvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_stvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_stvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="stvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_utvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_utvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="utvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_mepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_sepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_uepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="uepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_IF2ID_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF2ID_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IF2ID_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_ID2EX_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID2EX_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_EX2MEM_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX2MEM_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="EX2MEM_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_MEM2WB_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_MEM2WB_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="MEM2WB_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_IF_PCWrite" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF_PCWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IF_PCWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_IF_PCSrc" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF_PCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IF_PCSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_IF2ID_Write" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF2ID_Write">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IF2ID_Write"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_ID2EX_Src" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_Src">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID2EX_Src"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_ID_RegWr" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID_RegWr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID_RegWr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_BU_BrJSrc" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_BrJSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_BrJSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_BU_Jump" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_Jump">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_Jump"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_BU_BranchOp" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_BranchOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_BranchOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_BU_PC" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_ALU_ForwardA" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_ALU_ForwardA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="ALU_ForwardA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_ALU_ForwardB" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_ALU_ForwardB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="ALU_ForwardB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_ALU_SrcA" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_SrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_SrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_ALU_SrcB" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_SrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_SrcB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_ALU_Unsigned" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_Unsigned">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_Unsigned"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_ALU_DataMode" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_DataMode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_DataMode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="CTL_ALU_Ctl" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_Ctl">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_Ctl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_WB_MEMToGPR" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_WB_MEMToGPR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="WB_MEMToGPR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_CSR_val_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX_CSR_Val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="EX_CSR_Val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_IMEM_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IMEM_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CTL_DMEM_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="DMEM_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CTL_ID_PC" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ID_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID_PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CTL_ID_Instruction" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ID_Instruction">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID_Instruction"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="CTL_EX_Opcode" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="CTL_EX_Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="CTL_EX_Funct3" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Funct3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="EX_Funct3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="CTL_EX_Funct7" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Funct7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="EX_Funct7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_ALU_Zero" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="EX_ALU_Zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_ALU_LTS" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_LTS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="EX_ALU_LTS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_ALU_LTU" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_LTU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="EX_ALU_LTU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_ALU_Overflow" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Overflow">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_Overflow"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_ALU_Err" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Err">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_Err"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="EX_ALU_A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="EX_ALU_B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="CTL_IMEM_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_IMEM_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="IMEM_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CTL_DMEM_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="DMEM_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CTL_DMEM_data_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="DMEM_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_ID_Rs1_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_ID_Rs1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="ID_Rs1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_ID_Rs2_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_ID_Rs2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="ID_Rs2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_EX_Rs1_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rs1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="EX_Rs1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_EX_Rs2_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rs2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="EX_Rs2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_EX_Rd_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="EX_Rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_MEM_Rd_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_MEM_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="MEM_Rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="HU_WB_Rd_o" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_WB_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="WB_Rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HU_WB_RegWr" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RV32I_ControlUnit_Ve_0" HWVERSION="1.0" INSTANCE="RV32I_ControlUnit_Ve_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RV32I_ControlUnit_Verilog_RTL" VLNV="xilinx.com:module_ref:RV32I_ControlUnit_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="EX_Branch" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RV32I_ControlUnit_Ve_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CSR_Val_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_CSR_Val_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="CSR_Val_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CSR_Req_illegal_i" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_illegal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="illegal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CSR_Req_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_CSR_DATA_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="CSR_DATA_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CC_rdy_i" SIGIS="undef" SIGNAME="Cache_Controller_MEM_rdy_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="MEM_rdy_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CC_err_i" SIGIS="undef" SIGNAME="Cache_Controller_MEM_err_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="MEM_err_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CC_Idata_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_IMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="IMEM_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="CC_Ddata_i" RIGHT="0" SIGIS="undef" SIGNAME="Cache_Controller_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ID_PC" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ID_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ID_PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ID_Instruction" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ID_Instruction">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ID_Instruction"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BU_Branch_Taken" SIGIS="undef" SIGNAME="RV32I_EXBranch_Branc_0_Branch_Taken">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="Branch_Taken"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Hazard_Stall" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_Hazard_Stall">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="Hazard_Stall"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="EX_Funct3" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Funct3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_EX_Funct3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="EX_Funct7" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Funct7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_EX_Funct7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="inst_mem_misaligned" SIGIS="undef"/>
+        <PORT DIR="I" NAME="inst_mem_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="csr_illegal" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_illegal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="illegal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load_mem_misaligned" SIGIS="undef"/>
+        <PORT DIR="I" NAME="load_mem_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="store_mem_misaligned" SIGIS="undef"/>
+        <PORT DIR="I" NAME="store_mem_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="inst_page_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="load_page_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="store_page_fault" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ALU_Overflow" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Overflow">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_Overflow"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ALU_Err" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Err">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_Err"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="LIC_New_IP" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_New_IP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="New_IP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="LIC_IP_Cause" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mcause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mcause"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="LIC_IP_Lvl" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_trap_priv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="trap_priv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="IMEM_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_IMEM_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IMEM_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DMEM_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_DMEM_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_DMEM_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DMEM_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_DMEM_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CSR_Val_en_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Val_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_val_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="CSR_Val_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Val_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_valaddr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CSR_Req_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_req_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="CSR_Req_mode_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_mode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_mode_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="CSR_Req_addr_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CSR_Req_data_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Ivalid_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ivalid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="IMEM_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CC_Iaddr_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Iaddr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="IMEM_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Ire_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ire_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="IMEM_re_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Dvalid_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dvalid_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_valid_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Dbypass_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dbypass_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_bypass"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Dre_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dre_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_re_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Dwe_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dwe_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_we_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CC_Daddr_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Daddr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CC_Ddata_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Ddata_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="CC_Dmode_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dmode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_datamode_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC_Dunsigned_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CC_Dunsigned_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Cache_Controller" PORT="DMEM_unsigned_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Stall" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_Stall">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_Stall"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IF2ID_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF2ID_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IF2ID_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ID2EX_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ID2EX_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="EX2MEM_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX2MEM_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_EX2MEM_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MEM2WB_Flush" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_MEM2WB_Flush">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_MEM2WB_Flush"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IF_PCWrite" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF_PCWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IF_PCWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IF_PCSrc" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF_PCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IF_PCSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="CTL_EPCSrc" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_EPCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_EPCSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IF2ID_Write" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IF2ID_Write">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IF2ID_Write"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ID_RegWr" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID_RegWr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="WB_RegWr"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ID_RegWr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ID_Unsigned" SIGIS="undef"/>
+        <PORT DIR="O" NAME="BU_BrJSrc" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_BrJSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_BU_BrJSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BU_Jump" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_Jump">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="CTL_EX_Jump"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_BU_Jump"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="BU_BranchOp" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_BranchOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="CTL_EX_BranchOp"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_BU_BranchOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="BU_PC" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_BU_PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ID2EX_Src" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_Src">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ID2EX_Src"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ID2EX_MemRd" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_MemRd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="EX_MemRd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="EX_CSR_Val" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX_CSR_Val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_CSR_val_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALU_Unsigned" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_Unsigned">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="CTL_EX_Unsigned"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_Unsigned"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALU_DataMode" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_DataMode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_DataMode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ALU_Ctl" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_Ctl">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_Ctl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALU_SrcA" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_SrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_SrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALU_SrcB" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_SrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_SrcB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="EX2MEM_RegWr" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX2MEM_RegWr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="MEM_RegWR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WB_MEMToGPR" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_WB_MEMToGPR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_WB_MEMToGPR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="IMEM_data_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_IMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_IMEM_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DMEM_data_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_DMEM_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_DMEM_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_Exception" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Exception">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ctl_exception_i"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_Exception"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_Interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Interrupt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_Interrupt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="epc" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_epc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="exvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_exvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ctl_exvec_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="tval" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_tval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ctl_tval"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LIC_IP_Ack" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_LIC_IP_Ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ctl_ip_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="CTL_Priv_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Priv_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="priv_lvl"/>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="csr_priv_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_Ret_o" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Ret_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="xret"/>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_Return"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CTL_Inst_Done" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Inst_Done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="inst_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="CTL_Inst_Event" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Inst_Event">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="inst_event"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RV32I_EXBranch_Branc_0" HWVERSION="1.0" INSTANCE="RV32I_EXBranch_Branc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RV32I_EXBranch_BranchUnit_Verilog_RTL" VLNV="xilinx.com:module_ref:RV32I_EXBranch_BranchUnit_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RV32I_EXBranch_Branc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="CTL_EX_Unsigned" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ALU_Unsigned">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ALU_Unsigned"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CTL_EX_Jump" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_Jump">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_Jump"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CTL_EX_BranchOp" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_BU_BranchOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_BranchOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="CTL_EX_Opcode" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_EX_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_EX_Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EX_ALU_Zero" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_Zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_Zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EX_ALU_LTS" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_LTS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_LTS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EX_ALU_LTU" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_CTL_ALU_LTU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_LTU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Branch_Taken" SIGIS="undef" SIGNAME="RV32I_EXBranch_Branc_0_Branch_Taken">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_HazardUnit_Ver_0" PORT="Branch_Taken"/>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="BU_Branch_Taken"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RV32I_HazardUnit_Ver_0" HWVERSION="1.0" INSTANCE="RV32I_HazardUnit_Ver_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RV32I_HazardUnit_Verilog_RTL" VLNV="xilinx.com:module_ref:RV32I_HazardUnit_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RV32I_HazardUnit_Ver_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Branch_Taken" SIGIS="undef" SIGNAME="RV32I_EXBranch_Branc_0_Branch_Taken">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_EXBranch_Branc_0" PORT="Branch_Taken"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ID_Rs1" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_ID_Rs1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_ID_Rs1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ID_Rs2" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_ID_Rs2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_ID_Rs2_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EX_MemRd" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID2EX_MemRd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID2EX_MemRd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="EX_Rs1" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rs1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_EX_Rs1_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="EX_Rs2" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rs2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_EX_Rs2_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="EX_Rd" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_EX_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_EX_Rd_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MEM_RegWR" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_EX2MEM_RegWr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="EX2MEM_RegWr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="MEM_Rd" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_MEM_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_MEM_Rd_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WB_RegWr" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_ID_RegWr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="ID_RegWr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="WB_Rd" RIGHT="0" SIGIS="undef" SIGNAME="RISCV32I_EXBranch_Da_0_HU_WB_Rd_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="HU_WB_Rd_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Hazard_Stall" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_Hazard_Stall">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="Hazard_Stall"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALU_ForwardA" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_ALU_ForwardA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_ForwardA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALU_ForwardB" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_HazardUnit_Ver_0_ALU_ForwardB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_ALU_ForwardB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RV32_CSR_Verilog_RTL_0" HWVERSION="1.0" INSTANCE="RV32_CSR_Verilog_RTL_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RV32_CSR_Verilog_RTL" VLNV="xilinx.com:module_ref:RV32_CSR_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RV32_CSR_Verilog_RTL_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="csr_val_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Val_en_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Val_en_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="csr_valaddr_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Val_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Val_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="csr_req_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="csr_mode_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_mode_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_mode_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="csr_priv_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Priv_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Priv_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="csr_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_addr_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_addr_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_data_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CSR_Req_data_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_data_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="utip_i" SIGIS="undef" SIGNAME="External_Ports_utip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="utip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="stip_i" SIGIS="undef" SIGNAME="External_Ports_stip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="stip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mtip_i" SIGIS="undef" SIGNAME="External_Ports_mtip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mtip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="inst_done" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Inst_Done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Inst_Done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="inst_event" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Inst_Event">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Inst_Event"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mstatus_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mstatus_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mstatus_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mip_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="sip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_sip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="sip_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="uip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_uip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="uip_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mepc_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="sepc_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_sepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="sepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="uepc_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_uepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="uepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mcause_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mcause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mcause"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="scause_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_scause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="scause"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ucause_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_ucause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="ucause"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mtval_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mtval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mtval"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="stval_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_stval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="stval"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="utval_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_utval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="utval"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CSR_Commit" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_CSR_Commit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="CSR_Commit"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="CSR_Commit_Lvl" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_trap_priv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="trap_priv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CSR_Val_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_CSR_Val_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Val_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="illegal" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_illegal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_illegal_i"/>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="csr_illegal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CSR_DATA_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_CSR_DATA_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CSR_Req_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uie" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_uie_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sie" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_sie_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mie" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_mie_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uip" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_uip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sip" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_sip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mip" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_mip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mstatus" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mstatus">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="mstatus_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mideleg" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mideleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_mideleg_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="medeleg" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_medeleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_medeleg_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sideleg" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sideleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_sideleg_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sedeleg" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sedeleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_Local_Interrupt_0" PORT="csr_sedeleg_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="rsvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_rsvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_rsvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mtvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mtvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_mtvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="stvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_stvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_stvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="utvec" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_utvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_utvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_mepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_sepc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RISCV32I_EXBranch_Da_0" PORT="CTL_uepc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RV32_Local_Interrupt_0" HWVERSION="1.0" INSTANCE="RV32_Local_Interrupt_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RV32_Local_Interrupt_Controller_Verilog_RTL" VLNV="xilinx.com:module_ref:RV32_Local_Interrupt_Controller_Verilog_RTL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_RV32_Local_Interrupt_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" SIGIS="rst" SIGNAME="External_Ports_resetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="priv_lvl" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Priv_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Priv_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_epc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="epc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="mstatus_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mstatus">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mstatus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ueip" SIGIS="undef" SIGNAME="External_Ports_ueip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ueip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="seip" SIGIS="undef" SIGNAME="External_Ports_seip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="meip" SIGIS="undef" SIGNAME="External_Ports_meip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="meip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="utip" SIGIS="undef" SIGNAME="External_Ports_utip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="utip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="stip" SIGIS="undef" SIGNAME="External_Ports_stip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="stip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mtip" SIGIS="undef" SIGNAME="External_Ports_mtip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mtip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_uie_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="uie"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_sie_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sie"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_mie_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mie">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mie"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_mip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_sip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_uip_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_uip">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="uip"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_mideleg_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_mideleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mideleg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_medeleg_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_medeleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="medeleg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_sideleg_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sideleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sideleg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="csr_sedeleg_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32_CSR_Verilog_RTL_0_sedeleg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sedeleg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ctl_exception_i" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Exception">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Exception"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ctl_exvec_i" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_exvec">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="exvec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ctl_tval" RIGHT="0" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_tval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="tval"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ctl_ip_ack" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_LIC_IP_Ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="LIC_IP_Ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="xret" SIGIS="undef" SIGNAME="RV32I_ControlUnit_Ve_0_CTL_Ret_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="CTL_Ret_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="New_IP" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_New_IP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="LIC_New_IP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="trap_priv" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_trap_priv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="CSR_Commit_Lvl"/>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="LIC_IP_Lvl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mip_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sip_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_sip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uip_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_uip_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="uip_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mepc_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="sepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_sepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="sepc_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="uepc" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_uepc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="uepc_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mcause" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mcause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mcause_i"/>
+            <CONNECTION INSTANCE="RV32I_ControlUnit_Ve_0" PORT="LIC_IP_Cause"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="scause" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_scause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="scause_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ucause" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_ucause">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="ucause_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mtval" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mtval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mtval_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="stval" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_stval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="stval_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="utval" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_utval">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="utval_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="mstatus_o" RIGHT="0" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_mstatus_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="mstatus_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CSR_Commit" SIGIS="undef" SIGNAME="RV32_Local_Interrupt_0_CSR_Commit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RV32_CSR_Verilog_RTL_0" PORT="CSR_Commit"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/blk_mem_gen_0" HWVERSION="8.4" INSTANCE="blk_mem_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="2"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="8"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="1"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="128"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="128"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="1"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="128"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="128"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_LATENCY_A" VALUE="1"/>
+        <PARAMETER NAME="C_READ_LATENCY_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="1"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="4"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     23.719602 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_blk_mem_gen_0_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="True_Dual_Port_RAM"/>
+        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="true"/>
+        <PARAMETER NAME="Byte_Size" VALUE="8"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="true"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="128"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="128"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="128"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="128"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
+        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
+        <PARAMETER NAME="READ_LATENCY_A" VALUE="1"/>
+        <PARAMETER NAME="READ_LATENCY_B" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="External_Ports_bram_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bram_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="External_Ports_bram_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bram_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_web"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_addrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="DCache_bram_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DCache" PORT="bram_doutb"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dinb"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="doutb"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="web"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/blk_mem_gen_1" HWVERSION="8.4" INSTANCE="blk_mem_gen_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="2"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="8"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="1"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="128"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="128"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="1"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="128"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="128"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_LATENCY_A" VALUE="1"/>
+        <PARAMETER NAME="C_READ_LATENCY_B" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="1"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="4"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     23.719602 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_4_blk_mem_gen_1_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="True_Dual_Port_RAM"/>
+        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="true"/>
+        <PARAMETER NAME="Byte_Size" VALUE="8"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="true"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="128"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="128"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="128"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="128"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
+        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
+        <PARAMETER NAME="READ_LATENCY_A" VALUE="1"/>
+        <PARAMETER NAME="READ_LATENCY_B" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="clk" SIGNAME="External_Ports_bram_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bram_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="External_Ports_bram_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bram_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_web">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_web"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_addrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="ICache_bram_dinb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ICache" PORT="bram_doutb"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="READ_LATENCY" VALUE="1"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dinb"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="doutb"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="web"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
