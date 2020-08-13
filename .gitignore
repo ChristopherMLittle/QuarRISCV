@@ -4,3 +4,4 @@ RISCV_Test_Verilog.runs
 RISCV_Test_Verilog.sim
 /usage_statistics_webtalk.xml
 /usage_statistics_webtalk.html
+/RISCV_Test_Verilog.srcs/sources_1/new/RV32I_EXBranch_BranchUnit_Verilog_RTL.v

@@ -1,0 +1,2395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>RV32I_Memory_Interface_Controller</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:master>
+        <spirit:addressSpaceRef spirit:addressSpaceRef="M00_AXI"/>
+      </spirit:master>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWLEN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awlen</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWSIZE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awsize</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWBURST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awburst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWLOCK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awlock</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWCACHE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awcache</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWQOS</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awqos</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wuser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_buser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARLEN</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arlen</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARSIZE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arsize</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARBURST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arburst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARLOCK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arlock</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARCACHE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arcache</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARQOS</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arqos</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_aruser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RUSER</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_ruser</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.ASSOCIATED_BUSIF">M00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXI_CLK.ASSOCIATED_RESET">m00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:addressSpaces>
+    <spirit:addressSpace>
+      <spirit:name>M00_AXI</spirit:name>
+      <spirit:range spirit:format="long" spirit:resolve="dependent" spirit:dependency="pow(2,(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1) + 1)" spirit:minimum="0" spirit:maximum="4294967296" spirit:rangeType="long">4294967296</spirit:range>
+      <spirit:width spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1) + 1">32</spirit:width>
+    </spirit:addressSpace>
+  </spirit:addressSpaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>RV32I_Memory_Interface_Controller_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5b9593a6</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>RV32I_Memory_Interface_Controller_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5b9593a6</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>c44b7b47</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>ireq_valid_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ireq_raddr_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_ADDRSIZE&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ireq_rdata_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_DATASIZE&apos;)) * 4) - 1)">127</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_valid_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_rw_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_datamode_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_addr_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_ADDRSIZE&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_wdata_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_DATASIZE&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dreq_rdata_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_DATASIZE&apos;)) * 4) - 1)">127</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iblk_valid_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iblk_waddr_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_ADDRSIZE&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iblk_wdata_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_DATASIZE&apos;)) * 4) - 1)">127</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dblk_valid_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dblk_waddr_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_ADDRSIZE&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dblk_wdata_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_CPU_DATASIZE&apos;)) * 4) - 1)">127</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_init_axi_txn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_txn_done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_error</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_awid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awlen</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awsize</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awburst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awlock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awcache</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awqos</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_AWUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_awuser" xilinx:dependency="spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_AWUSER_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wuser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_WUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_wuser" xilinx:dependency="spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_WUSER_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_bid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_buser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_BUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_buser" xilinx:dependency="spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_BUSER_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_arid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arlen</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arsize</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arburst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arlock</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arcache</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arqos</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_aruser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ARUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_aruser" xilinx:dependency="spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_ARUSER_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_rid" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_ruser</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXI_RUSER_WIDTH&apos;)) - 1)">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+        <spirit:vendorExtensions>
+          <xilinx:portInfo>
+            <xilinx:enablement>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.m00_axi_ruser" xilinx:dependency="spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_RUSER_WIDTH&apos;)) >0">true</xilinx:isEnabled>
+            </xilinx:enablement>
+          </xilinx:portInfo>
+        </spirit:vendorExtensions>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:name>
+        <spirit:displayName>C M00 AXI TARGET SLAVE BASE ADDR</spirit:displayName>
+        <spirit:description>Base address of targeted slave</spirit:description>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_TARGET_SLAVE_BASE_ADDR" spirit:order="3" spirit:bitStringLength="32">0x00000000</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_BURST_LEN</spirit:name>
+        <spirit:displayName>C M00 AXI BURST LEN</spirit:displayName>
+        <spirit:description>Burst Length. Supports 1, 2, 4, 8, 16, 32, 64, 128, 256 burst lengths</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_BURST_LEN" spirit:choiceRef="choice_list_85010fde" spirit:order="4">4</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_ID_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI ID WIDTH</spirit:displayName>
+        <spirit:description>Thread ID Width</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_ID_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_ID_WIDTH&apos;))))" spirit:order="5" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of Address Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_ADDR_WIDTH" spirit:order="6" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of Data Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_DATA_WIDTH" spirit:order="7" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_AWUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI AWUSER WIDTH</spirit:displayName>
+        <spirit:description>Width of User Write Address Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_AWUSER_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_AWUSER_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_AWUSER_WIDTH&apos;))))" spirit:order="8" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_ARUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI ARUSER WIDTH</spirit:displayName>
+        <spirit:description>Width of User Read Address Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_ARUSER_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_ARUSER_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_ARUSER_WIDTH&apos;))))" spirit:order="9" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_WUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI WUSER WIDTH</spirit:displayName>
+        <spirit:description>Width of User Write Data Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_WUSER_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_WUSER_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_WUSER_WIDTH&apos;))))" spirit:order="10" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_RUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI RUSER WIDTH</spirit:displayName>
+        <spirit:description>Width of User Read Data Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_RUSER_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_RUSER_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_RUSER_WIDTH&apos;))))" spirit:order="11" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXI_BUSER_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXI BUSER WIDTH</spirit:displayName>
+        <spirit:description>Width of User Response Bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXI_BUSER_WIDTH" spirit:dependency="((spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_BUSER_WIDTH&apos;)) &lt;= 0 ) + (spirit:decode(id(&apos;PARAM_VALUE.C_M00_AXI_BUSER_WIDTH&apos;))))" spirit:order="12" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_CPU_DATASIZE</spirit:name>
+        <spirit:displayName>C M00 Cpu Datasize</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_CPU_DATASIZE">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_CPU_ADDRSIZE</spirit:name>
+        <spirit:displayName>C M00 Cpu Addrsize</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_CPU_ADDRSIZE">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_85010fde</spirit:name>
+      <spirit:enumeration>1</spirit:enumeration>
+      <spirit:enumeration>2</spirit:enumeration>
+      <spirit:enumeration>4</spirit:enumeration>
+      <spirit:enumeration>8</spirit:enumeration>
+      <spirit:enumeration>16</spirit:enumeration>
+      <spirit:enumeration>32</spirit:enumeration>
+      <spirit:enumeration>64</spirit:enumeration>
+      <spirit:enumeration>128</spirit:enumeration>
+      <spirit:enumeration>256</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/RV32I_Memory_Interface_Controller_v1_0_M00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/RV32I_Memory_Interface_Controller_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_789f39da</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/RV32I_Memory_Interface_Controller_v1_0_M00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/RV32I_Memory_Interface_Controller_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/RV32I_Memory_Interface_Controller_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_c44b7b47</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_TARGET_SLAVE_BASE_ADDR</spirit:name>
+      <spirit:displayName>C M00 AXI TARGET SLAVE BASE ADDR</spirit:displayName>
+      <spirit:description>Base address of targeted slave</spirit:description>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_TARGET_SLAVE_BASE_ADDR" spirit:order="3" spirit:bitStringLength="32">0x00000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_BURST_LEN</spirit:name>
+      <spirit:displayName>C M00 AXI BURST LEN</spirit:displayName>
+      <spirit:description>Burst Length. Supports 1, 2, 4, 8, 16, 32, 64, 128, 256 burst lengths</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_BURST_LEN" spirit:choiceRef="choice_list_85010fde" spirit:order="4">4</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_ID_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI ID WIDTH</spirit:displayName>
+      <spirit:description>Thread ID Width</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_ID_WIDTH" spirit:order="5" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of Address Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_ADDR_WIDTH" spirit:order="6" spirit:rangeType="long">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of Data Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="7">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_AWUSER_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI AWUSER WIDTH</spirit:displayName>
+      <spirit:description>Width of User Write Address Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_AWUSER_WIDTH" spirit:order="8" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_ARUSER_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI ARUSER WIDTH</spirit:displayName>
+      <spirit:description>Width of User Read Address Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_ARUSER_WIDTH" spirit:order="9" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_WUSER_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI WUSER WIDTH</spirit:displayName>
+      <spirit:description>Width of User Write Data Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_WUSER_WIDTH" spirit:order="10" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_RUSER_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI RUSER WIDTH</spirit:displayName>
+      <spirit:description>Width of User Read Data Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_RUSER_WIDTH" spirit:order="11" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXI_BUSER_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXI BUSER WIDTH</spirit:displayName>
+      <spirit:description>Width of User Response Bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXI_BUSER_WIDTH" spirit:order="12" spirit:minimum="0" spirit:maximum="1024" spirit:rangeType="long">1</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">RV32I_Memory_Interface_Controller_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_CPU_DATASIZE</spirit:name>
+      <spirit:displayName>C M00 Cpu Datasize</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_CPU_DATASIZE">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_CPU_ADDRSIZE</spirit:name>
+      <spirit:displayName>C M00 Cpu Addrsize</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_CPU_ADDRSIZE">32</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>RV32I_Memory_Interface_Controller_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>53</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-07-12T05:52:58Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b3c511e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ebaa0f3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b2c11d9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17a3edd3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a1ac7a6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55d70300_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9234888_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a9a3d4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47b7324a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10d23b86_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@720d1fe3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e55d1e5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24ec8630_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba4ae56_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee8d4b5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57fe8d3c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b38558_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@770a73d3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db7fbc3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f04a68b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79ca5026_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e86b4ff_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e5b337_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5546c235_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55c777f0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26da1bb3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1948a02b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48247161_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f6b8a9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16fcb92b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23720eb2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494a83ea_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30cdd216_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@174bc53f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463fad2b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51601e85_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1c3535_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@486f60da_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@709d2dc9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c48ff2c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5772b604_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25be32eb_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d77922c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@704d604e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a046ed_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a2c0aa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4201fc44_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dbc3627_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39aea5ae_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@399f2fb0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a693834_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a06c7d9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7632c309_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7455fd67_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@560d8709_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d8a9e0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79be2240_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7702e2a5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a195042_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d019ade_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6be9a037_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55a8d207_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@171aa0d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c31b88c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69dd69a0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b865876_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d18c6d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ee2cdae_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@778f9396_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50c2f60_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cd8ece4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68208591_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40381df4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ab83380_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f98964_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@332264c3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@502e2869_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6de171d2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49a281cd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f88d45_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37b86dac_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40575e4c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58131f4a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de392ab_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da9fcb7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f538cc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4779a1d7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f238453_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12939856_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481bd94_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a7ea936_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be84aa8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7db4bd29_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45ce4f88_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16a50ca3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bc50d3e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bcf6923_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@565cd54a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9e1b886_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c92c5b1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16b511af_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49aa67b1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37fd6263_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6037170a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8277d1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62440f4e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e020886_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bc1619c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6214823_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@721d35ba_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e14564a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e9bd0af_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3567c3a6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2994eb4d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49295eaa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1276aec1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b99d0c4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24638150_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6378cf15_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54807a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21c45f23_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24c8631c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d8bf1c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a11be46_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44fafaf0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a9499d5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eece81_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624e3c22_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f3ea6f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f0c1f39_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6a9f8c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19dc9e7c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5223d492_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d28c15a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fd27523_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e1d6d1f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b018d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@adb7069_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cd4f8f4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@445078cf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3399e799_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74bd17a6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70ca44c6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2be42178_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4210239d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36bbaa70_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f57810d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e6b9eab_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f843d3a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fadf386_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7feadb80_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d13ad2f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12de4489_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ca99ef1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d7786b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7676ea4a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66b894ef_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17d9fdd6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47d7ec2b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33280c8d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4f4de3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@993e91b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17e76718_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a6d8945_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e8d96e5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59817584_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d44733_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ad7cb2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e62d7a6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@82d35c9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f97346e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1467d4f3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fdf3128_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40c325c0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c03a6e4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e7a4a82_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22399330_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3740872b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b0f3b66_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b8b8747_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fc353d3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc636e6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36a83f5c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1892f766_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6edb8bd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59216be0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bc7951d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3430075f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52827191_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd52805_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d824b23_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2519f9d2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba15cef_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@184d800a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792c6a28_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7573df47_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c471c07_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f82c6d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5007b456_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52682df6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53f2c256_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@336acf6a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1304b521_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d21c39_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@671d3aac_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f935040_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76befc2a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a2136a1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489c3de9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@529bb6cf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f5a6471_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57471c9a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48f6394_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b9c44d5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@706bdd6e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78b1355_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@671fa305_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4379971e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74275f5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eab23f5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a96115e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b90b81f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3321bac1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a6efc6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@335bebb7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7566eef1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42cc4ff3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5992330_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@408054bf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@230191b3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25e9ccf1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d32693_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57c13541_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46390cb3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a8c8c12_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@221e1266_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42556d0e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2133f8fd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5878f480_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1394b225_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ff1b248_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@711d59ff_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f22b02a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@237f352f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370fd6a8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200d5541_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cf6f90e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30a8ce47_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a39fa0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67a6c43b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c12b14d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@393ef1bb_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59b1ac3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd8d4f5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e93372b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b85c132_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e312424_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e98567_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5081020e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f0348fd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b2f2410_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c725451_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c0bf21_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@182f5280_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aedb153_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d432a91_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c2d0c0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c1e2f0a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7257e878_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bf234c4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2578ca6f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36b816a0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19028b37_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3199d8dc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e49dbe1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5635bc56_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@527b2d2d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@712b71b0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c6d6252_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f647979_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29876dea_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ac4907_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9601c3b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31868989_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d776ea8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68e6c356_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23ecf32c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f8be42e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b33df4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27d2d3f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d788110_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c54ad94_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2df05df0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4628c79a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3976b9b8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35266564_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3320d153_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47e21082_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ec8e8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@721e966b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e7ece0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5865463b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ccb89e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8ef7310_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e55740a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ba91e6a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f971e8a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ccfe9df_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4192e383_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46305bb1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@285bcc72_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49afe25d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@206601f8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f5ed0fd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eedb391_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd0175c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18d48f6d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17837d2d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4de0987c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c483352_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69b24036_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b85f9ca_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a0680e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1330494b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3319e73a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@343d55ad_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e41666_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bc3bda6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c863977_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee028e4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ffdb723_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc0f63f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c83dc44_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd476ee_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ebdf8e8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@424818b0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70ea84b2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7efbe636_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a64770_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@619f903d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7088bdfa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fda8f1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60831dbc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d77de3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c57b3e6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fb6c2f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c23b8c9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a407f54_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57d137f1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41202a38_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65224ee6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d323896_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e940726_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eddb280_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5941ffc7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6684e0e5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@663952c5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4b9c54_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fe4f34_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21a4210c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5129030f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59a765ae_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@606f2bab_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a695451_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59887d46_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fef3b58_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57617185_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25eecd7f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79f1169_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79ada114_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ae081f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2645de_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7678d1a7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ab78a36_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2b672b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fb2854a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a84d4c0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61410bcc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e15860a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58c049d4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466c3835_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1846b0e0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34c6094b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f2332d4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d5be54c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59596eb7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2806bc08_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3491980e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17582bef_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65bfac5d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d55c3da_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11317bf3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d49ea1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e589699_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb8f0f1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79b030d0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c8884a1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fbc38cf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39912b21_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5923eb1c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cda3647_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b665646_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c77295_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65cd1645_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a72814d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b45a1d5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d62a621_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a41cd90_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28f7f50f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e517ad2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2acfb2dd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@204c1c2d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fc1302c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d68896_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58cab736_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64961d92_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64cb4289_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16dbcf47_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5697a827_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b234c63_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27482c77_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@685b0d90_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2e9216_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da5a06e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62075f53_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52309df2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46960303_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f0eb314_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@320ea8d2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53bf3fab_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1377a188_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dec6a6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@123d35aa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aed0997_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46aa9ce6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69b3ef8d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7c831a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79c6999c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20099ed8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32f91e4d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54db1df2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a8d3517_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46466cf8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8021392_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a17ee75_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a14cfa3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e1b8403_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44ac84e8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c1f4e18_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65c4ed45_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27d95e63_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@498b9051_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef2e583_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39d7a907_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19734002_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ce5156_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a5736c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c98af80_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2def2899_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e14b18_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a35dd85_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71007681_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bc5224d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@434f09a2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@666128c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69a3dc97_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6385b5d0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c1f004e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b1f14b7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f6c2a74_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f7e519c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4360557d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e258050_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fb55289_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f2048d8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e7239d5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ac548a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e027c6b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5655c926_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@734b46d2_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37a26172_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4de9f303_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57ec1c41_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eabfd31_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2c6d7a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50405e04_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67d9d9a4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e263115_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a63166_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bc40507_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415ac524_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f62a07d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4528fbc8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b3caaf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e128c78_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7758dde3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14110733_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6caea86c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4bf039_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd300eb_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d785a2b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5a7c52_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@268c34a3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@570d53c9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f72254b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c63c42e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25d95d7c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@798b9e3c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63ae00de_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@617355ca_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ebfaf15_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20589e02_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@395efdfa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18310cd3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fc61c52_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2abd7db8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@241703d4_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4994298_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@243349b5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a72f271_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ca1e3a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cf20d27_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@622f8b17_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@538628fd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442193aa_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67dc8fc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ee5a3e3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7902f959_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aca2f13_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a15601_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@101f8b3f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28615362_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@715d8ecc_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f4e5964_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12056c8a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b47fa5c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c65e4f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24029c88_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ea7828b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@487521e8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e01fd6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c5dd08b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13d0fd2b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d90a0e7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d5476f_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cffcaa6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f7fb14_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a6a61cf_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2f44e9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5efc5f47_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c9e810_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1846114d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@259c5ce7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@232064ac_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@193ca76e_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e72483_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11ddb7a_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68cbd65b_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6122e34_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e50390_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@289aafde_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@794d7912_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34159c8c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7147ce8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5499bc06_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70745f48_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1efd9044_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d04ff0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@443bbdc7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43921dba_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@566e5464_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d1f62da_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b060708_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ce55ef3_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c054bd6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b0b37c1_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c79bd31_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a251794_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54e3ef95_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4689d084_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714acec7_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@398f9b2d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f547ccd_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@630cc9b5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1427f215_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28512d5_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1647a9ad_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b483c06_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44759e19_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f71c982_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa28da_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f8a3d8d_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@465f6ae8_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515f300c_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@423a0a69_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a85c540_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@193679c0_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e50aca9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539ecff6_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@240ab815_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e5c1e9_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ecac376_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24abbc89_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@655b2350_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74966395_ARCHIVE_LOCATION">g:/Computer_Architecture/ip_repo/RV32I_Memory_Interface_Controller_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="372f74e8"/>
+      <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="55bfeea0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="046cc661"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ef5a1df2"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="f42694c4"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="76e51219"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
